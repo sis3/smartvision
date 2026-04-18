@@ -1,63 +1,153 @@
-<nav class="navbar navbar-expand-lg">
-        <div class="container">
-            <!-- Logo -->
-            <div class="logo-wrapper">
-                <a class="nav-item " href="index.html"> <img src="{{ asset('assets/images/Smartvision logotype initial.png') }}" class="logo-img" alt=""> </a>
+<div class="loader-wrap">
+      <svg viewBox="0 0 1000 1000" preserveAspectRatio="none">
+        <path id="svg" d="M0,1005S175,995,500,995s500,5,500,5V0H0Z"></path>
+      </svg>
 
-            </div>
-            <!-- Button -->
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"><i class="fa-regular fa-bars"></i></span> </button>
-            <!-- Menu -->
-            <div class="collapse navbar-collapse" id="navbar">
-                <ul class="navbar-nav ms-auto">
-
-                    <li class="nav-item "> <a class="nav-link active dropdown-toggle" href="#">
-					Accueil  </a> </li>
-
-						  <li class="nav-item dropdown"> <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">
-					Nos Offres <i class="fa-solid fa-caret-down"></i></a>
-
-
-					<ul class="dropdown-menu">
-						   <li><a href="strategie-digitale.html" class="dropdown-item"><span>Stratégie de Marque</span></a></li>
-						    <li><a href="identite-branding.html" class="dropdown-item"><span>Identité de Marque et Branding</span></a></li>
-                            <li><a href="gestion-rs.html" class="dropdown-item"><span>Gestion et Animation des Réseaux Sociaux</span></a></li>
-                           <li><a href="motion-video.html" class="dropdown-item"><span>Motion & Vidéo de Contenu</span></a></li>
-                            <li><a href="developpement-web.html" class="dropdown-item"><span> Développement  Web</span></a></li>
-							<li><a href="packaging-edition.html" class="dropdown-item"><span>Packaging & Edition</span></a></li>
-
-
-
-                        </ul>
-
-                    <li class="nav-item"><a class="nav-link" href="portfolio.html">Portfolio</a></li>
-
-                    <li class="nav-item dropdown"> <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">
-					L'Agence X <i class="fa-solid fa-caret-down"></i></a>
-                        <ul class="dropdown-menu">
-						   <li><a href="lagencex.html" class="dropdown-item"><span>A Propos de Nous</span></a></li>
-
-                            <li><a href="tarifs.html" class="dropdown-item"><span>Nos Tarifs</span></a></li>
-							<li><a href="t%c3%83%c2%a9moignages.html" class="dropdown-item"><span>Témoignages</span></a></li>
-
-                            <li><a href="faq.html" class="dropdown-item"><span>FAQ</span></a></li>
-
-
-                        </ul>
-                    </li>
-
-                    <li class="nav-item"><a class="nav-link" href="{{ route('contact') }}">Contact</a></li>
-                </ul>
-                <!-- Call -->
-                <div class="navbar-right">
-                    <div class="wrap">
-                        <div class="icon"> <i class="fa-solid fa-phone"></i> </div>
-                        <div class="text">
-                            <p>Contactez-nous</p>
-                           <h5><a href="tel:+237675430811">675 43 08 11</a></h5>
-                        </div>
-                    </div>
-                </div>
-            </div>
+      <div class="loader-wrap-heading">
+        <div class="load-text">
+          <span>C</span>
+          <span>r</span>
+          <span>u</span>
+          <span>v</span>
         </div>
-    </nav>
+      </div>
+    </div>
+
+    <!-- Sroll to top -->
+    <div class="progress-wrap">
+      <svg
+        class="progress-circle svg-content"
+        width="100%"
+        height="100%"
+        viewBox="-1 -1 102 102"
+      >
+        <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98"></path>
+      </svg>
+    </div>
+    <!-- side toggle start -->
+    <aside class="fix">
+      <div class="side-info">
+        <div class="side-info-content">
+          <div class="offset-widget offset-header">
+            <div class="offset-logo">
+              <a href="index.html">
+                <img
+                  src="{{ asset('assets/img/logo/Smartvision logotype blanc.png') }}"
+                  class="normal-logo"
+                  alt="Site Logo"
+               >
+              </a>
+            </div>
+            <button id="side-info-close" class="side-info-close">x</button>
+          </div>
+          <div class="mobile-menu d-xl-none fix"></div>
+          <div class="offset-button"></div>
+          <div class="offset-widget-box">
+            <h2 class="title">Contact US</h2>
+            <div class="contact-meta">
+              <div class="contact-item">
+                <span class="icon"
+                  ><i class="fa-solid fa-location-dot"></i
+                ></span>
+                <span class="text">3891 Ranchview Dr. Richardson</span>
+              </div>
+              <div class="contact-item">
+                <span class="icon"><i class="fa-solid fa-envelope"></i></span>
+                <span class="text"
+                  ><a href="mailto:hello@cruvagency.com"
+                    >hello@cruvagency.com</a
+                  ></span
+                >
+              </div>
+              <div class="contact-item">
+                <span class="icon"><i class="fa-solid fa-phone"></i></span>
+                <span class="text"
+                  ><a href="tel:(505)555-0125">(505) 555-0125</a></span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </aside>
+    <div class="offcanvas-overlay"></div>
+    <!-- side toggle end -->
+
+    <!-- Header area start -->
+    <header class="header-area">
+      <div class="header-main">
+        <div class="container">
+          <div class="header-area__inner">
+            <div class="header__logo">
+              <a href="index.html">
+                <img
+                  src="{{ asset('assets/img/logo/Smartvision logotype rouge.png') }}"
+                  class="normal-logo" width="180"
+                  alt="Site Logo"
+               >
+              </a>
+            </div>
+            <div class="header__nav">
+              <nav class="main-menu">
+                <ul>
+                  <li class="menu-item-has-children">
+                    <a href="#">Home</a>
+                    <ul class="dp-menu">
+                      <li><a href="index.html">Home</a></li>
+                      <li><a href="index-2.html">Home-2</a></li>
+                    </ul>
+                  </li>
+                  <li><a href="about.html">About</a></li>
+                  <li class="menu-item-has-children">
+                    <a href="#">Services</a>
+                    <ul class="dp-menu">
+                      <li><a href="services.html">Services</a></li>
+                      <li>
+                        <a href="services-details.html">Service Details</a>
+                      </li>
+                    </ul>
+                  </li>
+
+                  <li class="menu-item-has-children">
+                    <a href="#">Portfolio</a>
+                    <ul class="dp-menu">
+                      <li><a href="portfolio-grid.html">Portfolio Grid</a></li>
+                      <li><a href="portfolio-list.html">Portfolio List</a></li>
+                      <li>
+                        <a href="portfolio-details.html">Portfolio Details</a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="menu-item-has-children">
+                    <a href="#">Pages</a>
+                    <ul class="dp-menu">
+                      <li><a href="team.html">Team Page</a></li>
+                      <li><a href="pricing.html">Pricing Page</a></li>
+                      <li><a href="faq.html">Faq</a></li>
+                      <li><a href="404.html">404 Page</a></li>
+                    </ul>
+                  </li>
+                  <li class="menu-item-has-children">
+                    <a href="#">Blog</a>
+                    <ul class="dp-menu">
+                      <li><a href="blog-grid.html">Blog grid</a></li>
+                      <li><a href="blog-list.html">Blog list</a></li>
+                      <li><a href="blog-details.html">Blog Details</a></li>
+                    </ul>
+                  </li>
+                  <li><a href="contact-us.html">Contact</a></li>
+                </ul>
+              </nav>
+              <div class="header__navicon">
+                <button class="side-toggle">
+                  <span class="bar-icon">
+                    <span></span>
+                    <span></span>
+                  </span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
