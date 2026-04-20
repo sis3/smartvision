@@ -11,7 +11,7 @@
     <div class="hero__inner">
       <div class="hero__content">
         <h1 class="hero-title">
-          Le branding ne commence pas par un logo.
+          Le branding ne commence <br> pas par un logo.
           <span class="des">
             Nous aidons les entreprises et institutions à structurer leur marque et leur communication
             afin de transformer leur image en levier de crédibilité, de fidélisation et de ventes durables.
@@ -24,11 +24,11 @@
             alt="image"
          >
 
-          Il commence par une décision stratégique.
+          {{-- Il commence par une décision stratégique. --}}
           <br>
 
-          Beaucoup d’entreprises communiquent.<br>
-          Peu ont une marque réellement structurée pour vendre et durer.
+          {{-- Beaucoup d’entreprises communiquent.<br>
+          Peu ont une marque réellement structurée pour vendre et durer. --}}
 
           <img
             class="circle"
@@ -236,11 +236,11 @@
           <div class="title-slider__item">
             <h3 class="title-slider__title">
               Design Webflow<img
-                src="assets/img/Design.png"
+                src="{{ asset('assets/img/Design.png') }}"
                 alt="image"
              >
               Design d’application<img
-                src="assets/img/creative.png"
+                src="{{ asset('assets/img/creative.png') }}"
                 alt="image"
              >Pensée créative
             </h3>
@@ -250,17 +250,17 @@
         <div class="swiper-slide">
           <div class="title-slider__item">
             <h3 class="title-slider__title">
-              <img
-                src="assets/img/services/services-4.jpg"
+              {{-- <img
+                src="{{ asset('assets/img/services/services-4.jpg') }}"
                 alt="image"
-             >Développement sans code
+             > --}}Développement sans code
               <img
-                src="assets/img/services/services-5.jpg"
+                src="{{ asset('assets/img/no_code.png') }}"
                 alt="image"
              >
               Développement d’application
               <img
-                src="assets/img/services/services-5.jpg"
+                src="{{ asset('assets/img/app_developpement.png') }}"
                 alt="image"
              >
             </h3>
@@ -271,11 +271,11 @@
           <div class="title-slider__item">
             <h3 class="title-slider__title">
               Design Webflow<img
-                src="assets/img/services/services-2.jpg"
+                src="{{ asset('assets/img/Design.png') }}"
                 alt="image"
              >
               Design d’application<img
-                src="assets/img/services/services-3.jpg"
+                src="{{ asset('assets/img/creative.png') }}"
                 alt="image"
              >Pensée créative
             </h3>
@@ -285,17 +285,17 @@
         <div class="swiper-slide">
           <div class="title-slider__item">
             <h3 class="title-slider__title">
-              <img
+              {{-- <img
                 src="assets/img/services/services-4.jpg"
                 alt="image"
-             >Développement sans code
+             > --}}Développement sans code
               <img
-                src="assets/img/services/services-5.jpg"
+                src="{{ asset('assets/img/no_code.png') }}"
                 alt="image"
              >
               Développement d’application
               <img
-                src="assets/img/services/services-5.jpg"
+                src="{{ asset('assets/img/app_developpement.png') }}"
                 alt="image"
              >
             </h3>
@@ -312,11 +312,11 @@
           <div class="title-slider__item">
             <h3 class="title-slider__title">
               Design Webflow<img
-                src="assets/img/services/services-2.jpg"
+                src="{{ asset('assets/img/Design.png') }}"
                 alt="image"
              >
               Design d’application<img
-                src="assets/img/services/services-3.jpg"
+                src="{{ asset('assets/img/creative.png') }}"
                 alt="image"
              >Pensée créative
             </h3>
@@ -326,17 +326,17 @@
         <div class="swiper-slide">
           <div class="title-slider__item">
             <h3 class="title-slider__title">
-              <img
+              {{-- <img
                 src="assets/img/services/services-4.jpg"
                 alt="image"
-             >Développement sans code
+             > --}}Développement sans code
               <img
-                src="assets/img/services/services-5.jpg"
+                src="{{ asset('assets/img/no_code.png') }}"
                 alt="image"
              >
               Développement d’application
               <img
-                src="assets/img/services/services-5.jpg"
+                src="{{ asset('assets/img/app_developpement.png') }}"
                 alt="image"
              >
             </h3>
@@ -347,11 +347,11 @@
           <div class="title-slider__item">
             <h3 class="title-slider__title">
               Design Webflow<img
-                src="assets/img/services/services-2.jpg"
+                src="{{ asset('assets/img/Design.png') }}"
                 alt="image"
              >
               Design d’application<img
-                src="assets/img/services/services-3.jpg"
+                src="{{ asset('assets/img/creative.png') }}"
                 alt="image"
              >Pensée créative
             </h3>
@@ -361,17 +361,17 @@
         <div class="swiper-slide">
           <div class="title-slider__item">
             <h3 class="title-slider__title">
-              <img
+              {{-- <img
                 src="assets/img/services/services-4.jpg"
                 alt="image"
-             >Développement sans code
+             > --}}Développement sans code
               <img
-                src="assets/img/services/services-5.jpg"
+                src="{{ asset('assets/img/no_code.png') }}"
                 alt="image"
              >
               Développement d’application
               <img
-                src="assets/img/services/services-5.jpg"
+                src="{{ asset('assets/img/app_developpement.png') }}"
                 alt="image"
              >
             </h3>
@@ -398,7 +398,7 @@
           Services
         </h2>
         <div class="section__content">
-          <p>
+          {{-- <p>
             Duis aute irure dolor in reprehenderit in voluptate velit
             esse cillum dolore eu fugiat nulla pariatur. excepteur
             sint occaecat
@@ -407,66 +407,72 @@
           <a href="blog-details" class="btn-black">
             VOIR TOUS LES SERVICES
             <img
-              src="assets/img/icon/star-white.png"
+              src="{{ asset('assets/img/nos_services2.png') }}"
               alt="image"
            >
-          </a>
+          </a> --}}
+           <p>
+          Nos expertises couvrent l’ensemble des leviers nécessaires
+          à la construction et au déploiement d’une marque claire, crédible et cohérente.
+        </p>
+
+        <a href="blog-details" class="btn-black">
+          Demander un accompagnement stratégique
+          <img
+            src="{{ asset('assets/img/nos_services2.png') }}"
+            alt="image"
+         >
         </div>
       </div>
     </div>
 
     <div class="services__wrapper">
 
-      <div class="services__item wow fade-in-bottom" data-wow-delay="600ms">
-        <div class="services__content">
-          <h3 class="title"><a href="#">Identité de marque</a></h3>
-          <p class="des">
-            Nemo enim ipsam voluptatem quia voluptas sit aspernatur
-            aut odit aut fugit, sed quia consequuntur magni dolores
-            eos qui ratione voluptatem sequi nesciunt. neque esti, qui
-            dolorem ipsum quia dolor sit amet,
-          </p>
+  <div class="services__item wow fade-in-bottom" data-wow-delay="600ms">
+    <div class="services__content">
+      <h3 class="title"><a href="#">Stratégie de marque</a></h3>
+      <p class="des">
+        Structuration de l’ADN de marque, clarification de la vision,
+        définition de la promesse et du positionnement.
+      </p>
 
-          <ul class="services__list">
-            <li>DIRECTION ARTISTIQUE</li>
-            <li>IDENTITÉ DE MARQUE</li>
-            <li>CRÉATION DE LOGO</li>
-            <li>DESIGN GRAPHIQUE</li>
-          </ul>
-        </div>
+      <ul class="services__list">
+        <li>STRUCTURATION DE MARQUE</li>
+        <li>CLARIFICATION DE LA VISION</li>
+        <li>POSITIONNEMENT</li>
+        <li>STRATÉGIE</li>
+      </ul>
+    </div>
 
-        <div class="services__media">
-          <a href="#">
-            <img src="assets/img/services/services-1.jpg" alt="image">
-          </a>
-        </div>
-      </div>
+    <div class="services__media">
+      <a href="#">
+        <img src="{{ asset('assets/img/Identite_de_marque.png') }}" alt="image">
+      </a>
+    </div>
+  </div>
 
       <div class="services__item wow fade-in-bottom" data-wow-delay="600ms">
-        <div class="services__content">
-          <h3 class="title"><a href="#">Développement Web</a></h3>
-          <p class="des">
-            Nemo enim ipsam voluptatem quia voluptas sit aspernatur
-            aut odit aut fugit, sed quia consequuntur magni dolores
-            eos qui ratione voluptatem sequi nesciunt. neque esti, qui
-            dolorem ipsum quia dolor sit amet,
-          </p>
+  <div class="services__content">
+    <h3 class="title"><a href="#">Communication corporate</a></h3>
+    <p class="des">
+      Construction d’une communication institutionnelle claire, cohérente
+      et alignée avec la réalité de l’organisation.
+    </p>
 
-          <ul class="services__list">
-            <li>DIRECTION ARTISTIQUE</li>
-            <li>IDENTITÉ DE MARQUE</li>
-            <li>CRÉATION DE LOGO</li>
-            <li>DESIGN GRAPHIQUE</li>
-          </ul>
-        </div>
+    <ul class="services__list">
+      <li>COMMUNICATION INSTITUTIONNELLE</li>
+      <li>STRUCTURATION DES MESSAGES</li>
+      <li>ALIGNEMENT STRATÉGIQUE</li>
+      <li>COHÉRENCE DE MARQUE</li>
+    </ul>
+  </div>
 
-        <div class="services__media">
-          <a href="#">
-            <img src="assets/img/services/services-2.jpg" alt="image">
-          </a>
-        </div>
-      </div>
-
+  <div class="services__media">
+    <a href="#">
+      <img src="{{ asset('assets/img/web_veveloppement.jpg') }}" alt="image">
+    </a>
+  </div>
+</div>
       <div class="services__item wow fade-in-bottom" data-wow-delay="600ms">
         <div class="services__content">
           <h3 class="title"><a href="#">Direction créative</a></h3>
@@ -487,61 +493,56 @@
 
         <div class="services__media">
           <a href="#">
-            <img src="assets/img/services/services-3.jpg" alt="image">
+            <img src="{{ asset('assets/img/direction_creative.jpg') }}" alt="image">
           </a>
         </div>
       </div>
 
       <div class="services__item wow fade-in-bottom" data-wow-delay="600ms">
-        <div class="services__content">
-          <h3 class="title"><a href="#">Design UI/UX</a></h3>
-          <p class="des">
-            Nemo enim ipsam voluptatem quia voluptas sit aspernatur
-            aut odit aut fugit, sed quia consequuntur magni dolores
-            eos qui ratione voluptatem sequi nesciunt. neque esti, qui
-            dolorem ipsum quia dolor sit amet,
-          </p>
+  <div class="services__content">
+    <h3 class="title"><a href="#">Brand design</a></h3>
+    <p class="des">
+      Création d’identités visuelles pensées
+      comme des outils de crédibilité, jamais comme une finalité.
+    </p>
 
-          <ul class="services__list">
-            <li>DIRECTION ARTISTIQUE</li>
-            <li>IDENTITÉ DE MARQUE</li>
-            <li>CRÉATION DE LOGO</li>
-            <li>DESIGN GRAPHIQUE</li>
-          </ul>
-        </div>
+    <ul class="services__list">
+      <li>IDENTITÉ VISUELLE</li>
+      <li>SYSTÈME GRAPHIQUE</li>
+      <li>CHARTE GRAPHIQUE</li>
+      <li>COHÉRENCE VISUELLE</li>
+    </ul>
+  </div>
 
-        <div class="services__media">
-          <a href="#">
-            <img src="assets/img/services/services-4.jpg" alt="image">
-          </a>
-        </div>
-      </div>
+  <div class="services__media">
+    <a href="#">
+      <img src="{{ asset('assets/img/disign_ux.jpg') }}" alt="image">
+    </a>
+  </div>
+</div>
 
-      <div class="services__item wow fade-in-bottom" data-wow-delay="600ms">
-        <div class="services__content">
-          <h3 class="title"><a href="#">Design graphique</a></h3>
-          <p class="des">
-            Nemo enim ipsam voluptatem quia voluptas sit aspernatur
-            aut odit aut fugit, sed quia consequuntur magni dolores
-            eos qui ratione voluptatem sequi nesciunt. neque esti, qui
-            dolorem ipsum quia dolor sit amet,
-          </p>
+     <div class="services__item wow fade-in-bottom" data-wow-delay="600ms">
+  <div class="services__content">
+    <h3 class="title"><a href="#">Brand content & storytelling</a></h3>
+    <p class="des">
+      Clarification des messages clés et construction d’un discours
+      de marque lisible et impactant.
+    </p>
 
-          <ul class="services__list">
-            <li>DIRECTION ARTISTIQUE</li>
-            <li>IDENTITÉ DE MARQUE</li>
-            <li>CRÉATION DE LOGO</li>
-            <li>DESIGN GRAPHIQUE</li>
-          </ul>
-        </div>
+    <ul class="services__list">
+      <li>STRATÉGIE DE CONTENU</li>
+      <li>MESSAGES CLÉS</li>
+      <li>STORYTELLING</li>
+      <li>DISCOURS DE MARQUE</li>
+    </ul>
+  </div>
 
-        <div class="services__media">
-          <a href="#">
-            <img src="assets/img/services/services-5.jpg" alt="image">
-          </a>
-        </div>
-      </div>
-
+  <div class="services__media">
+    <a href="#">
+      <img src="{{ asset('assets/img/disign_graphique.jpg') }}" alt="image">
+    </a>
+  </div>
+</div>
     </div>
   </div>
 </section>
@@ -551,128 +552,128 @@
           <section class="portfolio section-space">
   <div class="container">
     <div class="section__wrapper">
-      <div class="section-sub__wrapper">
-        <h6>Portfolio sélectionné</h6>
-        <span></span>
-      </div>
+  <div class="section-sub__wrapper">
+    <h6>Réalisations & références</h6>
+    <span></span>
+  </div>
 
-      <div class="section__wrap">
-        <h2 class="section-title rr-title-anim">SÉLECTION</h2>
-        <div class="section__content">
-          <p>
-            Duis aute irure dolor in reprehenderit in voluptate velit
-            esse cillum dolore eu fugiat nulla pariatur. excepteur
-            sint occaecat
-          </p>
+  <div class="section__wrap">
+    <h2 class="section-title rr-title-anim">SÉLECTION</h2>
+    <div class="section__content">
+      <p>
+        Pour des raisons de confidentialité, les stratégies de marque développées pour nos clients
+        ne sont pas rendues publiques. Les projets présentés illustrent toutefois notre exigence de cohérence,
+        notre approche stratégique et la qualité des univers visuels produits.
+      </p>
 
-          <a href="blog-details" class="btn-black btn-white">
-            VOIR TOUS LES PROJETS
-            <img
-              src="assets/img/icon/star-black.png"
-              alt="image"
-           >
-          </a>
-        </div>
-      </div>
-
-      <div class="section__bottom">
-        <h2 class="section__bottom-title">projets</h2>
-        <h3 class="section__bottom-sub-title">[2022—2024]</h3>
-      </div>
+      <a href="blog-details" class="btn-black btn-white">
+        Voir les réalisations
+        <img
+          src="assets/img/icon/star-black.png"
+          alt="image"
+       >
+      </a>
     </div>
+  </div>
+
+  <div class="section__bottom">
+    <h2 class="section__bottom-title">réalisations</h2>
+    <h3 class="section__bottom-sub-title">[Smart Vision]</h3>
+  </div>
+</div>
 
     <div class="portfolio-inner">
-      <div class="portfolio-wrapper">
+  <div class="portfolio-wrapper">
 
-        <div class="portfolio__item wow fade-in-bottom" data-wow-delay="600ms">
-          <div class="thumb" data-cursor-text="Voir">
-            <a href="#">
-              <img src="assets/img/portfolio/portfolio-1.jpg" alt="image">
-            </a>
-            <ul class="tags">
-              <li>Branding  //  </li>
-              <li> Design_Packaging  //</li>
-              <li>Développement</li>
-            </ul>
-          </div>
-          <div class="content">
-            <h3 class="title rr-title-anim">Design packaging</h3>
-            <span class="date">// 2024</span>
-          </div>
-        </div>
-
-        <div class="portfolio__item wow fade-in-bottom" data-wow-delay="600ms">
-          <div class="thumb" data-cursor-text="Voir">
-            <a href="#">
-              <img src="assets/img/portfolio/portfolio-2.jpg" alt="image">
-            </a>
-            <ul class="tags">
-              <li>Branding  //  </li>
-              <li> Design_Packaging  //</li>
-              <li>Développement</li>
-            </ul>
-          </div>
-          <div class="content">
-            <h3 class="title rr-title-anim">Design d’application mobile</h3>
-            <span class="date">// 2024</span>
-          </div>
-        </div>
-
-        <div class="portfolio__item wow fade-in-bottom" data-wow-delay="600ms">
-          <div class="thumb" data-cursor-text="Voir">
-            <a href="#">
-              <img src="assets/img/portfolio/portfolio-3.jpg" alt="image">
-            </a>
-            <ul class="tags">
-              <li>Branding  //  </li>
-              <li> Design_Packaging  //</li>
-              <li>Développement</li>
-            </ul>
-          </div>
-          <div class="content">
-            <h3 class="title rr-title-anim">Design de maquette</h3>
-            <span class="date">// 2024</span>
-          </div>
-        </div>
-
-        <div class="portfolio__item wow fade-in-bottom" data-wow-delay="600ms">
-          <div class="thumb" data-cursor-text="Voir">
-            <a href="#">
-              <img src="assets/img/portfolio/portfolio-4.jpg" alt="image">
-            </a>
-            <ul class="tags">
-              <li>Branding  //  </li>
-              <li> Design_Packaging  //</li>
-              <li>Développement</li>
-            </ul>
-          </div>
-          <div class="content">
-            <h3 class="title rr-title-anim">Design d’identité de marque</h3>
-            <span class="date">// 2024</span>
-          </div>
-        </div>
-
-        <div class="portfolio__item wow fade-in-bottom span-2" data-wow-delay="600ms">
-          <div class="thumb" data-cursor-text="Voir">
-            <a href="#">
-              <img src="assets/img/portfolio/portfolio-5.jpg" alt="image">
-            </a>
-            <ul class="tags">
-              <li>Branding  //  </li>
-              <li> Design_Packaging  //</li>
-              <li>Développement</li>
-            </ul>
-          </div>
-          <div class="content">
-            <h3 class="title rr-title-anim">
-              Design de produit digital
-            </h3>
-            <span class="date">// 2024</span>
-          </div>
-        </div>
-
+    <div class="portfolio__item wow fade-in-bottom" data-wow-delay="600ms">
+      <div class="thumb" data-cursor-text="Voir">
+        <a href="#">
+          <img src="assets/img/portfolio/portfolio-1.jpg" alt="image">
+        </a>
+        <ul class="tags">
+          <li>Stratégie de marque  //</li>
+          <li>Identité visuelle  //</li>
+          <li>Positionnement</li>
+        </ul>
+      </div>
+      <div class="content">
+        <h3 class="title rr-title-anim">Structuration d’une identité de marque</h3>
+        <span class="date">// Projet confidentiel</span>
       </div>
     </div>
+
+    <div class="portfolio__item wow fade-in-bottom" data-wow-delay="600ms">
+      <div class="thumb" data-cursor-text="Voir">
+        <a href="#">
+          <img src="assets/img/portfolio/portfolio-2.jpg" alt="image">
+        </a>
+        <ul class="tags">
+          <li>Brand content  //</li>
+          <li>Storytelling  //</li>
+          <li>Communication</li>
+        </ul>
+      </div>
+      <div class="content">
+        <h3 class="title rr-title-anim">Construction d’un discours de marque</h3>
+        <span class="date">// Projet confidentiel</span>
+      </div>
+    </div>
+
+    <div class="portfolio__item wow fade-in-bottom" data-wow-delay="600ms">
+      <div class="thumb" data-cursor-text="Voir">
+        <a href="#">
+          <img src="assets/img/portfolio/portfolio-3.jpg" alt="image">
+        </a>
+        <ul class="tags">
+          <li>Brand design  //</li>
+          <li>Charte graphique  //</li>
+          <li>Univers visuel</li>
+        </ul>
+      </div>
+      <div class="content">
+        <h3 class="title rr-title-anim">Création d’un univers visuel cohérent</h3>
+        <span class="date">// Projet confidentiel</span>
+      </div>
+    </div>
+
+    <div class="portfolio__item wow fade-in-bottom" data-wow-delay="600ms">
+      <div class="thumb" data-cursor-text="Voir">
+        <a href="#">
+          <img src="assets/img/portfolio/portfolio-4.jpg" alt="image">
+        </a>
+        <ul class="tags">
+          <li>Communication corporate  //</li>
+          <li>Structuration  //</li>
+          <li>Alignement</li>
+        </ul>
+      </div>
+      <div class="content">
+        <h3 class="title rr-title-anim">Alignement stratégique d’une communication</h3>
+        <span class="date">// Projet confidentiel</span>
+      </div>
+    </div>
+
+    <div class="portfolio__item wow fade-in-bottom span-2" data-wow-delay="600ms">
+      <div class="thumb" data-cursor-text="Voir">
+        <a href="#">
+          <img src="assets/img/portfolio/portfolio-5.jpg" alt="image">
+        </a>
+        <ul class="tags">
+          <li>Conseil stratégique  //</li>
+          <li>Branding  //</li>
+          <li>Transformation</li>
+        </ul>
+      </div>
+      <div class="content">
+        <h3 class="title rr-title-anim">
+          Accompagnement global de marque
+        </h3>
+        <span class="date">// Projet confidentiel</span>
+      </div>
+    </div>
+
+  </div>
+</div>
   </div>
 </section>
           <!-- portfolio area end  -->
