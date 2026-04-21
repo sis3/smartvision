@@ -4,7 +4,7 @@
       gap: 10px;
       display: flex;
       padding-bottom: 35px;
-      border-bottom: 1px solid var(--black);
+      border-bottom: 1px solid var(--white);
       justify-content: space-between;
 
       @media #{$xs} {
@@ -15,7 +15,7 @@
         font-size: 20px;
         font-weight: 700;
         line-height: 26px;
-        color: var(--black);
+        color: var(--white);
       }
 
       .left-sub-title {
@@ -30,7 +30,7 @@
           height: 10px;
           position: absolute;
           border-radius: 500px;
-          background-color: var(--black);
+          background-color: var(--white);
           transform: translate(0px, -50%);
         }
       }
@@ -46,7 +46,7 @@
       }
 
       .title {
-        color: var(--black);
+        color: var(--white);
       }
     }
   }
@@ -57,10 +57,10 @@
     justify-content: space-between;
     padding-top: 35px;
     padding-bottom: 35px;
-    border-bottom: 1px solid var(--black);
+    border-bottom: 1px solid var(--white);
 
     &:first-child {
-      border-top: 1px solid var(--black);
+      border-top: 1px solid var(--white);
     }
 
     @media #{$xxl} {
@@ -78,7 +78,7 @@
         gap: 60px;
         display: flex;
         font-size: 90px;
-        color: var(--black);
+        color: var(--white);
         line-height: 100px;
         align-items: center;
 
@@ -212,7 +212,7 @@
           line-height: 26px;
           border-radius: 500px;
           text-transform: uppercase;
-          border: 1px solid var(--black);
+          border: 1px solid var(--white);
 
           @media #{$xl} {
             font-size: 12px;

@@ -10,7 +10,7 @@
       font-weight: 700;
       font-size: 200px;
       line-height: 200px;
-      color: var(--primary);
+      color: var(---white);
       text-transform: uppercase;
       text-align: center;
       @media #{$xxl} {
@@ -36,7 +36,7 @@
 
       span {
         -webkit-text-fill-color: transparent;
-        -webkit-text-stroke: 1px var(--primary);
+        -webkit-text-stroke: 1px var(---white);
       }
     }
   }
@@ -44,7 +44,7 @@
   &__item {
     padding-top: 35px;
     padding-bottom: 35px;
-    border-bottom: 1px solid var(--primary);
+    border-bottom: 1px solid var(---white);
     gap: 60px;
     display: flex;
     align-items: center;
@@ -59,7 +59,7 @@
     }
 
     &:first-child {
-      border-top: 1px solid var(--primary);
+      border-top: 1px solid var(---white);
     }
 
     &:hover {
@@ -111,12 +111,12 @@
         font-weight: 500;
         line-height: 28px;
         align-items: center;
-        color: var(--primary);
+        color: var(---white);
         span {
           padding: 2px 23px;
           border-radius: 500px;
           display: inline-block;
-          border: 1px solid var(--primary);
+          border: 1px solid var(---white);
         }
       }
     }
@@ -130,7 +130,7 @@
         font-size: 18px;
         font-weight: 500;
         line-height: 28px;
-        color: var(--primary);
+        color: var(---white);
       }
     }
 
@@ -138,7 +138,7 @@
       font-size: 42px;
       line-height: 52px;
       font-weight: 700;
-      color: var(--primary);
+      color: var(---white);
       margin-bottom: 30px;
 
       @media #{$xl} {
@@ -163,7 +163,7 @@
   }
 
   &__btn {
-    .btn-primary {
+    .btn--white {
       rotate: -51.5deg;
       white-space: nowrap;
       @media #{$lg} {

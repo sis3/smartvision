@@ -18,7 +18,7 @@
       line-height: 28px;
       border-radius: 90px;
       background: var(--white);
-      color: var(--primary);
+      color: var(---white);
       padding: 5px 26px;
       display: inline-block;
     }
@@ -35,7 +35,7 @@
       font-weight: 700;
       line-height: 52px;
       text-indent: 270px;
-      color: var(--black);
+      color: var(--white);
       margin-bottom: 35px;
       font-family: var(--font_brico);
 
@@ -64,7 +64,7 @@
     font-size: 24px;
     font-weight: 500;
     display: inline-block;
-    color: var(--black);
+    color: var(--white);
 
     @media #{$lg} {
       margin-left: inherit;
@@ -186,7 +186,7 @@
 
     .about-info {
       padding: 45px;
-      background: #b3ec11;
+      background: #c51718;
       border-radius: 10px;
       display: inline-block;
       position: absolute;
@@ -220,7 +220,7 @@
         font-size: 30px;
         line-height: 40px;
         font-weight: 700;
-        color: var(--black);
+        color: var(--white);
         margin-bottom: 15px;
       }
       .about-info-item {
@@ -231,7 +231,7 @@
 
         &:not(:last-child) {
           padding-bottom: 18px;
-          border-bottom: 1px solid var(--black);
+          border-bottom: 1px solid var(--white);
         }
         &:first-of-type {
           padding-top: 0;
@@ -240,7 +240,7 @@
           font-size: 100px;
           font-weight: 700;
           line-height: 100px;
-          color: var(--black);
+          color: var(--white);
           font-family: var(--font_brico);
 
           .odometer.odometer-auto-theme,
@@ -268,7 +268,7 @@
           font-size: 18px;
           line-height: 28px;
           font-weight: 700;
-          color: var(--black);
+          color: var(--white);
           font-family: var(--font_brico);
 
           @media #{$xs} {

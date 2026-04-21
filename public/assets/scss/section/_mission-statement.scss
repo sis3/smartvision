@@ -25,7 +25,7 @@
     .sub-title {
       font-size: 60px;
       line-height: 70px;
-      color: #b3ec11;
+      color: #c51718;
       margin-bottom: 30px;
 
       @media #{$xl} {
@@ -103,7 +103,7 @@
         gap: 35px;
         display: flex;
         font-weight: 400;
-        border: 1px solid #b3ec11;
+        border: 1px solid #c51718;
         border-radius: 90px;
         align-items: center;
         padding: 0px 35px;
@@ -120,7 +120,7 @@
           height: 60px;
           display: flex;
           align-items: center;
-          background: #b3ec11;
+          background: #c51718;
           border-radius: 500px;
           justify-content: center;
 
@@ -201,7 +201,7 @@
       position: absolute;
       width: 15px;
       height: 15px;
-      background: #3b4eff;
+      background: #c51718;
       border-radius: 2px;
       right: 15px;
       bottom: 15px;
@@ -215,7 +215,7 @@
     h2 {
       font-size: 200px;
       line-height: 200px;
-      color: var(--black);
+      color: var(--white);
       font-weight: 700;
 
       @media #{$xl} {
@@ -245,7 +245,7 @@
       }
     }
     p {
-      color: var(--black);
+      color: var(--white);
       font-size: 30px;
       font-weight: 600;
       line-height: 40px;
@@ -299,7 +299,7 @@
         position: absolute;
         width: 15px;
         height: 15px;
-        background: #3b4eff;
+        background: #c51718;
         border-radius: 2px;
         right: 15px;
         bottom: 15px;
@@ -315,7 +315,7 @@
       h4 {
         font-size: 100px;
         line-height: 100px;
-        color: var(--black);
+        color: var(--white);
         font-weight: 700;
         margin-bottom: 60px;
 
@@ -350,7 +350,7 @@
         font-size: 30px;
         font-weight: 600;
         line-height: 40px;
-        color: var(--black);
+        color: var(--white);
         text-align: right;
         font-family: var(--font_brico);
 

@@ -25,7 +25,7 @@
       font-weight: 700;
       font-size: 18px;
       line-height: 23px;
-      color: var(--black);
+      color: var(--white);
       background-color: var(--secondary);
       border-radius: 500px;
       margin-bottom: 25px;
@@ -265,12 +265,12 @@
       i {
         font-size: 16px;
         margin-right: 8px;
-        color: var(--rr-theme-primary);
+        color: var(--rr-theme--white);
       }
 
       &:hover {
         a {
-          color: var(--rr-theme-primary);
+          color: var(--rr-theme--white);
         }
       }
     }
@@ -323,7 +323,7 @@
         height: 35px;
         display: flex;
         align-items: center;
-        color: var(--black);
+        color: var(--white);
         justify-content: center;
         transition: all 0.3s;
         background: var(--white);
@@ -360,7 +360,7 @@
         line-height: 26px;
         padding: 3px 20px;
         border-radius: 500px;
-        color: var(--black);
+        color: var(--white);
         transition: all 0.3s;
         background-color: var(--white);
 
@@ -519,10 +519,10 @@
 
       .btn-black-2 {
         background: var(--action);
-        color: var(--black);
+        color: var(--white);
 
         &::before {
-          background: var(--black);
+          background: var(--white);
         }
 
         &::after {

@@ -64,7 +64,7 @@
         box-shadow: none;
         border-radius: 10px;
         padding-right: 70px;
-        background: var(--black);
+        background: var(--white);
 
         &::placeholder {
           font-family: var(--font_dmsans);
@@ -89,7 +89,7 @@
         font-weight: 500;
         font-size: 16px;
         line-height: 16px;
-        color: var(--black);
+        color: var(--white);
         background: var(--action);
         border-radius: 0px 10px 10px 0px;
 
@@ -190,7 +190,7 @@
             &:hover {
               color: var(--action);
               i {
-                color: var(--primary);
+                color: var(---white);
               }
             }
           }
@@ -238,7 +238,7 @@
         border: 1px solid rgba(255, 255, 255, 0.1);
 
         &:hover {
-          color: var(--black);
+          color: var(--white);
           background: var(--action);
         }
       }

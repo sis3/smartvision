@@ -24,14 +24,14 @@
       font-size: 20px;
       line-height: 30px;
       font-weight: 700;
-      color: var(--black);
+      color: var(--white);
       max-width: 466px;
 
       @media #{$xs} {
         font-size: 15px;
         line-height: 25px;
         font-weight: 700;
-        color: var(--black);
+        color: var(--white);
         max-width: 466px;
       }
     }
@@ -63,14 +63,14 @@
           font-size: 26px;
           line-height: 30px;
           font-weight: 700;
-          color: var(--black);
+          color: var(--white);
           margin-bottom: 5px;
         }
 
         span {
           font-size: 18px;
           line-height: 28px;
-          color: var(--black);
+          color: var(--white);
         }
       }
     }
@@ -96,7 +96,7 @@
       margin: 0 !important;
       border-radius: 500px;
       background: transparent;
-      border: 2px solid var(--black);
+      border: 2px solid var(--white);
     }
     .swiper-pagination-bullet:after {
       position: absolute;
@@ -109,10 +109,10 @@
       left: calc(50% - 5px);
     }
     .swiper-pagination-bullet-active {
-      border-color: var(--black);
+      border-color: var(--white);
     }
     .swiper-pagination-bullet-active::after {
-      background-color: var(--black);
+      background-color: var(--white);
     }
   }
 }

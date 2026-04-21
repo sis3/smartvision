@@ -187,7 +187,7 @@
         line-height: 70px;
         align-items: center;
         margin-bottom: 100px;
-        color: var(--primary);
+        color: var(---white);
         justify-content: space-between;
 
         @media #{$xl} {
@@ -211,7 +211,7 @@
           font-size: 22px;
           align-items: center;
           border-radius: 500px;
-          color: var(--primary);
+          color: var(---white);
           justify-content: center;
           background-color: var(--action);
 
@@ -226,7 +226,7 @@
         font-size: 30px;
         font-weight: 600;
         line-height: 40px;
-        color: var(--primary);
+        color: var(---white);
         font-family: var(--font_brico);
 
         @media #{$xs} {
@@ -306,7 +306,7 @@
       font-weight: 800;
       font-size: 350px;
       line-height: 350px;
-      color: var(--primary);
+      color: var(---white);
       text-align: center;
       margin-left: -15px;
       letter-spacing: 16px;

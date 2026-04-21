@@ -36,7 +36,7 @@
 // text-slider area
 .text {
   &-slider {
-    background: #b3ec11;
+    background: #c51718;
     padding: 35px 0;
   }
   &-slide {
@@ -50,7 +50,7 @@
       font-weight: 700;
       font-size: 52px;
       line-height: 62px;
-      color: var(--black);
+      color: var(--white);
 
       @media #{$sm} {
         font-size: 40px;
@@ -63,7 +63,7 @@
       width: 15px;
       left: -26px;
       top: 21px;
-      background: var(--black);
+      background: var(--white);
       border-radius: 100px;
     }
     &-2 {
@@ -85,7 +85,7 @@
 }
 
 .test-slider {
-  background: #3b4eff;
+  background: #c51718;
   padding: 35px 0;
 }
 

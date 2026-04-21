@@ -174,7 +174,7 @@
         font-weight: 600;
         font-size: 26px;
         line-height: 36px;
-        color: var(--primary);
+        color: var(---white);
 
         @media #{$xl} {
           font-size: 20px;
@@ -192,7 +192,7 @@
     &__next {
       width: 62px;
       height: 32px;
-      background: #e5e0d0;
+      background: #0000;
       display: flex;
       align-items: center;
       border-radius: 80px;
@@ -229,7 +229,7 @@
         display: flex;
         min-width: 156px;
         align-items: center;
-        background: #b3ec11;
+        background: #c51718;
         justify-content: center;
 
         @media #{$xs} {
@@ -272,7 +272,7 @@
       padding-right: 210px;
       padding-top: 47px;
       padding-bottom: 47px;
-      background-color: #3b4eff;
+      background-color: #c51718;
 
       @media #{$lg} {
         padding-left: 50px;
@@ -351,7 +351,7 @@
         font-size: 18px;
         font-weight: 700;
         position: relative;
-        color: var(--black);
+        color: var(--white);
 
         &::before {
           left: 0;
@@ -365,7 +365,7 @@
         }
 
         &:hover {
-          color: var(--black);
+          color: var(--white);
 
           &::before {
             width: 0;

@@ -1,11 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Arrox HTML Template">
-    <title>@yield('title')  | Smart Vision</title>
+
+
+    <meta name="description"
+        content="Agence spécialisée en brand design, personal branding et marketing digital. Nous aidons les entreprises et dirigeants à construire une image forte, crédible et alignée avec leur réalité pour générer confiance et croissance.">
+
+    <meta name="keywords"
+        content="branding, brand design, personal branding, marketing digital, stratégie digitale, storytelling, image de marque, réseaux sociaux, agence marketing">
+
+    <meta name="author" content="Nom de votre agence">
+    <title>@yield('title') | Smart Vision</title>
 
     <!-- Fav Icon -->
     <link rel="icon" type="image/x-icon" href="{{ asset('assets/img/logo/favicon.png')}}">
@@ -21,1265 +30,901 @@
 
     <!-- Template Main CSS File -->
     <link rel="stylesheet" href="{{ asset('assets/css/style.css')}}">
-  </head>
+</head>
 
-  <body>
+<body>
     <div class="loader-wrap">
-      <svg viewBox="0 0 1000 1000" preserveAspectRatio="none">
-        <path id="svg" d="M0,1005S175,995,500,995s500,5,500,5V0H0Z"></path>
-      </svg>
+        <svg viewBox="0 0 1000 1000" preserveAspectRatio="none">
+            <path id="svg" d="M0,1005S175,995,500,995s500,5,500,5V0H0Z"></path>
+        </svg>
 
-      <div class="loader-wrap-heading">
-        <div class="load-text">
-          <span>Smart</span>
-          <span>Vision</span>
+        <div class="loader-wrap-heading">
+            <div class="load-text">
+                <span>Smart</span>
+                <span>Vision</span>
+            </div>
         </div>
-      </div>
     </div>
 
     <!-- Sroll to top -->
     <div class="progress-wrap">
-      <svg
-        class="progress-circle svg-content"
-        width="100%"
-        height="100%"
-        viewBox="-1 -1 102 102"
-      >
-        <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98"></path>
-      </svg>
+        <svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
+            <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98"></path>
+        </svg>
     </div>
     <!-- side toggle start -->
     <aside class="fix">
-      <div class="side-info">
-        <div class="side-info-content">
-          <div class="offset-widget offset-header">
-            <div class="offset-logo">
-              <a href="index.html">
-                <img
-                  src="{{ asset('assets/img/logo/logo-black.png')}}"
-                  class="normal-logo"
-                  alt="Site Logo"
-               >
-              </a>
+        <div class="side-info">
+            <div class="side-info-content">
+                <div class="offset-widget offset-header">
+                    <div class="offset-logo">
+                        <a href="index.html">
+                            <img src="{{ asset('assets/img/logo/logo-black.png')}}" class="normal-logo" alt="Site Logo">
+                        </a>
+                    </div>
+                    <button id="side-info-close" class="side-info-close">x</button>
+                </div>
+                <div class="mobile-menu d-xl-none fix"></div>
+                <div class="offset-button"></div>
+                <div class="offset-widget-box">
+                    <h2 class="title">Contact US</h2>
+                    <div class="contact-meta">
+                        <div class="contact-item">
+                            <span class="icon"><i class="fa-solid fa-location-dot"></i></span>
+                            <span class="text">3891 Ranchview Dr. Richardson</span>
+                        </div>
+                        <div class="contact-item">
+                            <span class="icon"><i class="fa-solid fa-envelope"></i></span>
+                            <span class="text"><a href="mailto:hello@cruvagency.com">hello@cruvagency.com</a></span>
+                        </div>
+                        <div class="contact-item">
+                            <span class="icon"><i class="fa-solid fa-phone"></i></span>
+                            <span class="text"><a href="tel:(505)555-0125">(505) 555-0125</a></span>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <button id="side-info-close" class="side-info-close">x</button>
-          </div>
-          <div class="mobile-menu d-xl-none fix"></div>
-          <div class="offset-button"></div>
-          <div class="offset-widget-box">
-            <h2 class="title">Contact US</h2>
-            <div class="contact-meta">
-              <div class="contact-item">
-                <span class="icon"
-                  ><i class="fa-solid fa-location-dot"></i
-                ></span>
-                <span class="text">3891 Ranchview Dr. Richardson</span>
-              </div>
-              <div class="contact-item">
-                <span class="icon"><i class="fa-solid fa-envelope"></i></span>
-                <span class="text"
-                  ><a href="mailto:hello@cruvagency.com"
-                    >hello@cruvagency.com</a
-                  ></span
-                >
-              </div>
-              <div class="contact-item">
-                <span class="icon"><i class="fa-solid fa-phone"></i></span>
-                <span class="text"
-                  ><a href="tel:(505)555-0125">(505) 555-0125</a></span
-                >
-              </div>
-            </div>
-          </div>
         </div>
-      </div>
     </aside>
     <div class="offcanvas-overlay"></div>
     <!-- side toggle end -->
 
     <!-- Header area start -->
     <header class="header-area">
-      <div class="header-main">
-        <div class="container">
-          <div class="header-area__inner">
-            <div class="header__logo">
-              <a href="index.html">
-                <img
-                  src="{{ asset('assets/img/logo/Logo.png')}}"
-                  class="normal-logo"
-                  alt="Site Logo"
-               >
-              </a>
-            </div>
-            <div class="header__nav">
-              <nav class="main-menu">
-                <ul>
-                  <li class="menu-item-has-children">
-                    <a href="#">Home</a>
-                    <ul class="dp-menu">
-                      <li><a href="index.html">Home</a></li>
-                      <li><a href="index-2.html">Home-2</a></li>
-                    </ul>
-                  </li>
-                  <li><a href="about.html">About</a></li>
-                  <li class="menu-item-has-children">
-                    <a href="#">Services</a>
-                    <ul class="dp-menu">
-                      <li><a href="services.html">Services</a></li>
-                      <li>
-                        <a href="services-details.html">Service Details</a>
-                      </li>
-                    </ul>
-                  </li>
+        <div class="header-main">
+            <div class="container">
+                <div class="header-area__inner">
+                    <div class="header__logo">
+                        <a href="index.html">
+                            <br>
+                            <br>
+                            <img src="{{ asset('assets/img/logo/Logo.png')}}" class="normal-logo" alt="Site Logo"
+                                width="200">
+                        </a>
+                    </div>
+                    <div class="header__nav">
+                        <nav class="main-menu">
+                            <ul>
+                                <li class="menu-item-has-children">
+                                    <a href="#">Home</a>
+                                    <ul class="dp-menu">
+                                        <li><a href="index.html">Home</a></li>
+                                        <li><a href="index-2.html">Home-2</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="about.html">About</a></li>
+                                <li class="menu-item-has-children">
+                                    <a href="#">Services</a>
+                                    <ul class="dp-menu">
+                                        <li><a href="services.html">Services</a></li>
+                                        <li>
+                                            <a href="services-details.html">Service Details</a>
+                                        </li>
+                                    </ul>
+                                </li>
 
-                  <li class="menu-item-has-children">
-                    <a href="#">Portfolio</a>
-                    <ul class="dp-menu">
-                      <li><a href="portfolio-grid.html">Portfolio Grid</a></li>
-                      <li><a href="portfolio-list.html">Portfolio List</a></li>
-                      <li>
-                        <a href="portfolio-details.html">Portfolio Details</a>
-                      </li>
-                    </ul>
-                  </li>
-                  <li class="menu-item-has-children">
-                    <a href="#">Pages</a>
-                    <ul class="dp-menu">
-                      <li><a href="team.html">Team Page</a></li>
-                      <li><a href="pricing.html">Pricing Page</a></li>
-                      <li><a href="faq.html">Faq</a></li>
-                      <li><a href="404.html">404 Page</a></li>
-                    </ul>
-                  </li>
-                  <li class="menu-item-has-children">
-                    <a href="#">Blog</a>
-                    <ul class="dp-menu">
-                      <li><a href="blog-grid.html">Blog grid</a></li>
-                      <li><a href="blog-list.html">Blog list</a></li>
-                      <li><a href="blog-details.html">Blog Details</a></li>
-                    </ul>
-                  </li>
-                  <li><a href="contact-us.html">Contact</a></li>
-                </ul>
-              </nav>
-              <div class="header__navicon">
-                <button class="side-toggle">
-                  <span class="bar-icon">
-                    <span></span>
-                    <span></span>
-                  </span>
-                </button>
-              </div>
+                                <li class="menu-item-has-children">
+                                    <a href="#">Portfolio</a>
+                                    <ul class="dp-menu">
+                                        <li><a href="portfolio-grid.html">Portfolio Grid</a></li>
+                                        <li><a href="portfolio-list.html">Portfolio List</a></li>
+                                        <li>
+                                            <a href="portfolio-details.html">Portfolio Details</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="menu-item-has-children">
+                                    <a href="#">Pages</a>
+                                    <ul class="dp-menu">
+                                        <li><a href="team.html">Team Page</a></li>
+                                        <li><a href="pricing.html">Pricing Page</a></li>
+                                        <li><a href="faq.html">Faq</a></li>
+                                        <li><a href="404.html">404 Page</a></li>
+                                    </ul>
+                                </li>
+                                <li class="menu-item-has-children">
+                                    <a href="#">Blog</a>
+                                    <ul class="dp-menu">
+                                        <li><a href="blog-grid.html">Blog grid</a></li>
+                                        <li><a href="blog-list.html">Blog list</a></li>
+                                        <li><a href="blog-details.html">Blog Details</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="contact-us.html">Contact</a></li>
+                            </ul>
+                        </nav>
+                        <div class="header__navicon">
+                            <button class="side-toggle">
+                                <span class="bar-icon">
+                                    <span></span>
+                                    <span></span>
+                                </span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
         </div>
-      </div>
     </header>
     <!-- Header area end -->
 
     <div class="has-smooth" id="has_smooth"></div>
     <div id="smooth-wrapper">
-      <div id="smooth-content">
-        <main>
-          <!-- hero area start  -->
-          <section class="hero" data-background="{{ asset('assets/img/hero/hero-bg.png')}}">
-            <div class="container">
-              <div class="hero__inner">
-                <div class="hero__content">
-                  <h1 class="hero-title">
-                    Smartvision
-                    <span class="des">
-                    </span>
-                                       <img
-                      class="arrow"
-                      src="{{ asset('assets/img/hero/hero-arrow.png')}}"
-                      alt="image"
-                   >
-Branding  <br> Logo & stratégique
+        <div id="smooth-content">
+            <main>
+                <!-- hero area start  -->
+                <section class="hero" data-background="{{ asset('assets/img/hero/hero-bg.png')}}">
+                    <div class="container">
+                        <div class="hero__inner">
+                            <div class="hero__content">
+                                <h1 class="hero-title">
+                                    Smart Vision
+                                    <span class="des">
+                                    </span>
+                                    <img class="arrow" src="{{ asset('assets/img/hero/hero-arrow.png')}}" alt="image">
+                                    Branding <br> Communication & corporate
 
-                    <img
-                      class="circle"
-                      src="{{ asset('assets/img/hero/hero-shape.png')}}"
-                      alt="image"
-                   >
-                  </h1>
-                  <div class="hero__featured">
-                    <div class="hero__featured__wrapper">
-                      <div class="swiper hero__featured__active">
-                        <div class="swiper-wrapper">
-                          <div class="swiper-slide">
-                            <div class="hero__featured__item">
-                              <img src="{{ asset('assets/img/hero/hero.png')}}" alt="image">
+                                    <img class="circle" src="{{ asset('assets/img/hero/hero-shape.png')}}" alt="image">
+                                </h1>
+
                             </div>
-                          </div>
                         </div>
-                      </div>
                     </div>
+                </section>
+                <!-- hero area start  -->
 
-                    <div class="hero__featured__bottom">
-                      <h6 class="title">Featured Projects</h6>
-                      <div class="hero__featured__arrow">
-                        <div class="hero__featured__prev">
-                          <svg
-                            width="24"
-                            height="24"
-                            viewBox="0 0 24 24"
-                            fill="none"
-                            xmlns="http://www.w3.org/2000/svg"
-                          >
-                            <path
-                              d="M8 5C8 5.742 7.267 6.85 6.525 7.78C5.571 8.98 4.431 10.027 3.124 10.826C2.144 11.425 0.956 12 0 12M0 12C0.956 12 2.145 12.575 3.124 13.174C4.431 13.974 5.571 15.021 6.525 16.219C7.267 17.15 8 18.26 8 19M0 12H24"
-                              stroke="black"
-                              stroke-width="1.5"
-                            ></path>
-                          </svg>
+                <section class="hero-video">
+                    <div class="hero-video__wrapper">
+                        <div class="work">
+                            <h6></h6>
                         </div>
-                        <div class="hero__featured__next">
-                          <svg
-                            width="24"
-                            height="14"
-                            viewBox="0 0 24 14"
-                            fill="none"
-                            xmlns="http://www.w3.org/2000/svg"
-                          >
-                            <path
-                              d="M16 0C16 0.742 16.733 1.85 17.475 2.78C18.429 3.98 19.569 5.027 20.876 5.826C21.856 6.425 23.044 7 24 7M24 7C23.044 7 21.855 7.575 20.876 8.174C19.569 8.974 18.429 10.021 17.475 11.219C16.733 12.15 16 13.26 16 14M24 7H0"
-                              stroke="black"
-                              stroke-width="1.5"
-                           >
-                          </svg>
+                        <div class="hero__play">
+                            <a class="popup-video" href="https://www.youtube.com/watch?v=8oON21G1Bqg">
+                                <svg width="18" height="22" viewBox="0 0 18 22" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M18 11L0 0.607697V21.3923L18 11Z" fill="black">
+                                </svg>
+                            </a>
+
+                            <a class="popup-video has--play" href="https://www.youtube.com/watch?v=8oON21G1Bqg">
+                                <span>LIRE</span>
+                            </a>
                         </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </section>
-          <!-- hero area start  -->
-
-          <section class="hero-video">
-            <div class="hero-video__wrapper">
-              <div class="work">
-                <h6><a href="#">EXPLORER NOS PROJETS</a></h6>
-              </div>
-              <div class="hero__play">
-                <a
-                  class="popup-video"
-                  href="https://www.youtube.com/watch?v=8oON21G1Bqg"
-                >
-                  <svg
-                    width="18"
-                    height="22"
-                    viewBox="0 0 18 22"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path d="M18 11L0 0.607697V21.3923L18 11Z" fill="black">
-                  </svg>
-                </a>
-
-                <a
-                  class="popup-video has--play"
-                  href="https://www.youtube.com/watch?v=8oON21G1Bqg"
-                >
-                  <span>LIRE</span>
-                </a>
-              </div>
-              <div class="play">
-                <h6><a href="#about">SCROLL VERS LE BAS</a></h6>
-              </div>
-            </div>
-          </section>
-
-          <section class="about-us theme-bg-gray section-space-top">
-            <div class="container">
-              <div class="about-us__inner">
-                <h6
-                  class="about-us__sub-title wow fade-in-left"
-                  data-wow-delay="600ms"
-                >
-                  <span>Smartvision</span>
-                </h6>
-                <div
-                  class="about-us__content wow fade-in-bottom"
-                  data-wow-delay="600ms"
-                >
-                  <p>
-                 Le branding ne commence pas par un logo.
-Il commence par une décision stratégique.
-                  </p>
-
-                  <a href="blog-details" class="btn-black"
-                    >More About Us<img
-                      src="{{ asset('assets/img/icon/star-white.png')}}"
-                      alt="image"
-                 ></a>
-                </div>
-                <span
-                  class="about-us__date wow fade-in-right"
-                  data-wow-delay="600ms"
-                  ></span
-                >
-              </div>
-            </div>
-          </section>
-
-          <!-- counter area start  -->
-          <section class="counter theme-bg-gray section-space">
-            <div class="container">
-              <div class="row mb-minus-30">
-                <div class="col-lg-4 col-sm-6">
-                  <div
-                    class="counter__item wow fade-in-left"
-                    data-wow-delay="600ms"
-                  >
-                    <h4><span class="odometer" data-count="2012">0</span></h4>
-                    <p>Founding Year</p>
-                  </div>
-                </div>
-                <div class="col-lg-4 col-sm-6">
-                  <div
-                    class="counter__item wow fade-in-bottom"
-                    data-wow-delay="600ms"
-                  >
-                    <h4><span class="odometer" data-count="100">0</span>+</h4>
-                    <p>Completed Projects</p>
-                  </div>
-                </div>
-                <div class="col-lg-4 col-sm-6">
-                  <div
-                    class="counter__item wow fade-in-right"
-                    data-wow-delay="600ms"
-                  >
-                    <h4><span class="odometer" data-count="15">0</span>+</h4>
-                    <p>Years of Experience</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </section>
-          <!-- counter area end  -->
-
-          <!-- experience area start  -->
-          <section id="about" class="experience">
-            <div class="experience__media">
-              <img src="{{ asset('assets/img/services/experience.jpg')}}" alt="image">
-
-              <div class="experience__card">
-                <div class="experience__card-wrapper">
-                  <h2 class="number">15+</h2>
-                  <p>
-                    We have over a 15 years of experience in design,
-                    development, production, and support of modern digital
-                    solutions.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </section>
-          <!-- experience area end  -->
-
-          <!-- title-slider area start  -->
-          <section class="title-slider theme-bg-gray section-space">
-            <div class="title-slider__wrapper">
-              <div class="swiper title-slider__active">
-                <div class="swiper-wrapper">
-                  <div class="swiper-slide">
-                    <div class="title-slider__item">
-                      <h3 class="title-slider__title">
-                        Webflow Design<img
-                          src="{{ asset('assets/img/services/services-2.jpg')}}"
-                          alt="image"
-                       >
-                        App design<img
-                          src="{{ asset('assets/img/services/services-3.jpg')}}"
-                          alt="image"
-                       >Creative thinking
-                      </h3>
-                    </div>
-                  </div>
-                  <div class="swiper-slide">
-                    <div class="title-slider__item">
-                      <h3 class="title-slider__title">
-                        <img
-                          src="{{ asset('assets/img/services/services-4.jpg')}}"
-                          alt="image"
-                       >No-code development
-                        <img
-                          src="{{ asset('assets/img/services/services-5.jpg')}}"
-                          alt="image"
-                       >
-                        App Development
-                        <img
-                          src="{{ asset('assets/img/services/services-5.jpg')}}"
-                          alt="image"
-                       >
-                      </h3>
-                    </div>
-                  </div>
-                  <div class="swiper-slide">
-                    <div class="title-slider__item">
-                      <h3 class="title-slider__title">
-                        Webflow Design<img
-                          src="{{ asset('assets/img/services/services-2.jpg')}}"
-                          alt="image"
-                       >
-                        App design<img
-                          src="{{ asset('assets/img/services/services-3.jpg')}}"
-                          alt="image"
-                       >Creative thinking
-                      </h3>
-                    </div>
-                  </div>
-                  <div class="swiper-slide">
-                    <div class="title-slider__item">
-                      <h3 class="title-slider__title">
-                        <img
-                          src="{{ asset('assets/img/services/services-4.jpg')}}"
-                          alt="image"
-                       >No-code development
-                        <img
-                          src="{{ asset('assets/img/services/services-5.jpg')}}"
-                          alt="image"
-                       >
-                        App Development
-                        <img
-                          src="{{ asset('assets/img/services/services-5.jpg')}}"
-                          alt="image"
-                       >
-                      </h3>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div dir="rtl" class="swiper title-slider__active-2">
-                <div class="swiper-wrapper">
-                  <div class="swiper-slide">
-                    <div class="title-slider__item">
-                      <h3 class="title-slider__title">
-                        Webflow Design<img
-                          src="{{ asset('assets/img/services/services-2.jpg')}}"
-                          alt="image"
-                       >
-                        App design<img
-                          src="{{ asset('assets/img/services/services-3.jpg')}}"
-                          alt="image"
-                       >Creative thinking
-                      </h3>
-                    </div>
-                  </div>
-                  <div class="swiper-slide">
-                    <div class="title-slider__item">
-                      <h3 class="title-slider__title">
-                        <img
-                          src="{{ asset('assets/img/services/services-4.jpg')}}"
-                          alt="image"
-                       >No-code development
-                        <img
-                          src="{{ asset('assets/img/services/services-5.jpg')}}"
-                          alt="image"
-                       >
-                        App Development
-                        <img
-                          src="{{ asset('assets/img/services/services-5.jpg')}}"
-                          alt="image"
-                       >
-                      </h3>
-                    </div>
-                  </div>
-                  <div class="swiper-slide">
-                    <div class="title-slider__item">
-                      <h3 class="title-slider__title">
-                        Webflow Design<img
-                          src="{{ asset('assets/img/services/services-2.jpg')}}"
-                          alt="image"
-                       >
-                        App design<img
-                          src="{{ asset('assets/img/services/services-3.jpg')}}"
-                          alt="image"
-                       >Creative thinking
-                      </h3>
-                    </div>
-                  </div>
-                  <div class="swiper-slide">
-                    <div class="title-slider__item">
-                      <h3 class="title-slider__title">
-                        <img
-                          src="{{ asset('assets/img/services/services-4.jpg')}}"
-                          alt="image"
-                       >No-code development
-                        <img
-                          src="{{ asset('assets/img/services/services-5.jpg')}}"
-                          alt="image"
-                       >
-                        App Development
-                        <img
-                          src="{{ asset('assets/img/services/services-5.jpg')}}"
-                          alt="image"
-                       >
-                      </h3>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </section>
-          <!-- title-slider area end  -->
-
-          <!-- services area start  -->
-          <section class="services theme-bg-white section-space">
-            <div class="container">
-              <div class="section__wrapper">
-                <div class="section-sub__wrapper">
-                  <h6>Our Services</h6>
-                  <span></span>
-                </div>
-
-                <div class="section__wrap">
-                  <h2 class="section-title text-black rr-title-anim">
-                    Services
-                  </h2>
-                  <div class="section__content">
-                    <p>
-                      Duis aute irure dolor in reprehenderit in voluptate velit
-                      esse cillum dolore eu fugiat nulla pariatur. excepteur
-                      sint occaecat
-                    </p>
-
-                    <a href="blog-details" class="btn-black"
-                      >VIEW ALL SERVICES<img
-                        src="{{ asset('assets/img/icon/star-white.png')}}"
-                        alt="image"
-                   ></a>
-                  </div>
-                </div>
-              </div>
-
-              <div class="services__wrapper">
-                <div
-                  class="services__item wow fade-in-bottom"
-                  data-wow-delay="600ms"
-                >
-                  <div class="services__content">
-                    <h3 class="title"><a href="#">Branding Identity</a></h3>
-                    <p class="des">
-                      Nemo enim ipsam voluptatem quia voluptas sit aspernatur
-                      aut odit aut fugit, sed quia consequuntur magni dolores
-                      eos qui ratione voluptatem sequi nesciunt. neque esti, qui
-                      dolorem ipsum quia dolor sit amet,
-                    </p>
-
-                    <ul class="services__list">
-                      <li>ART DIRECTION</li>
-                      <li>BRANDING IDENTITY</li>
-                      <li>LOGO DESIGN</li>
-                      <li>GRAPHICS DESIGN</li>
-                    </ul>
-                  </div>
-
-                  <div class="services__media">
-                    <a href="#">
-                      <img src="{{ asset('assets/img/services/services-1.jpg')}}" alt="image"
-                   ></a>
-                  </div>
-                </div>
-                <div
-                  class="services__item wow fade-in-bottom"
-                  data-wow-delay="600ms"
-                >
-                  <div class="services__content">
-                    <h3 class="title"><a href="#">Web Development</a></h3>
-                    <p class="des">
-                      Nemo enim ipsam voluptatem quia voluptas sit aspernatur
-                      aut odit aut fugit, sed quia consequuntur magni dolores
-                      eos qui ratione voluptatem sequi nesciunt. neque esti, qui
-                      dolorem ipsum quia dolor sit amet,
-                    </p>
-
-                    <ul class="services__list">
-                      <li>ART DIRECTION</li>
-                      <li>BRANDING IDENTITY</li>
-                      <li>LOGO DESIGN</li>
-                      <li>GRAPHICS DESIGN</li>
-                    </ul>
-                  </div>
-
-                  <div class="services__media">
-                    <a href="#">
-                      <img src="{{ asset('assets/img/services/services-2.jpg')}}" alt="image"
-                   ></a>
-                  </div>
-                </div>
-                <div
-                  class="services__item wow fade-in-bottom"
-                  data-wow-delay="600ms"
-                >
-                  <div class="services__content">
-                    <h3 class="title"><a href="#">Creative Direction</a></h3>
-                    <p class="des">
-                      Nemo enim ipsam voluptatem quia voluptas sit aspernatur
-                      aut odit aut fugit, sed quia consequuntur magni dolores
-                      eos qui ratione voluptatem sequi nesciunt. neque esti, qui
-                      dolorem ipsum quia dolor sit amet,
-                    </p>
-
-                    <ul class="services__list">
-                      <li>ART DIRECTION</li>
-                      <li>BRANDING IDENTITY</li>
-                      <li>LOGO DESIGN</li>
-                      <li>GRAPHICS DESIGN</li>
-                    </ul>
-                  </div>
-
-                  <div class="services__media">
-                    <a href="#">
-                      <img src="{{ asset('assets/img/services/services-3.jpg')}}" alt="image"
-                   ></a>
-                  </div>
-                </div>
-                <div
-                  class="services__item wow fade-in-bottom"
-                  data-wow-delay="600ms"
-                >
-                  <div class="services__content">
-                    <h3 class="title"><a href="#">UI/UX Design</a></h3>
-                    <p class="des">
-                      Nemo enim ipsam voluptatem quia voluptas sit aspernatur
-                      aut odit aut fugit, sed quia consequuntur magni dolores
-                      eos qui ratione voluptatem sequi nesciunt. neque esti, qui
-                      dolorem ipsum quia dolor sit amet,
-                    </p>
-
-                    <ul class="services__list">
-                      <li>ART DIRECTION</li>
-                      <li>BRANDING IDENTITY</li>
-                      <li>LOGO DESIGN</li>
-                      <li>GRAPHICS DESIGN</li>
-                    </ul>
-                  </div>
-
-                  <div class="services__media">
-                    <a href="#">
-                      <img src="{{ asset('assets/img/services/services-4.jpg')}}" alt="image"
-                   ></a>
-                  </div>
-                </div>
-                <div
-                  class="services__item wow fade-in-bottom"
-                  data-wow-delay="600ms"
-                >
-                  <div class="services__content">
-                    <h3 class="title"><a href="#">Graphic Design</a></h3>
-                    <p class="des">
-                      Nemo enim ipsam voluptatem quia voluptas sit aspernatur
-                      aut odit aut fugit, sed quia consequuntur magni dolores
-                      eos qui ratione voluptatem sequi nesciunt. neque esti, qui
-                      dolorem ipsum quia dolor sit amet,
-                    </p>
-
-                    <ul class="services__list">
-                      <li>ART DIRECTION</li>
-                      <li>BRANDING IDENTITY</li>
-                      <li>LOGO DESIGN</li>
-                      <li>GRAPHICS DESIGN</li>
-                    </ul>
-                  </div>
-
-                  <div class="services__media">
-                    <a href="#">
-                      <img src="{{ asset('assets/img/services/services-5.jpg')}}" alt="image"
-                   ></a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </section>
-          <!-- services area end  -->
-
-          <!-- portfolio area start  -->
-          <section class="portfolio section-space">
-            <div class="container">
-              <div class="section__wrapper">
-                <div class="section-sub__wrapper">
-                  <h6>Featured Portfolio</h6>
-                  <span></span>
-                </div>
-
-                <div class="section__wrap">
-                  <h2 class="section-title rr-title-anim">SELECTED</h2>
-                  <div class="section__content">
-                    <p>
-                      Duis aute irure dolor in reprehenderit in voluptate velit
-                      esse cillum dolore eu fugiat nulla pariatur. excepteur
-                      sint occaecat
-                    </p>
-
-                    <a href="blog-details" class="btn-black btn-white"
-                      >VIEW ALL projects<img
-                        src="{{ asset('assets/img/icon/star-black.png')}}"
-                        alt="image"
-                   ></a>
-                  </div>
-                </div>
-                <div class="section__bottom">
-                  <h2 class="section__bottom-title">works</h2>
-                  <h3 class="section__bottom-sub-title">[2022—2024]</h3>
-                </div>
-              </div>
-              <div class="portfolio-inner">
-                <div class="portfolio-wrapper">
-                  <div
-                    class="portfolio__item wow fade-in-bottom"
-                    data-wow-delay="600ms"
-                  >
-                    <div class="thumb" data-cursor-text="View">
-                      <a href="#">
-                        <img
-                          src="{{ asset('assets/img/portfolio/portfolio-1.jpg')}}"
-                          alt="image"
-                       >
-                      </a>
-                      <ul class="tags">
-                        <li>Branding  //  </li>
-                        <li> Package_Design  //</li>
-                        <li>Development</li>
-                      </ul>
-                    </div>
-                    <div class="content">
-                      <h3 class="title rr-title-anim">Packaging design</h3>
-                      <span class="date">// 2024</span>
-                    </div>
-                  </div>
-                  <div
-                    class="portfolio__item wow fade-in-bottom"
-                    data-wow-delay="600ms"
-                  >
-                    <div class="thumb" data-cursor-text="View">
-                      <a href="#">
-                        <img
-                          src="{{ asset('assets/img/portfolio/portfolio-2.jpg')}}"
-                          alt="image"
-                       >
-                      </a>
-                      <ul class="tags">
-                        <li>Branding  //  </li>
-                        <li> Package_Design  //</li>
-                        <li>Development</li>
-                      </ul>
-                    </div>
-                    <div class="content">
-                      <h3 class="title rr-title-anim">Mobile app design</h3>
-                      <span class="date">// 2024</span>
-                    </div>
-                  </div>
-                  <div
-                    class="portfolio__item wow fade-in-bottom"
-                    data-wow-delay="600ms"
-                  >
-                    <div class="thumb" data-cursor-text="View">
-                      <a href="#">
-                        <img
-                          src="{{ asset('assets/img/portfolio/portfolio-3.jpg')}}"
-                          alt="image"
-                       >
-                      </a>
-                      <ul class="tags">
-                        <li>Branding  //  </li>
-                        <li> Package_Design  //</li>
-                        <li>Development</li>
-                      </ul>
-                    </div>
-                    <div class="content">
-                      <h3 class="title rr-title-anim">Mockup Design</h3>
-                      <span class="date">// 2024</span>
-                    </div>
-                  </div>
-                  <div
-                    class="portfolio__item wow fade-in-bottom"
-                    data-wow-delay="600ms"
-                  >
-                    <div class="thumb" data-cursor-text="View">
-                      <a href="#">
-                        <img
-                          src="{{ asset('assets/img/portfolio/portfolio-4.jpg')}}"
-                          alt="image"
-                       >
-                      </a>
-                      <ul class="tags">
-                        <li>Branding  //  </li>
-                        <li> Package_Design  //</li>
-                        <li>Development</li>
-                      </ul>
-                    </div>
-                    <div class="content">
-                      <h3 class="title rr-title-anim">Brand Identity Design</h3>
-                      <span class="date">// 2024</span>
-                    </div>
-                  </div>
-                  <div
-                    class="portfolio__item wow fade-in-bottom span-2"
-                    data-wow-delay="600ms"
-                  >
-                    <div class="thumb" data-cursor-text="View">
-                      <a href="#">
-                        <img
-                          src="{{ asset('assets/img/portfolio/portfolio-5.jpg')}}"
-                          alt="image"
-                       >
-                      </a>
-                      <ul class="tags">
-                        <li>Branding  //  </li>
-                        <li> Package_Design  //</li>
-                        <li>Development</li>
-                      </ul>
-                    </div>
-                    <div class="content">
-                      <h3 class="title rr-title-anim">
-                        Digital Prodcut Design
-                      </h3>
-                      <span class="date">// 2024</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </section>
-          <!-- portfolio area end  -->
-
-          <!-- testimonial area start  -->
-          <section class="testimonial theme-bg-gray section-space-top">
-            <div class="container">
-              <div class="section__wrapper">
-                <div class="section-sub__wrapper">
-                  <h6>Testimonials</h6>
-                  <span></span>
-                </div>
-                <div class="section__wrap">
-                  <h2 class="section-title rr-title-anim">What people</h2>
-                  <h2 class="section-title text-lg-end rr-title-anim">
-                    say about us
-                  </h2>
-                </div>
-              </div>
-              <div class="testimonial__inner">
-                <div class="testimonial__arrow">
-                  <div class="testimonial__prev">
-                    <i class="fa-solid fa-arrow-right"></i>
-                  </div>
-                  <div class="testimonial__next">
-                    <i class="fa-solid fa-arrow-left"></i>
-                  </div>
-                </div>
-                <div class="testimonial__wrapper testimonial__active">
-                  <div class="testimonial__item">
-                    <div class="testimonial__number">
-                      <span>01</span>
-                    </div>
-                    <div class="testimonial__content">
-                      <img src="{{ asset('assets/img/icon/quite.png')}}" alt="image">
-                      <p class="des">
-                        Nemo enim ipsam voluptatem quia voluptas sit aspernatur
-                        aut odit consequuntur magni quie ratione voluptatem
-                        porro quisquam est quia dolor sit amet consectetu
-                      </p>
-
-                      <div class="testimonial__author">
-                        <div class="media">
-                          <img
-                            src="{{ asset('assets/img/testimonial/author.jpg')}}"
-                            alt="image"
-                         >
+                        <div class="play">
+                            <h6><a href="#about">SCROLL VERS LE BAS</a></h6>
                         </div>
-                        <div class="text">
-                          <h6 class="name">Ryan Anderson</h6>
-                          <p>CEO of Bit Weaver Studio</p>
+                    </div>
+                </section>
+
+                <section class="about-us theme-bg-gray section-space-top">
+                    <div class="container">
+                        <div class="about-us__inner">
+                            <h6 class="about-us__sub-title wow fade-in-left" data-wow-delay="600ms">
+                                <span>Smart Vision</span>
+                            </h6>
+                            <div class="about-us__content wow fade-in-bottom" data-wow-delay="600ms">
+                                <p> Le branding ne commence pas par un logo.
+                                    Il commence par une décision stratégique.
+
+                                    <br> Nous aidons les entreprises et institutions à structurer leur marque et leur
+                                    communication
+                                    afin de transformer leur image en levier de crédibilité, de fidélisation et de
+                                    ventes durables.Beaucoup d’entreprises communiquent. Peu ont une marque réellement
+                                    structurée pour vendre et durer.
+                                </p>
+
+                                <a href="" class="btn-black" style="background-color: white; color: black;">Plus de
+                                    détails
+                                </a>Plus
+                            </div>
+                            <span class="about-us__date wow fade-in-right" data-wow-delay="600ms"></span>
                         </div>
-                      </div>
+                        <br>
+                        <br>
+                        <br>
                     </div>
-                  </div>
-                  <div class="testimonial__item">
-                    <div class="testimonial__number">
-                      <span>02</span>
-                    </div>
-                    <div class="testimonial__content">
-                      <img src="{{ asset('assets/img/icon/quite.png')}}" alt="image">
-                      <p class="des">
-                        Nemo enim ipsam voluptatem quia voluptas sit aspernatur
-                        aut odit consequuntur magni quie ratione voluptatem
-                        porro quisquam est quia dolor sit amet consectetu
-                      </p>
+                </section>
 
-                      <div class="testimonial__author">
-                        <div class="media">
-                          <img
-                            src="{{ asset('assets/img/testimonial/author.jpg')}}"
-                            alt="image"
-                         >
+                <!-- counter area start  -->
+
+                <!-- counter area end  -->
+
+                <!-- experience area start  -->
+                <section id="about" class="experience">
+                    <div class="experience__media">
+                        {{-- <img src="{{ asset('assets/img/services/experience.jpg')}}" alt="image"> --}}
+
+                        <div class="experience__card">
+                            <div class="experience__card-wrapper">
+                                <h2 class="number">15+</h2>
+                                <p>
+                                    We have over a 15 years of experience in design,
+                                    development, production, and support of modern digital
+                                    solutions.
+                                </p>
+                            </div>
                         </div>
-                        <div class="text">
-                          <h6>Ryan Anderson</h6>
-                          <p>CEO of Bit Weaver Studio</p>
+                    </div>
+                </section>
+                <!-- experience area end  -->
+
+                <section class="mission-statement section-space"
+                    data-background="assets/img/our-services/mission-statement-bg.png">
+                    <div class="container">
+                        <div class="mission-statement__top wow fade-in-bottom" data-wow-delay="600ms">
+                            <h4 class="sub-title">
+                                Notre Vision
+                                <span><svg width="25" height="31" viewBox="0 0 25 31" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M15 28.3333L13.8217 29.5117L15 30.69L16.1783 29.5117L15 28.3333ZM1.66667 0C1.22464 0 0.800716 0.175595 0.488156 0.488155C0.175595 0.800716 0 1.22464 0 1.66667C0 2.10869 0.175595 2.53262 0.488156 2.84518C0.800716 3.15774 1.22464 3.33333 1.66667 3.33333V0ZM5.48833 21.1783L13.8217 29.5117L16.1783 27.155L7.845 18.8217L5.48833 21.1783ZM16.1783 29.5117L24.5117 21.1783L22.155 18.8217L13.8217 27.155L16.1783 29.5117ZM16.6667 28.3333V11.6667H13.3333V28.3333H16.6667ZM5 0H1.66667V3.33333H5V0ZM16.6667 11.6667C16.6667 8.57247 15.4375 5.60501 13.2496 3.41709C11.0617 1.22916 8.09419 0 5 0V3.33333C7.21014 3.33333 9.32975 4.21131 10.8926 5.77411C12.4554 7.33691 13.3333 9.45653 13.3333 11.6667H16.6667Z"
+                                            fill="#B3EC11"></path>
+                                    </svg>
+                                </span>
+                            </h4>
+                            <div class="mission-statement__item wow fade-in-bottom" data-wow-delay="600ms">
+                                <h5 class="title">Une marque </h5>
+                                <h5 class="title has--border">
+                                    claire
+                                    <span>
+                                        <svg width="22" height="22" viewBox="0 0 22 22" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M1.99984 2H19.9165M19.9165 2V19.9167M19.9165 2L1.99984 19.9167"
+                                                stroke="black" stroke-width="3" stroke-linecap="round"
+                                                stroke-linejoin="round"></path>
+                                        </svg>
+                                    </span>
+                                </h5>
+                                <h5 class="title">simplifie la</h5>
+                            </div>
+                            <div class="mission-statement__item wow fade-in-bottom" data-wow-delay="600ms">
+                                <h5 class="title has--border">
+                                    décision
+                                    <span>
+                                        <svg width="22" height="22" viewBox="0 0 22 22" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M1.99984 2H19.9165M19.9165 2V19.9167M19.9165 2L1.99984 19.9167"
+                                                stroke="black" stroke-width="3" stroke-linecap="round"
+                                                stroke-linejoin="round"></path>
+                                        </svg>
+                                    </span>
+                                </h5>
+                                <h5 class="title">d'achat</h5>
+                            </div>
                         </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="testimonial__item">
-                    <div class="testimonial__number">
-                      <span>03</span>
-                    </div>
-                    <div class="testimonial__content">
-                      <img src="{{ asset('assets/img/icon/quite.png')}}" alt="image">
-                      <p class="des">
-                        Nemo enim ipsam voluptatem quia voluptas sit aspernatur
-                        aut odit consequuntur magni quie ratione voluptatem
-                        porro quisquam est quia dolor sit amet consectetu
-                      </p>
 
-                      <div class="testimonial__author">
-                        <div class="media">
-                          <img
-                            src="{{ asset('assets/img/testimonial/author.jpg')}}"
-                            alt="image"
-                         >
+                        <div class="mission-statement__content wow fade-in-bottom" data-wow-delay="600ms">
+                            <p class="description">
+                                Nous croyons que le branding n’est ni esthétique ni décoratif.
+                                C’est un outil stratégique qui permet à une organisation :d’être comprise
+                                rapidement,d’inspirer confiance,de créer une expérience cohérente,et de générer des
+                                résultats mesurables.Une marque claire simplifie la décision d’achat.
+                                Une marque floue rend toute communication coûteuse et inefficace.La visibilité sans
+                                clarté devient une dépense.
+                                La clarté transforme chaque action en investissement.
+                            </p>
+                            <div class="mission-statement__box">
+                                <h2 style="color: black;"><span class="odometer" data-count="100"
+                                        style="color: black;">0</span>+</h2>
+                                <p style="color: black;">
+                                    Des projets réussis, menés avec excellence et précision
+                                </p>
+                            </div>
+                            <div class="mission-statement__wrapper">
+                                <div class="item-box">
+                                    <h4 style="color: black;"><span class="odometer" data-count="99"
+                                            style="color: black;">0</span>%</h4>
+                                    <p style="color: black;">La satisfaction de nos clients</p>
+                                </div>
+                            </div>
                         </div>
-                        <div class="text">
-                          <h6>Ryan Anderson</h6>
-                          <p>CEO of Bit Weaver Studio</p>
+                    </div>
+                </section>
+
+                <!-- title-slider area start  -->
+                <section class="title-slider theme-bg-gray section-space">
+                    <div class="title-slider__wrapper">
+                        <div class="swiper title-slider__active">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="title-slider__item">
+                                        <h3 class="title-slider__title">
+                                            Formation Personal<img src="{{ asset('assets/img/logo/Logo.png')}}"
+                                                alt="image">
+                                            Branding & Community<img src="{{ asset('assets/img/logo/Logo.png')}}"
+                                                alt="image">Management Communication
+                                        </h3>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="title-slider__item">
+                                        <h3 class="title-slider__title">
+                                            <img src="{{ asset('assets/img/logo/Logo.png')}}"
+                                                alt="image">Institutionnelle Branding
+                                            <img src="{{ asset('assets/img/logo/Logo.png')}}" alt="image">
+                                            Stratégique Graphisme
+                                            <img src="{{ asset('assets/img/logo/Logo.png')}}" alt="image">
+                                        </h3>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="title-slider__item">
+                                        <h3 class="title-slider__title">
+                                            Digital Marketing Former<img src="{{ asset('assets/img/logo/Logo.png')}}"
+                                                alt="image">
+                                            Creative thinking
+                                        </h3>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="title-slider__item">
+                                        <h3 class="title-slider__title">
+                                            <img src="{{ asset('assets/img/logo/Logo.png')}}" alt="image">Formation
+                                            Personal
+                                            <img src="{{ asset('assets/img/logo/Logo.png')}}" alt="image">
+                                            Stratégique Graphisme
+                                            <img src="{{ asset('assets/img/logo/Logo.png')}}" alt="image">
+                                        </h3>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="testimonial__item">
-                    <div class="testimonial__number">
-                      <span>04</span>
-                    </div>
-                    <div class="testimonial__content">
-                      <img src="{{ asset('assets/img/icon/quite.png')}}" alt="image">
-                      <p class="des">
-                        Nemo enim ipsam voluptatem quia voluptas sit aspernatur
-                        aut odit consequuntur magni quie ratione voluptatem
-                        porro quisquam est quia dolor sit amet consectetu
-                      </p>
-
-                      <div class="testimonial__author">
-                        <div class="media">
-                          <img
-                            src="{{ asset('assets/img/testimonial/author.jpg')}}"
-                            alt="image"
-                         >
+                        <div dir="rtl" class="swiper title-slider__active-2">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="title-slider__item">
+                                        <h3 class="title-slider__title">
+                                            Digital Marketing Former<img src="{{ asset('assets/img/logo/Logo.png')}}"
+                                                alt="image">
+                                            Formation Personal<img src="{{ asset('assets/img/logo/Logo.png')}}"
+                                                alt="image">Creative thinking
+                                        </h3>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="title-slider__item">
+                                        <h3 class="title-slider__title">
+                                            <img src="{{ asset('assets/img/logo/Logo.png')}}"
+                                                alt="image">Institutionnelle Branding
+                                            <img src="{{ asset('assets/img/logo/Logo.png')}}" alt="image">
+                                            Branding & Community
+                                            <img src="{{ asset('assets/img/logo/Logo.png')}}" alt="image">
+                                        </h3>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="title-slider__item">
+                                        <h3 class="title-slider__title">
+                                            Management Communication<img src="{{ asset('assets/img/logo/Logo.png')}}"
+                                                alt="image">
+                                            Stratégique Graphisme<img src="{{ asset('assets/img/logo/Logo.png')}}"
+                                                alt="image">Creative thinking
+                                        </h3>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="title-slider__item">
+                                        <h3 class="title-slider__title">
+                                            <img src="{{ asset('assets/img/logo/Logo.png')}}" alt="image">
+                                            Branding & Community
+                                            <img src="{{ asset('assets/img/logo/Logo.png')}}" alt="image">
+                                            Institutionnelle Branding
+                                            <img src="{{ asset('assets/img/logo/Logo.png')}}" alt="image">
+                                        </h3>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        <div class="text">
-                          <h6>Ryan Anderson</h6>
-                          <p>CEO of Bit Weaver Studio</p>
+                    </div>
+                </section>
+                <!-- title-slider area end  -->
+
+                <!-- services area start  -->
+                <section class="our-services section-space">
+                    <div class="container">
+                        <div class="section-2-title-wrapper wow fade-in-bottom" data-wow-delay="600ms">
+                            <div class="section-2__top">
+                                <h6 class="left-sub-title">Notre expertise</h6>
+                                <h6 class="right-sub-title"></h6>
+                            </div>
+                            <div class="section-2__bottom">
+                                <h3 class="title">
+                                    Nos expertises couvrent l’ensemble des leviers nécessaires
+                                    à la construction et au déploiement d’une marque claire, crédible et cohérente.
+                                </h3>
+                            </div>
                         </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </section>
-          <!-- testimonial area start  -->
 
-          <!-- brand-slide area start  -->
-          <section class="brand-slide theme-bg-gray section-space">
-            <div class="container">
-              <div class="brand-slide__wrapper">
-                <h3 class="title">Loved by teams around the world</h3>
-                <div class="swiper brand-slide__active">
-                  <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                      <div class="brand-slide__item">
-                        <img
-                          src="{{ asset('assets/img/brand/brand-1.png')}}"
-                          alt="image not found"
-                       >
-                      </div>
-                    </div>
-                    <div class="swiper-slide">
-                      <div class="brand-slide__item">
-                        <img
-                          src="{{ asset('assets/img/brand/brand-2.png')}}"
-                          alt="image not found"
-                       >
-                      </div>
-                    </div>
-                    <div class="swiper-slide">
-                      <div class="brand-slide__item">
-                        <img
-                          src="{{ asset('assets/img/brand/brand-3.png')}}"
-                          alt="image not found"
-                       >
-                      </div>
-                    </div>
-                    <div class="swiper-slide">
-                      <div class="brand-slide__item">
-                        <img
-                          src="{{ asset('assets/img/brand/brand-4.png')}}"
-                          alt="image not found"
-                       >
-                      </div>
-                    </div>
-                    <div class="swiper-slide">
-                      <div class="brand-slide__item">
-                        <img
-                          src="{{ asset('assets/img/brand/brand-5.png')}}"
-                          alt="image not found"
-                       >
-                      </div>
-                    </div>
-                    <div class="swiper-slide">
-                      <div class="brand-slide__item">
-                        <img
-                          src="{{ asset('assets/img/brand/brand-6.png')}}"
-                          alt="image not found"
-                       >
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </section>
-          <!-- brand-slide area end  -->
+                        <div class="our-services__wrapper section-space-top">
+                            <div class="our-services__item wow fade-in-bottom" data-wow-delay="600ms">
+                                <div class="title-wrapper">
+                                    <h3 class="title rr-title-anim">
+                                        <a href="#">Brand Strategy</a> <span></span>
+                                    </h3>
+                                </div>
+                                <div class="our-services__media">
+                                    <div class="section-2__bottom">
+                                        <h5 class="title">
+                                            Structuration de l’ADN de marque, clarification de la vision,
+                                            définition de la promesse et du positionnement.
+                                        </h5>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="our-services__item wow fade-in-bottom" data-wow-delay="600ms">
+                                <div class="title-wrapper">
+                                    <h3 class="title rr-title-anim">
+                                        <a href="#">Communication Corporate</a> <span></span>
+                                    </h3>
+                                </div>
+                                <div class="our-services__media">
+                                    <div class="section-2__bottom">
+                                        <h5 class="title">
+                                            Construction d’une communication institutionnelle claire, cohérente
+                                            et alignée avec la réalité de l’organisation.
+                                        </h5>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="our-services__item wow fade-in-bottom" data-wow-delay="600ms">
+                                <div class="title-wrapper">
+                                    <h3 class="title rr-title-anim">
+                                        <a href="#">Brand Design</a> <span></span>
+                                    </h3>
+                                </div>
+                                <div class="our-services__media">
+                                    <div class="section-2__bottom">
+                                        <h5 class="title">
+                                            Création d’identités visuelles pensées
+                                            comme des outils de crédibilité, jamais comme une finalité.
+                                        </h5>
+                                    </div>
 
-          <!-- blog area start  -->
-          <section class="blog section-space">
-            <div class="container">
-              <div class="section__wrapper">
-                <div class="section-sub__wrapper">
-                  <h6>latest news & articles</h6>
-                  <span></span>
-                </div>
+                                </div>
+                            </div>
+                            <div class="our-services__item wow fade-in-bottom" data-wow-delay="600ms">
+                                <div class="title-wrapper">
+                                    <h3 class="title rr-title-anim">
+                                        <a href="#">Personal Branding</a> <span></span>
+                                    </h3>
+                                </div>
+                                <div class="our-services__media">
+                                    <div class="section-2__bottom">
+                                        <h5 class="title">
+                                            Accompagnement des dirigeants et leaders dans la structuration d’une
+                                            image cohérente et maîtrisée.
+                                        </h5>
+                                    </div>
+                                </div>
+                            </div>
 
-                <div class="section__wrap">
-                  <h2 class="section-title rr-title-anim">ARTICLES</h2>
-                  <div class="section__content">
-                    <p>
-                      Duis aute irure dolor in reprehenderit in voluptate velit
-                      esse cillum dolore eu fugiat nulla pariatur. excepteur
-                      sint occaecat
-                    </p>
+                            <div class="our-services__item wow fade-in-bottom" data-wow-delay="600ms">
+                                <div class="title-wrapper">
+                                    <h3 class="title rr-title-anim">
+                                        <a href="#">Brand Content & Storytelling </a> <span></span>
+                                    </h3>
+                                </div>
+                                <div class="our-services__media">
+                                    <div class="section-2__bottom">
+                                        <h5 class="title">
+                                            Clarification des messages clés et construction d’un discoursde marque
+                                            lisible et impactant.
+                                        </h5>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="our-services__item wow fade-in-bottom" data-wow-delay="600ms">
+                                <div class="title-wrapper">
+                                    <h3 class="title rr-title-anim">
+                                        <a href="#">Digital Marketing & Réseaux Sociaux</a> <span></span>
+                                    </h3>
+                                </div>
+                                <div class="our-services__media">
+                                    <div class="section-2__bottom">
+                                        <h5 class="title">
+                                            Déploiement de stratégies digitales
+                                            au service de la notoriété, de la confiance et de la conversion.
+                                        </h5>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- services area end  -->
 
-                    <a href="blog-details" class="btn-black btn-white"
-                      >VIEW ALL BLOG<img
-                        src="{{ asset('assets/img/icon/star-black.png')}}"
-                        alt="image"
-                   ></a>
-                  </div>
-                </div>
-              </div>
+                <section class="working-process section-space-top">
+                    <div class="container">
+                        <div class="section-2-title-wrapper wow fade-in-bottom" data-wow-delay="600ms">
+                            <div class="section-2__top">
+                                <h6 class="left-sub-title">Notre méthode</h6>
+                                <h6 class="right-sub-title"></h6>
+                            </div>
+                            <div class="section-2__bottom">
+                                <h3 class="title">
+                                    Notre méthode repose sur une logique claire :
+                                    clarifier avant de communiquer, structurer avant de vendre.
 
-              <div class="row gutter-30 mb-minus-30">
-                <div class="col-lg-6 col-xl-4">
-                  <div
-                    class="blog__item wow fade-in-bottom"
-                    data-wow-delay="600ms"
-                  >
-                    <div class="blog-media">
-                      <a href="blog-details.html">
-                        <img src="{{ asset('assets/img/blog/blog-1.jpg')}}" alt="image"
-                     ></a>
-                    </div>
-                    <ul class="blog-meta__list">
-                      <li>insight</li>
-                      <li>25 march, 2025</li>
-                    </ul>
-                    <h4 class="blog-title rr-title-anim">
-                      <a href="blog-details"
-                        >Transforming Concepts into Reality: The Art of
-                        Effective Design</a
-                      >
-                    </h4>
-                    <a class="read-more" href="blog-details"
-                      >Read more
-                      <span><i class="fa-solid fa-arrow-right"></i></span
-                    ></a>
-                  </div>
-                </div>
-                <div class="col-lg-6 col-xl-4">
-                  <div
-                    class="blog__item wow fade-in-bottom"
-                    data-wow-delay="600ms"
-                  >
-                    <div class="blog-media">
-                      <a href="blog-details.html">
-                        <img src="{{ asset('assets/img/blog/blog-2.jpg')}}" alt="image"
-                     ></a>
-                    </div>
-                    <ul class="blog-meta__list">
-                      <li>insight</li>
-                      <li>25 march, 2025</li>
-                    </ul>
-                    <h4 class="blog-title rr-title-anim">
-                      <a href="blog-details"
-                        >The Brave is Seeking to Recruit the Brightest & Best
-                        Talent</a
-                      >
-                    </h4>
-                    <a class="read-more" href="blog-details"
-                      >Read more
-                      <span><i class="fa-solid fa-arrow-right"></i></span
-                    ></a>
-                  </div>
-                </div>
-                <div class="col-lg-6 col-xl-4">
-                  <div
-                    class="blog__item wow fade-in-bottom"
-                    data-wow-delay="600ms"
-                  >
-                    <div class="blog-media">
-                      <a href="blog-details.html">
-                        <img src="{{ asset('assets/img/blog/blog-3.jpg')}}" alt="image"
-                     ></a>
-                    </div>
-                    <ul class="blog-meta__list">
-                      <li>insight</li>
-                      <li>25 march, 2025</li>
-                    </ul>
-                    <h4 class="blog-title rr-title-anim">
-                      <a href="blog-details"
-                        >Designers' Hub: Tips and Tricks for Creatives to
-                        Inspire, Innovate & Succeed</a
-                      >
-                    </h4>
-                    <a class="read-more" href="blog-details"
-                      >Read more
-                      <span><i class="fa-solid fa-arrow-right"></i></span
-                    ></a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </section>
-          <!-- blog area end  -->
+                                </h3>
+                            </div>
+                        </div>
+                        <div class="working-process__wrapper section-space-top">
+                            <div class="working-process__item">
+                                <div class="content">
+                                    <span>001</span>
+                                    <p>
+                                        Comprendre Analyse de la vision, des objectifs, du contexte
+                                        et des réalités terrain de l’organisation.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="working-process__item">
+                                <div class="content">
+                                    <span>002</span>
+                                    <p>
+                                        Structurer Clarification de l’identité, des messages, de l’offre
+                                        et de la promesse de marque.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="working-process__item">
+                                <div class="content">
+                                    <span>003</span>
+                                    <p>
+                                        Aligner Harmonisation de l’image, des supports
+                                        et de l’expérience client à chaque point de contact.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="working-process__item">
+                                <div class="content">
+                                    <span>004</span>
+                                    <p>
+                                        Activer Déploiement cohérent de la communication
+                                        et accompagnement opérationnel.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="working-process__item">
+                                <div class="content">
+                                    <span>005</span>
+                                    <p>
+                                        Fidéliser Construction d’une relation durable
+                                        et d’une communauté alignée autour de la marque.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="section-2-title-wrapper wow fade-in-bottom" data-wow-delay="600ms">
+                            <div class="section-2__bottom">
+                                <h3 class="title">
+                                    Sans méthode, les résultats restent occasionnels.
+                                    Avec une marque structurée, la croissance devient prévisible.
 
-          <!-- cta area start  -->
-          <section class="cta theme-bg-gray">
-            <div
-              class="cta__inner section-space"
-              data-background="assets/img/cta/cta-bg.png')}}"
-            >
-              <div class="container">
-                <div
-                  class="cta__content wow fade-in-bottom"
-                  data-wow-delay="600ms"
-                >
-                  <h2 class="title">
-                    Ready to <br>
-                    <span>work</span> together? Download your media kit.
-                  </h2>
+                                </h3>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- portfolio area start  -->
+                <section class="portfolio section-space">
+                    <div class="container">
+                        <div class="section__wrapper">
+                            <div class="section-sub__wrapper">
+                                <h6>Portfolio</h6>
+                                <span></span>
+                            </div>
 
-                  <a href="contact.html" class="btn-black"
-                    >Let’s work together
-                    <img src="{{ asset('assets/img/icon/star-white.png')}}" alt="image"
-                 ></a>
-                </div>
-              </div>
-            </div>
-          </section>
-          <!-- cta area end  -->
+                            <div class="section__wrap">
+                                <h2 class="section-title rr-title-anim">REALISATIONS </h2>
+                                <div class="section__content">
+                                    <p>
+                                        Pour des raisons de confidentialité,
+                                        les stratégies de marque développées pour nos clients
+                                        ne sont pas rendues publiques.Les projets présentés illustrent toutefois :notre
+                                        exigence de cohérence,notre approche stratégique,et la qualité des univers
+                                        visuels produits
+                                    </p>
 
-          <!-- footer area start  -->
-          <footer class="footer-area">
-            <div
-              class="footer-bg"
-              data-background="assets/img/footer/footer-bg.png')}}"
-            >
-              <div class="container">
-                <div class="footer-top-inner">
-                  <div class="text">
-                    <p>DROP US A LINE, AND WE’LL GET IN TOUCH!</p>
-                  </div>
-                  <div class="footer-socail">
-                    <ul>
-                      <li><a href="#">DRIBBBLE</a></li>
-                      <li><a href="#">BEHANCE</a></li>
-                      <li><a href="#">LINKEDIN</a></li>
-                      <li><a href="#"> X (TWITTER)</a></li>
-                      <li><a href="#">INSTAGRAM</a></li>
-                      <li><a href="#">FACEBOOK</a></li>
-                      <li><a href="#">YOUTUBE</a></li>
-                    </ul>
-                    <div class="info-link">
-                      <a href="mailto:contact@gmail.com">contact@gmail.com</a>
+                                    <a href="blog-details" class="btn-black btn-white">VIEW ALL projects<img
+                                            src="{{ asset('assets/img/icon/star-black.png')}}" alt="image"></a>
+                                </div>
+                            </div>
+                            <div class="section__bottom">
+                                <h2 class="section__bottom-title">& REFERENCES</h2>
+                                <h3 class="section__bottom-sub-title"></h3>
+                            </div>
+                        </div>
+                        <div class="portfolio-inner">
+                            <div class="portfolio-wrapper">
+                                <div class="portfolio__item wow fade-in-bottom" data-wow-delay="600ms">
+                                    <div class="thumb" data-cursor-text="View">
+                                        <a href="#">
+                                            <img src="{{ asset('assets/img/portfolio/portfolio-1.jpg')}}" alt="image">
+                                        </a>
+                                        <ul class="tags">
+                                            <li>Branding // </li>
+                                            <li> Package_Design //</li>
+                                            <li>Development</li>
+                                        </ul>
+                                    </div>
+                                    <div class="content">
+                                        <h3 class="title rr-title-anim">Packaging design</h3>
+                                        <span class="date">// 2024</span>
+                                    </div>
+                                </div>
+                                <div class="portfolio__item wow fade-in-bottom" data-wow-delay="600ms">
+                                    <div class="thumb" data-cursor-text="View">
+                                        <a href="#">
+                                            <img src="{{ asset('assets/img/portfolio/portfolio-2.jpg')}}" alt="image">
+                                        </a>
+                                        <ul class="tags">
+                                            <li>Branding // </li>
+                                            <li> Package_Design //</li>
+                                            <li>Development</li>
+                                        </ul>
+                                    </div>
+                                    <div class="content">
+                                        <h3 class="title rr-title-anim">Mobile app design</h3>
+                                        <span class="date">// 2024</span>
+                                    </div>
+                                </div>
+                                <div class="portfolio__item wow fade-in-bottom" data-wow-delay="600ms">
+                                    <div class="thumb" data-cursor-text="View">
+                                        <a href="#">
+                                            <img src="{{ asset('assets/img/portfolio/portfolio-3.jpg')}}" alt="image">
+                                        </a>
+                                        <ul class="tags">
+                                            <li>Branding // </li>
+                                            <li> Package_Design //</li>
+                                            <li>Development</li>
+                                        </ul>
+                                    </div>
+                                    <div class="content">
+                                        <h3 class="title rr-title-anim">Mockup Design</h3>
+                                        <span class="date">// 2024</span>
+                                    </div>
+                                </div>
+                                <div class="portfolio__item wow fade-in-bottom" data-wow-delay="600ms">
+                                    <div class="thumb" data-cursor-text="View">
+                                        <a href="#">
+                                            <img src="{{ asset('assets/img/portfolio/portfolio-4.jpg')}}" alt="image">
+                                        </a>
+                                        <ul class="tags">
+                                            <li>Branding // </li>
+                                            <li> Package_Design //</li>
+                                            <li>Development</li>
+                                        </ul>
+                                    </div>
+                                    <div class="content">
+                                        <h3 class="title rr-title-anim">Brand Identity Design</h3>
+                                        <span class="date">// 2024</span>
+                                    </div>
+                                </div>
+                                <div class="portfolio__item wow fade-in-bottom span-2" data-wow-delay="600ms">
+                                    <div class="thumb" data-cursor-text="View">
+                                        <a href="#">
+                                            <img src="{{ asset('assets/img/portfolio/portfolio-5.jpg')}}" alt="image">
+                                        </a>
+                                        <ul class="tags">
+                                            <li>Branding // </li>
+                                            <li> Package_Design //</li>
+                                            <li>Development</li>
+                                        </ul>
+                                    </div>
+                                    <div class="content">
+                                        <h3 class="title rr-title-anim">
+                                            Digital Prodcut Design
+                                        </h3>
+                                        <span class="date">// 2024</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                  </div>
-                </div>
-                <div class="footer-widget-wrapper-box">
-                  <div class="footer-widget-wrapper">
-                    <div class="footer-widget-box let-talk">
-                      <h3 class="let-talk-title">
-                        Let's talk
-                        <a href="contact.html"
-                          ><i class="fa-solid fa-arrow-right"></i
-                        ></a>
-                      </h3>
-                      <p>Wanna be starting something?</p>
+                </section>
+                <!-- portfolio area end  -->
+
+
+                <!-- blog area start  -->
+                <section class="blog section-space">
+                    <div class="container">
+                        <div class="section__wrapper">
+                            <div class="section-sub__wrapper">
+                                <h6>latest news & articles</h6>
+                                <span></span>
+                            </div>
+
+                            <div class="section__wrap">
+                                <h2 class="section-title rr-title-anim">ARTICLES</h2>
+                                <div class="section__content">
+                                    <p>
+                                        Duis aute irure dolor in reprehenderit in voluptate velit
+                                        esse cillum dolore eu fugiat nulla pariatur. excepteur
+                                        sint occaecat
+                                    </p>
+
+                                    <a href="blog-details" class="btn-black btn-white">VIEW ALL BLOG<img
+                                            src="{{ asset('assets/img/icon/star-black.png')}}" alt="image"></a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row gutter-30 mb-minus-30">
+                            <div class="col-lg-6 col-xl-4">
+                                <div class="blog__item wow fade-in-bottom" data-wow-delay="600ms">
+                                    <div class="blog-media">
+                                        <a href="blog-details.html">
+                                            <img src="{{ asset('assets/img/blog/blog-1.jpg')}}" alt="image"></a>
+                                    </div>
+                                    <ul class="blog-meta__list">
+                                        <li>insight</li>
+                                        <li>25 march, 2025</li>
+                                    </ul>
+                                    <h4 class="blog-title rr-title-anim">
+                                        <a href="blog-details">Transforming Concepts into Reality: The Art of
+                                            Effective Design</a>
+                                    </h4>
+                                    <a class="read-more" href="blog-details">Read more
+                                        <span><i class="fa-solid fa-arrow-right"></i></span></a>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-xl-4">
+                                <div class="blog__item wow fade-in-bottom" data-wow-delay="600ms">
+                                    <div class="blog-media">
+                                        <a href="blog-details.html">
+                                            <img src="{{ asset('assets/img/blog/blog-2.jpg')}}" alt="image"></a>
+                                    </div>
+                                    <ul class="blog-meta__list">
+                                        <li>insight</li>
+                                        <li>25 march, 2025</li>
+                                    </ul>
+                                    <h4 class="blog-title rr-title-anim">
+                                        <a href="blog-details">The Brave is Seeking to Recruit the Brightest & Best
+                                            Talent</a>
+                                    </h4>
+                                    <a class="read-more" href="blog-details">Read more
+                                        <span><i class="fa-solid fa-arrow-right"></i></span></a>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-xl-4">
+                                <div class="blog__item wow fade-in-bottom" data-wow-delay="600ms">
+                                    <div class="blog-media">
+                                        <a href="blog-details.html">
+                                            <img src="{{ asset('assets/img/blog/blog-3.jpg')}}" alt="image"></a>
+                                    </div>
+                                    <ul class="blog-meta__list">
+                                        <li>insight</li>
+                                        <li>25 march, 2025</li>
+                                    </ul>
+                                    <h4 class="blog-title rr-title-anim">
+                                        <a href="blog-details">Designers' Hub: Tips and Tricks for Creatives to
+                                            Inspire, Innovate & Succeed</a>
+                                    </h4>
+                                    <a class="read-more" href="blog-details">Read more
+                                        <span><i class="fa-solid fa-arrow-right"></i></span></a>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="footer-widget-box">
-                      <h2 class="title">Quick Links</h2>
-                      <ul class="footer-nav-list">
-                        <li><a href="about.html">About Us</a></li>
-                        <li><a href="tema.html">Our Team</a></li>
-                        <li><a href="pricing.html">Pricing</a></li>
-                        <li><a href="blog-details.html">News</a></li>
-                        <li><a href="contact-us.html">Contact Us</a></li>
-                      </ul>
+                </section>
+                <!-- blog area end  -->
+
+                <!-- cta area start  -->
+                <!-- cta area end  -->
+
+                <!-- footer area start  -->
+                <footer class="footer-area">
+                    <div class="footer-bg" data-background="assets/img/footer/footer-bg.png')}}">
+                        <div class="container">
+                            <div class="footer-top-inner">
+                                <div class="text">
+                                    <p>DROP US A LINE, AND WE’LL GET IN TOUCH!</p>
+                                </div>
+                                <div class="footer-socail">
+                                    <ul>
+                                        <li><a href="#">DRIBBBLE</a></li>
+                                        <li><a href="#">BEHANCE</a></li>
+                                        <li><a href="#">LINKEDIN</a></li>
+                                        <li><a href="#"> X (TWITTER)</a></li>
+                                        <li><a href="#">INSTAGRAM</a></li>
+                                        <li><a href="#">FACEBOOK</a></li>
+                                        <li><a href="#">YOUTUBE</a></li>
+                                    </ul>
+                                    <div class="info-link">
+                                        <a href="mailto:contact@gmail.com">contact@gmail.com</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="footer-widget-wrapper-box">
+                                <div class="footer-widget-wrapper">
+                                    <div class="footer-widget-box let-talk">
+                                        <h3 class="let-talk-title">
+                                            Let's talk
+                                            <a href="contact.html"><i class="fa-solid fa-arrow-right"></i></a>
+                                        </h3>
+                                        <p>Wanna be starting something?</p>
+                                    </div>
+                                    <div class="footer-widget-box">
+                                        <h2 class="title">Quick Links</h2>
+                                        <ul class="footer-nav-list">
+                                            <li><a href="about.html">About Us</a></li>
+                                            <li><a href="tema.html">Our Team</a></li>
+                                            <li><a href="pricing.html">Pricing</a></li>
+                                            <li><a href="blog-details.html">News</a></li>
+                                            <li><a href="contact-us.html">Contact Us</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="footer-widget-box">
+                                        <h2 class="title">Services</h2>
+                                        <ul class="footer-nav-list">
+                                            <li><a href="contact.html">Brand Identity</a></li>
+                                            <li><a href="contact.html">Digital Printing</a></li>
+                                            <li><a href="contact.html">Logo Design</a></li>
+                                            <li><a href="contact.html">Product Design</a></li>
+                                            <li><a href="contact.html">Graphic Design</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="footer-widget-box">
+                                        <h2 class="title">Contact Us</h2>
+                                        <ul class="footer-nav-list">
+                                            <li>
+                                                <a href="contact.html">845, King Street Road, Mahattan, <br>
+                                                    New York - 89654.</a>
+                                            </li>
+                                            <li>
+                                                <a href="tel:+02574328301">+02) 574 - 328 - 301</a>
+                                            </li>
+                                            <li>
+                                                <a href="contact.html">info@buildyexample.com</a>
+                                            </li>
+                                            <li>
+                                                <a href="contact.html">contactinfo@gmail.com</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="copyright-area">
+                                <div class="copyright-area-inner">
+                                    <div class="copyright-text">
+                                        <p class="text">
+                                            © Copyright {{ Date('Y')}}, All Rights Reserved by
+                                            <a href="#">Smart Vision</a>top
+                                        </p>
+                                        <a class="back" href="#">Vers le Haut</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="footer-widget-box">
-                      <h2 class="title">Services</h2>
-                      <ul class="footer-nav-list">
-                        <li><a href="contact.html">Brand Identity</a></li>
-                        <li><a href="contact.html">Digital Printing</a></li>
-                        <li><a href="contact.html">Logo Design</a></li>
-                        <li><a href="contact.html">Product Design</a></li>
-                        <li><a href="contact.html">Graphic Design</a></li>
-                      </ul>
+                    <div class="footer-bottom">
+                        <h4 class="footer-bottom-title">SmartVision</h2>
                     </div>
-                    <div class="footer-widget-box">
-                      <h2 class="title">Contact Us</h2>
-                      <ul class="footer-nav-list">
-                        <li>
-                          <a href="contact.html"
-                            >845, King Street Road, Mahattan, <br>
-                            New York - 89654.</a
-                          >
-                        </li>
-                        <li>
-                          <a href="tel:+02574328301">+02) 574 - 328 - 301</a>
-                        </li>
-                        <li>
-                          <a href="contact.html">info@buildyexample.com</a>
-                        </li>
-                        <li>
-                          <a href="contact.html">contactinfo@gmail.com</a>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-                <div class="copyright-area">
-                  <div class="copyright-area-inner">
-                    <div class="copyright-text">
-                      <p class="text">
-                        © Copyright 2025, All Rights Reserved by
-                        <a href="index.html">Cruv</a> Themes
-                      </p>
-                      <a class="back" href="#">back to top</a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="footer-bottom">
-              <h2 class="footer-bottom-title">Smart vision</h2>
-            </div>
-          </footer>
-          <!-- footer area end  -->
-        </main>
-      </div>
+                </footer>
+                <!-- footer area end  -->
+            </main>
+        </div>
     </div>
 
     <script src="{{ asset('assets/js/jquery-3.7.1.min.js')}}"></script>
@@ -1298,5 +943,6 @@ Il commence par une décision stratégique.
     <script src="{{ asset('assets/js/backToTop.js')}}"></script>
     <script src="{{ asset('assets/js/main.js')}}"></script>
     <script src="{{ asset('assets/js/magiccursor.js')}}"></script>
-  </body>
+</body>
+
 </html>

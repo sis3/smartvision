@@ -259,11 +259,11 @@
 
     &:hover {
       border-color: transparent;
-      background: #b3ec11;
-      color: var(--black);
+      background: #c51718;
+      color: var(--white);
 
       svg [stroke="white"] {
-        stroke: var(--black);
+        stroke: var(--white);
       }
     }
   }
