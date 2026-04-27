@@ -816,7 +816,7 @@
                         </div>
 
                                  <section class="contact-area section-space">
-            <div class="container">
+            {{-- <div class="container">
               <div class="contact-wrapper">
                 <div class="row">
                   <div class="col-xl-6">
@@ -917,7 +917,7 @@
                   </div>
                 </div>
               </div>
-            </div>
+            </div> --}}
           </section>
                     </div>
                 </section>
