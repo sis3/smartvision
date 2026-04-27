@@ -40,8 +40,8 @@
 
         <div class="loader-wrap-heading">
             <div class="load-text">
-                <span>Smart</span>
-                <span>Vision</span>
+                <span style="color: black;">Smart</span>
+                <span style="color: black;">Vision</span>
             </div>
         </div>
     </div>
@@ -105,52 +105,14 @@
                     <div class="header__nav">
                         <nav class="main-menu">
                             <ul>
-                                <li class="menu-item-has-children">
-                                    <a href="#">Home</a>
-                                    <ul class="dp-menu">
-                                        <li><a href="index.html">Home</a></li>
-                                        <li><a href="index-2.html">Home-2</a></li>
-                                    </ul>
+                                <li class="menu-item">
+                                    <a href="#">Accueil</a>
                                 </li>
-                                <li><a href="about.html">About</a></li>
-                                <li class="menu-item-has-children">
-                                    <a href="#">Services</a>
-                                    <ul class="dp-menu">
-                                        <li><a href="services.html">Services</a></li>
-                                        <li>
-                                            <a href="services-details.html">Service Details</a>
-                                        </li>
-                                    </ul>
-                                </li>
-
-                                <li class="menu-item-has-children">
-                                    <a href="#">Portfolio</a>
-                                    <ul class="dp-menu">
-                                        <li><a href="portfolio-grid.html">Portfolio Grid</a></li>
-                                        <li><a href="portfolio-list.html">Portfolio List</a></li>
-                                        <li>
-                                            <a href="portfolio-details.html">Portfolio Details</a>
-                                        </li>
-                                    </ul>
-                                </li>
-                                <li class="menu-item-has-children">
-                                    <a href="#">Pages</a>
-                                    <ul class="dp-menu">
-                                        <li><a href="team.html">Team Page</a></li>
-                                        <li><a href="pricing.html">Pricing Page</a></li>
-                                        <li><a href="faq.html">Faq</a></li>
-                                        <li><a href="404.html">404 Page</a></li>
-                                    </ul>
-                                </li>
-                                <li class="menu-item-has-children">
-                                    <a href="#">Blog</a>
-                                    <ul class="dp-menu">
-                                        <li><a href="blog-grid.html">Blog grid</a></li>
-                                        <li><a href="blog-list.html">Blog list</a></li>
-                                        <li><a href="blog-details.html">Blog Details</a></li>
-                                    </ul>
-                                </li>
-                                <li><a href="contact-us.html">Contact</a></li>
+                                <li><a href="about.html">À propos</a></li>
+                                <li><a href="about.html">Actualités</a></li>
+                                <li><a href="about.html">Projets</a></li>
+                                <li><a href="about.html">Contact</a></li>
+                                <li><a href="about.html">Formation</a></li>
                             </ul>
                         </nav>
                         <div class="header__navicon">
@@ -182,7 +144,7 @@
                                     <span class="des">
                                     </span>
                                     <img class="arrow" src="{{ asset('assets/img/hero/hero-arrow.png')}}" alt="image">
-                                    Branding <br> Communication & corporate
+                                    Branding <br> Communication et corporate
 
                                     <img class="circle" src="{{ asset('assets/img/hero/hero-shape.png')}}" alt="image">
                                 </h1>
@@ -351,7 +313,7 @@
                                         <h3 class="title-slider__title">
                                             Formation Personal<img src="{{ asset('assets/img/logo/Logo.png')}}"
                                                 alt="image">
-                                            Branding & Community<img src="{{ asset('assets/img/logo/Logo.png')}}"
+                                            Branding et Community<img src="{{ asset('assets/img/logo/Logo.png')}}"
                                                 alt="image">Management Communication
                                         </h3>
                                     </div>
@@ -407,7 +369,7 @@
                                             <img src="{{ asset('assets/img/logo/Logo.png')}}"
                                                 alt="image">Institutionnelle Branding
                                             <img src="{{ asset('assets/img/logo/Logo.png')}}" alt="image">
-                                            Branding & Community
+                                            Branding et Community
                                             <img src="{{ asset('assets/img/logo/Logo.png')}}" alt="image">
                                         </h3>
                                     </div>
@@ -426,7 +388,7 @@
                                     <div class="title-slider__item">
                                         <h3 class="title-slider__title">
                                             <img src="{{ asset('assets/img/logo/Logo.png')}}" alt="image">
-                                            Branding & Community
+                                            Branding et Community
                                             <img src="{{ asset('assets/img/logo/Logo.png')}}" alt="image">
                                             Institutionnelle Branding
                                             <img src="{{ asset('assets/img/logo/Logo.png')}}" alt="image">
@@ -521,7 +483,7 @@
                             <div class="our-services__item wow fade-in-bottom" data-wow-delay="600ms">
                                 <div class="title-wrapper">
                                     <h3 class="title rr-title-anim">
-                                        <a href="#">Brand Content & Storytelling </a> <span></span>
+                                        <a href="#">Brand Content et Storytelling </a> <span></span>
                                     </h3>
                                 </div>
                                 <div class="our-services__media">
@@ -536,7 +498,7 @@
                             <div class="our-services__item wow fade-in-bottom" data-wow-delay="600ms">
                                 <div class="title-wrapper">
                                     <h3 class="title rr-title-anim">
-                                        <a href="#">Digital Marketing & Réseaux Sociaux</a> <span></span>
+                                        <a href="#">Digital Marketing et Réseaux Sociaux</a> <span></span>
                                     </h3>
                                 </div>
                                 <div class="our-services__media">
@@ -651,7 +613,7 @@
                                 </div>
                             </div>
                             <div class="section__bottom">
-                                <h2 class="section__bottom-title">& REFERENCES</h2>
+                                <h2 class="section__bottom-title">et REFERENCES</h2>
                                 <h3 class="section__bottom-sub-title"></h3>
                             </div>
                         </div>
@@ -751,7 +713,7 @@
                     <div class="container">
                         <div class="section__wrapper">
                             <div class="section-sub__wrapper">
-                                <h6>latest news & articles</h6>
+                                <h6>latest news et articles</h6>
                                 <span></span>
                             </div>
 
@@ -800,7 +762,7 @@
                                         <li>25 march, 2025</li>
                                     </ul>
                                     <h4 class="blog-title rr-title-anim">
-                                        <a href="blog-details">The Brave is Seeking to Recruit the Brightest & Best
+                                        <a href="blog-details">The Brave is Seeking to Recruit the Brightest et Best
                                             Talent</a>
                                     </h4>
                                     <a class="read-more" href="blog-details">Read more
@@ -819,7 +781,7 @@
                                     </ul>
                                     <h4 class="blog-title rr-title-anim">
                                         <a href="blog-details">Designers' Hub: Tips and Tricks for Creatives to
-                                            Inspire, Innovate & Succeed</a>
+                                            Inspire, Innovate et Succeed</a>
                                     </h4>
                                     <a class="read-more" href="blog-details">Read more
                                         <span><i class="fa-solid fa-arrow-right"></i></span></a>
@@ -919,7 +881,7 @@
                         </div>
                     </div>
                     <div class="footer-bottom">
-                        <h4 class="footer-bottom-title">SmartVision</h2>
+                        <h4 class="footer-bottom-title" style="font-size: 224px;" >SmartVision</h2>
                     </div>
                 </footer>
                 <!-- footer area end  -->

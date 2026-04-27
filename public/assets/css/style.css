@@ -15,29 +15,33 @@
 /*----------------------------------------*/
 /* VARIBALES CSS START
 /*----------------------------------------*/
+/* @import url("https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"); */
+
+
 @font-face {
     font-family: 'VPU';
-    src: url('/assets/fonts/vpu.otf') format('opentype');
+    src: url('/assets/fonts/vpu.ttf') format('opentype');
     font-weight: normal;
     font-style: normal;
 }
 
+
 :root {
   ---white: #000000;
-  --secondary: #c61718;
+  --secondary: #c51718;
   --white: #000000;
   --white: #FFFFFF;
-  --blue: #c61718;
-  --action: #c61718;
+  --blue: #c51718;
+  --action: #c51718;
 }
 
 /*----------------------------------------*/
 /* TYPOGRAPHY CSS START
 /*----------------------------------------*/
 :root {
-  --font_dmsans: "DM+Sans", sans-serif;
-  --font_brico: "Bricolage Grotesque", sans-serif;
-  --font_awesome: "Font Awesome 6 pro";
+  --font_dmsans: "VPU", "DM+Sans", sans-serif;
+  --font_brico:  "VPU", "Bricolage Grotesque", sans-serif;
+  --font_awesome:  "VPU", "Font Awesome 6 pro";
 }
 
 * {
@@ -66,7 +70,7 @@ h6 {
   line-height: 1.22;
   font-weight: 500;
   color: var(--white);
-  font-family:
+  font-family: var(--font_brico);
 }
 
 ul,
@@ -621,7 +625,7 @@ section {
   background-color: var(--action);
 }
 .btn-black.btn-white-2 {
-  background-color: #c61718;
+  background-color: #c51718;
   color: var(--white);
   text-transform: capitalize;
 }
@@ -798,7 +802,7 @@ section {
   font-size: 18px;
   line-height: 1;
   color: var(--white);
-  font-family:
+  font-family: var(--font_brico);
   text-transform: capitalize;
 }
 .main-menu ul.dp-menu {
@@ -1568,7 +1572,7 @@ section {
 }
 .hero__content .hero-title {
   font-weight: 800;
-  font-size: 200px;
+  font-size: 175px;
   line-height: 200px;
   text-transform: uppercase;
 }
@@ -1799,7 +1803,7 @@ section {
   display: flex;
   min-width: 156px;
   align-items: center;
-  background: #c61718;
+  background: #c51718;
   justify-content: center;
 }
 @media (max-width: 575px) {
@@ -1840,7 +1844,7 @@ section {
   padding-right: 210px;
   padding-top: 47px;
   padding-bottom: 47px;
-  background-color: #c61718;
+  background-color: #c51718;
 }
 @media only screen and (max-width: 1199px) {
   .hero-video__wrapper .work {
@@ -2079,7 +2083,7 @@ section {
   line-height: 19px;
   color: var(--white);
   text-transform: uppercase;
-  font-family:
+  font-family: var(--font_brico);
 }
 @media only screen and (max-width: 1399px) {
   .header-area-2 .main-menu li a {
@@ -2249,7 +2253,7 @@ section {
   font-size: 90px;
   color: var(--white);
   line-height: 90px;
-  font-family:
+  font-family: var(--font_brico);
 }
 @media only screen and (max-width: 1399px) {
   .footer-area .footer-top-inner .info-link a {
@@ -2338,7 +2342,7 @@ section {
   font-size: 30px;
   line-height: 25px;
   color: var(--white);
-  font-family:
+  font-family: var(--font_brico);
   margin-bottom: 48px;
 }
 @media only screen and (max-width: 1199px) {
@@ -2407,7 +2411,7 @@ section {
   font-weight: 600;
   line-height: 40px;
   color: var(---white);
-  font-family:
+  font-family: var(--font_brico);
 }
 @media (max-width: 575px) {
   .footer-area .footer-widget-box.let-talk p {
@@ -2568,7 +2572,7 @@ section {
   font-size: 90px;
   color: var(--white);
   line-height: 90px;
-  font-family:
+  font-family: var(--font_brico);
 }
 @media only screen and (max-width: 1399px) {
   .footer-area-2 .footer-top-inner .info-link a {
@@ -2703,7 +2707,7 @@ section {
   font-size: 30px;
   line-height: 25px;
   color: var(--white);
-  font-family:
+  font-family: var(--font_brico);
   margin-bottom: 48px;
 }
 @media only screen and (max-width: 1199px) {
@@ -3240,7 +3244,7 @@ section {
   font-size: 36px;
   line-height: 46px;
   color: var(--white);
-  font-family:
+  font-family: var(--font_brico);
   margin-top: 45px;
   margin-bottom: 45px;
 }
@@ -3373,13 +3377,13 @@ section {
   }
 }
 .about-us__content p {
-  font-size: 42px;
+  font-size: 32px;
   font-weight: 700;
   line-height: 52px;
   text-indent: 270px;
   color: var(--white);
   margin-bottom: 35px;
-  font-family:
+  font-family: var(--font_brico);
 }
 @media only screen and (max-width: 1919px) {
   .about-us__content p {
@@ -3540,7 +3544,7 @@ section {
 }
 .about .about-media .about-info {
   padding: 45px;
-  background: #c61718;
+  background: #c51718;
   border-radius: 10px;
   display: inline-block;
   position: absolute;
@@ -3601,11 +3605,11 @@ section {
   font-weight: 700;
   line-height: 100px;
   color: var(--white);
-  font-family:
+  font-family: var(--font_brico);
 }
 .about .about-media .about-info .about-info-item h4 .odometer.odometer-auto-theme,
 .about .about-media .about-info .about-info-item h4 .odometer.odometer-theme-default {
-  font-family:
+  font-family: var(--font_brico);
   line-height: 1;
 }
 @media only screen and (max-width: 1919px) {
@@ -3635,7 +3639,7 @@ section {
   line-height: 28px;
   font-weight: 700;
   color: var(--white);
-  font-family:
+  font-family: var(--font_brico);
 }
 @media (max-width: 575px) {
   .about .about-media .about-info .about-info-item p br {
@@ -4061,7 +4065,7 @@ section {
   padding: 35px 35px;
   border-radius: 10px;
   align-items: center;
-  background-color: #c61718;
+  background-color: #c51718;
 }
 @media only screen and (max-width: 767px) {
   .experience__card-wrapper {
@@ -4090,7 +4094,7 @@ section {
   font-size: 20px;
   line-height: 30px;
   font-weight: 500;
-  font-family:
+  font-family: var(--font_brico);
 }
 @media only screen and (max-width: 767px) {
   .experience__card-wrapper p {
@@ -4123,11 +4127,11 @@ section {
   line-height: 90px;
   color: var(--white);
   margin-bottom: 55px;
-  font-family:
+  font-family: var(--font_brico);
 }
 .counter__item h4 .odometer.odometer-auto-theme,
 .counter__item h4 .odometer.odometer-theme-default {
-  font-family:
+  font-family: var(--font_brico);
   line-height: 1;
 }
 @media only screen and (max-width: 1399px) {
@@ -4156,7 +4160,7 @@ section {
   line-height: 35px;
   text-align: right;
   color: var(--rr-text-body);
-  font-family:
+  font-family: var(--font_brico);
 }
 @media only screen and (max-width: 1199px) {
   .counter__item p {
@@ -4361,7 +4365,7 @@ section {
   border-radius: 10px;
   text-align: center;
   border: 1px solid var(--white);
-  background-color: #c61718;
+  background-color: #c51718;
   transition: all 0.3s ease;
   position: relative;
 }
@@ -4657,7 +4661,7 @@ section {
 }
 .our-expertise-7 .our-expertise-item:hover span,
 .our-expertise-7 .our-expertise-item:hover .title {
-  color: #c61718;
+  color: #c51718;
 }
 .our-expertise-7 .our-expertise-item span {
   font-size: 14px;
@@ -5047,7 +5051,7 @@ section {
 .mission-statement__top .sub-title {
   font-size: 60px;
   line-height: 70px;
-  color: #c61718;
+  color: #c51718;
   margin-bottom: 30px;
 }
 @media only screen and (max-width: 1399px) {
@@ -5099,7 +5103,7 @@ section {
   }
 }
 .mission-statement__item .title {
-  font-size: 90px;
+  font-size: 72px;
   line-height: 100px;
   font-weight: 600;
 }
@@ -5143,7 +5147,7 @@ section {
   gap: 35px;
   display: flex;
   font-weight: 400;
-  border: 1px solid #c61718;
+  border: 1px solid #c51718;
   border-radius: 90px;
   align-items: center;
   padding: 0px 35px;
@@ -5164,7 +5168,7 @@ section {
   height: 60px;
   display: flex;
   align-items: center;
-  background: #c61718;
+  background: #c51718;
   border-radius: 500px;
   justify-content: center;
 }
@@ -5187,7 +5191,7 @@ section {
   font-size: 42px;
   line-height: 52px;
   font-weight: 700;
-  font-family:
+  font-family: var(--font_brico);
   margin-bottom: 120px;
 }
 @media only screen and (max-width: 1399px) {
@@ -5256,7 +5260,7 @@ section {
   position: absolute;
   width: 15px;
   height: 15px;
-  background: #c61718;
+  background: #c51718;
   border-radius: 2px;
   right: 15px;
   bottom: 15px;
@@ -5307,7 +5311,7 @@ section {
 }
 .mission-statement__box h2 .odometer.odometer-auto-theme,
 .mission-statement__box h2 .odometer.odometer-theme-default {
-  font-family:
+  font-family: var(--font_brico);
   line-height: 1;
 }
 .mission-statement__box p {
@@ -5317,7 +5321,7 @@ section {
   line-height: 40px;
   max-width: 390px;
   text-indent: 105px;
-  font-family:
+  font-family: var(--font_brico);
 }
 @media only screen and (max-width: 991px) {
   .mission-statement__box p {
@@ -5374,7 +5378,7 @@ section {
   position: absolute;
   width: 15px;
   height: 15px;
-  background: #c61718;
+  background: #c51718;
   border-radius: 2px;
   right: 15px;
   bottom: 15px;
@@ -5425,7 +5429,7 @@ section {
 }
 .mission-statement__wrapper .item-box h4 .odometer.odometer-auto-theme,
 .mission-statement__wrapper .item-box h4 .odometer.odometer-theme-default {
-  font-family:
+  font-family: var(--font_brico);
   line-height: 1;
 }
 .mission-statement__wrapper .item-box p {
@@ -5434,7 +5438,7 @@ section {
   line-height: 40px;
   color: var(--white);
   text-align: right;
-  font-family:
+  font-family: var(--font_brico);
 }
 @media only screen and (max-width: 1199px) {
   .mission-statement__wrapper .item-box p {
@@ -5741,7 +5745,7 @@ section {
   line-height: 52px;
   font-weight: 700;
   color: var(--white);
-  font-family:
+  font-family: var(--font_brico);
   max-width: 1246px;
   margin-left: auto;
 }
@@ -5878,7 +5882,7 @@ section {
   height: 100%;
   padding: 45px;
   position: absolute;
-  background: #c61718;
+  background: #c51718;
   transition: all 0.6s;
   transform: translateY(100%);
 }
@@ -6037,7 +6041,7 @@ section {
   font-size: 26px;
   line-height: 36px;
   font-weight: 700;
-  font-family:
+  font-family: var(--font_brico);
 }
 @media only screen and (max-width: 767px) {
   .breadcrumb__content p {
@@ -6152,7 +6156,7 @@ section {
   line-height: 62px;
   font-weight: 300;
   color: var(--white);
-  font-family:
+  font-family: var(--font_brico);
   display: inline-block;
   margin-bottom: 25px;
 }
@@ -6456,7 +6460,7 @@ section {
 }
 .video__pagination a:hover {
   border-color: transparent;
-  background: #c61718;
+  background: #c51718;
   color: var(--white);
 }
 .video__pagination a:hover svg [stroke=white] {
@@ -6552,7 +6556,7 @@ section {
   }
 }
 .contact-info-widget-link h5 a:hover {
-  color: #c61718;
+  color: #c51718;
 }
 
 .contact-wrapper {
@@ -6675,7 +6679,7 @@ section {
   margin-top: 20px;
 }
 .error-content h2 {
-  font-family:
+  font-family: var(--font_brico);
   font-style: normal;
   font-weight: 700;
   font-size: 52px;
@@ -6694,7 +6698,7 @@ section {
 }
 
 .text-slider {
-  background: #c61718;
+  background: #c51718;
   padding: 35px 0;
 }
 .text-slide {
@@ -6703,7 +6707,7 @@ section {
 }
 .text-slide h2 {
   position: relative;
-  font-family:
+  font-family: var(--font_brico);
   font-style: normal;
   font-weight: 700;
   font-size: 52px;
@@ -6740,7 +6744,7 @@ section {
 }
 
 .test-slider {
-  background: #c61718;
+  background: #c51718;
   padding: 35px 0;
 }
 
@@ -6790,7 +6794,7 @@ section {
   align-items: end;
 }
 .faq-content .rr-accordion-button .number {
-  font-family:
+  font-family: var(--font_brico);
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
@@ -6804,7 +6808,7 @@ section {
   }
 }
 .faq-content .rr-accordion-button .number .title {
-  font-family:
+  font-family: var(--font_brico);
   font-style: normal;
   font-weight: 700;
   font-size: 26px;
@@ -6888,7 +6892,7 @@ section {
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 .pricing-price h2 {
-  font-family:
+  font-family: var(--font_brico);
   font-style: normal;
   font-weight: 700;
   font-size: 72px;
@@ -6901,7 +6905,7 @@ section {
   }
 }
 .pricing-price h2 span {
-  font-family:
+  font-family: var(--font_brico);
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
@@ -6955,7 +6959,7 @@ section {
   }
 }
 .client-satisfaction__inner > *:nth-child(1) {
-  background-color: #c61718;
+  background-color: #c51718;
 }
 .client-satisfaction__inner > *:nth-child(1) .content {
   height: 100%;
@@ -6980,7 +6984,7 @@ section {
   }
 }
 .client-satisfaction__inner > *:nth-child(3) .content {
-  background-color: #c61718;
+  background-color: #c51718;
 }
 .client-satisfaction__inner > *:nth-child(3) .content .sub-title {
   color: var(--white);
@@ -7041,11 +7045,11 @@ section {
   line-height: 100px;
   color: var(--white);
   margin-bottom: 55px;
-  font-family:
+  font-family: var(--font_brico);
 }
 .client-satisfaction__item h4 .odometer.odometer-auto-theme,
 .client-satisfaction__item h4 .odometer.odometer-theme-default {
-  font-family:
+  font-family: var(--font_brico);
   line-height: 1;
 }
 @media only screen and (max-width: 1399px) {
@@ -7290,7 +7294,7 @@ section {
 }
 .portfolio-details-main .content .content-list li {
   position: relative;
-  font-family:
+  font-family: var(--font_brico);
   font-weight: 600;
   font-size: 20px;
   line-height: 28px;
@@ -7577,7 +7581,7 @@ section {
   }
 }
 .blog__details-content blockquote p {
-  font-family:
+  font-family: var(--font_brico);
   font-style: normal;
   font-weight: 600;
   font-size: 20px;
@@ -7656,7 +7660,7 @@ section {
   font-size: 20px;
   line-height: 30px;
   color: var(--white);
-  font-family:
+  font-family: var(--font_brico);
 }
 .blog__details-bottom .share-social-media a {
   width: 35px;
@@ -7687,7 +7691,7 @@ section {
   font-size: 20px;
   line-height: 30px;
   color: var(--white);
-  font-family:
+  font-family: var(--font_brico);
 }
 .blog__details-bottom-tags a {
   font-size: 15px;
@@ -7891,7 +7895,7 @@ section {
   font-weight: 700;
   margin-bottom: 35px;
   color: var(--white);
-  font-family:
+  font-family: var(--font_brico);
 }
 .sidebar__widget-search .search__bar {
   position: relative;
@@ -8022,7 +8026,7 @@ section {
   font-weight: 700;
   font-size: 20px;
   line-height: 30px;
-  font-family:
+  font-family: var(--font_brico);
   color: var(--white);
 }
 @media (max-width: 575px) {
@@ -8069,7 +8073,7 @@ section {
   font-size: 18px;
   line-height: 28px;
   border-radius: 90px;
-  background: #c61718;
+  background: #c51718;
   color: var(---white);
   padding: 5px 25px;
 }
