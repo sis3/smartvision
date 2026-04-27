@@ -239,7 +239,7 @@ section {
 }
 .section-2__bottom .title {
   font-weight: 700;
-  font-size: 52px;
+  font-size: 30px;
   line-height: 62px;
   color: var(--white);
   text-indent: 300px;
@@ -4873,7 +4873,7 @@ section {
 .our-services__item .title-wrapper .title {
   gap: 60px;
   display: flex;
-  font-size: 90px;
+  font-size: 60px;
   color: var(--white);
   line-height: 100px;
   align-items: center;

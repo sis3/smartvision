@@ -276,17 +276,18 @@
                         </div>
 
                         <div class="mission-statement__content wow fade-in-bottom" data-wow-delay="600ms">
-                            <p class="description">
+                            <p class="description" style="font-size: 35px;">
                                 Nous croyons que le branding n’est ni esthétique ni décoratif.
-                                C’est un outil stratégique qui permet à une organisation :d’être comprise
-                                rapidement,d’inspirer confiance,de créer une expérience cohérente,et de générer des
-                                résultats mesurables.Une marque claire simplifie la décision d’achat.
-                                Une marque floue rend toute communication coûteuse et inefficace.La visibilité sans
+                                C’est un outil stratégique qui permet à une organisation d’être comprise
+                                rapidement, d’inspirer confiance, de créer une expérience cohérente, et de générer des
+                                résultats mesurables. <br> <br>
+                                Une marque claire simplifie la décision d’achat. Une marque floue rend toute communication coûteuse et inefficace.La visibilité sans
                                 clarté devient une dépense.
                                 La clarté transforme chaque action en investissement.
                             </p>
+                            <br>
                             <div class="mission-statement__box">
-                                <h2 style="color: black;"><span class="odometer" data-count="100"
+                                <h2 style="color: black;"><span class="odometer" data-count="50"
                                         style="color: black;">0</span>+</h2>
                                 <p style="color: black;">
                                     Des projets réussis, menés avec excellence et précision
@@ -805,13 +806,8 @@
                                 </div>
                                 <div class="footer-socail">
                                     <ul>
-                                        <li><a href="#">DRIBBBLE</a></li>
-                                        <li><a href="#">BEHANCE</a></li>
                                         <li><a href="#">LINKEDIN</a></li>
-                                        <li><a href="#"> X (TWITTER)</a></li>
-                                        <li><a href="#">INSTAGRAM</a></li>
                                         <li><a href="#">FACEBOOK</a></li>
-                                        <li><a href="#">YOUTUBE</a></li>
                                     </ul>
                                     <div class="info-link">
                                         <a href="mailto:contact@gmail.com">contact@gmail.com</a>
