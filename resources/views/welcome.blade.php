@@ -815,62 +815,110 @@
                             </div>
                         </div>
 
-                        <div class="row gutter-30 mb-minus-30">
-                            <div class="col-lg-6 col-xl-4">
-                                <div class="blog__item wow fade-in-bottom" data-wow-delay="600ms">
-                                    <div class="blog-media">
-                                        <a href="blog-details.html">
-                                            <img src="{{ asset('assets/img/blog/blog-1.jpg')}}" alt="image"></a>
-                                    </div>
-                                    <ul class="blog-meta__list">
-                                        <li>insight</li>
-                                        <li>25 march, 2025</li>
-                                    </ul>
-                                    <h4 class="blog-title rr-title-anim">
-                                        <a href="blog-details">Transforming Concepts into Reality: The Art of
-                                            Effective Design</a>
-                                    </h4>
-                                    <a class="read-more" href="blog-details">Read more
-                                        <span><i class="fa-solid fa-arrow-right"></i></span></a>
+                                 <section class="contact-area section-space">
+            <div class="container">
+              <div class="contact-wrapper">
+                <div class="row">
+                  <div class="col-xl-6">
+                    <div class="contact-us__area">
+                      <div class="row align-items-center">
+                        <div class="col-12">
+                          <div class="contact-us__form-wrapper">
+                            <h2 class="title">We’ve been waiting for you!</h2>
+                            <form
+                              class="contact-us__form"
+                              id="contact-us__form"
+                              method="POST"
+                              action="./mail.php"
+                            >
+                              <div class="row">
+                                <div class="col-sm-6">
+                                  <div
+                                    class="contact-us__input wow fadeInLeft"
+                                    data-wow-delay=".4s"
+                                  >
+                                    <input
+                                      type="text"
+                                      id="name"
+                                      placeholder="Name"
+                                   >
+                                  </div>
                                 </div>
-                            </div>
-                            <div class="col-lg-6 col-xl-4">
-                                <div class="blog__item wow fade-in-bottom" data-wow-delay="600ms">
-                                    <div class="blog-media">
-                                        <a href="blog-details.html">
-                                            <img src="{{ asset('assets/img/blog/blog-2.jpg')}}" alt="image"></a>
-                                    </div>
-                                    <ul class="blog-meta__list">
-                                        <li>insight</li>
-                                        <li>25 march, 2025</li>
-                                    </ul>
-                                    <h4 class="blog-title rr-title-anim">
-                                        <a href="blog-details">The Brave is Seeking to Recruit the Brightest et Best
-                                            Talent</a>
-                                    </h4>
-                                    <a class="read-more" href="blog-details">Read more
-                                        <span><i class="fa-solid fa-arrow-right"></i></span></a>
+                                <div class="col-sm-6">
+                                  <div
+                                    class="contact-us__input wow fadeInLeft"
+                                    data-wow-delay=".5s"
+                                  >
+                                    <input
+                                      id="password"
+                                      type="password"
+                                      placeholder="Email"
+                                   >
+                                  </div>
                                 </div>
-                            </div>
-                            <div class="col-lg-6 col-xl-4">
-                                <div class="blog__item wow fade-in-bottom" data-wow-delay="600ms">
-                                    <div class="blog-media">
-                                        <a href="blog-details.html">
-                                            <img src="{{ asset('assets/img/blog/blog-3.jpg')}}" alt="image"></a>
-                                    </div>
-                                    <ul class="blog-meta__list">
-                                        <li>insight</li>
-                                        <li>25 march, 2025</li>
-                                    </ul>
-                                    <h4 class="blog-title rr-title-anim">
-                                        <a href="blog-details">Designers' Hub: Tips and Tricks for Creatives to
-                                            Inspire, Innovate et Succeed</a>
-                                    </h4>
-                                    <a class="read-more" href="blog-details">Read more
-                                        <span><i class="fa-solid fa-arrow-right"></i></span></a>
+                                <div class="col-sm-6">
+                                  <div
+                                    class="contact-us__input wow fadeInLeft"
+                                    data-wow-delay=".5s"
+                                  >
+                                    <input
+                                      id="number"
+                                      type="number"
+                                      placeholder="Phone"
+                                   >
+                                  </div>
                                 </div>
-                            </div>
+                                <div class="col-sm-6">
+                                  <div
+                                    class="contact-us__input wow fadeInLeft"
+                                    data-wow-delay=".5s"
+                                  >
+                                    <input
+                                      id="Subject"
+                                      type="text"
+                                      placeholder="Subject"
+                                   >
+                                  </div>
+                                </div>
+                                <div class="col-12">
+                                  <div
+                                    class="contact-us__textarea wow fadeInLeft"
+                                    data-wow-delay=".7s"
+                                  >
+                                    <textarea
+                                      name="textarea"
+                                      id="textarea"
+                                      cols="30"
+                                      rows="10"
+                                      placeholder="Write Your Message"
+                                    ></textarea>
+                                  </div>
+                                </div>
+                                <div class="col-12">
+                                  <button
+                                    type="submit"
+                                    class="btn-black btn-white rr-btnn mt-20 wow fadeInLeft"
+                                    data-wow-delay=".8s"
+                                  >
+                                    Submit Message
+                                  </button>
+                                </div>
+                              </div>
+                            </form>
+                          </div>
                         </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-xl-6">
+                    <div class="contact-thumb">
+                      <img src="assets/img/contact/contact-img-1.jpg" alt="">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
                     </div>
                 </section>
 
@@ -899,46 +947,39 @@
                                 <div class="footer-widget-wrapper">
                                     <div class="footer-widget-box let-talk">
                                         <h3 class="let-talk-title">
-                                            Let's talk
+                                         Parlons
                                             <a href="contact.html"><i class="fa-solid fa-arrow-right"></i></a>
                                         </h3>
-                                        <p>Wanna be starting something?</p>
+                                        <p>Envie de lancer quelque chose ?</p>
                                     </div>
                                     <div class="footer-widget-box">
-                                        <h2 class="title">Quick Links</h2>
+                                        <h2 class="title">Liens rapides</h2>
                                         <ul class="footer-nav-list">
-                                            <li><a href="about.html">About Us</a></li>
-                                            <li><a href="tema.html">Our Team</a></li>
-                                            <li><a href="pricing.html">Pricing</a></li>
-                                            <li><a href="blog-details.html">News</a></li>
-                                            <li><a href="contact-us.html">Contact Us</a></li>
+                                            <li><a href="about.html">À propos</a></li>
+                                            <li><a href="blog-details.html">Actualités</a></li>
+                                            <li><a href="contact-us.html">Contact</a></li>
                                         </ul>
                                     </div>
                                     <div class="footer-widget-box">
                                         <h2 class="title">Services</h2>
                                         <ul class="footer-nav-list">
-                                            <li><a href="contact.html">Brand Identity</a></li>
-                                            <li><a href="contact.html">Digital Printing</a></li>
-                                            <li><a href="contact.html">Logo Design</a></li>
-                                            <li><a href="contact.html">Product Design</a></li>
-                                            <li><a href="contact.html">Graphic Design</a></li>
+                                            <li><a href="contact.html">Brand Strategy</a></li>
+                                            <li><a href="contact.html"> Communication et corporate</a></li>
+                                            <li><a href="contact.html">Brand Design</a></li>
+                                            <li><a href="contact.html">Personal Branding</a></li>
                                         </ul>
                                     </div>
                                     <div class="footer-widget-box">
-                                        <h2 class="title">Contact Us</h2>
+                                        <h2 class="title">Contacts</h2>
                                         <ul class="footer-nav-list">
                                             <li>
-                                                <a href="contact.html">845, King Street Road, Mahattan, <br>
-                                                    New York - 89654.</a>
+                                                <a href="contact.html">N'tomikorobougou près du GMS</a>
                                             </li>
                                             <li>
-                                                <a href="tel:+02574328301">+02) 574 - 328 - 301</a>
+                                                <a href="tel:+22378187300">+223 78-18-73-00 / 66 82 59 94</a>
                                             </li>
                                             <li>
-                                                <a href="contact.html">info@buildyexample.com</a>
-                                            </li>
-                                            <li>
-                                                <a href="contact.html">contactinfo@gmail.com</a>
+                                                <a href="contact.html">contact@smartvision-ml.com</a>
                                             </li>
                                         </ul>
                                     </div>
