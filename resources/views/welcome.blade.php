@@ -281,7 +281,8 @@
                                 C’est un outil stratégique qui permet à une organisation d’être comprise
                                 rapidement, d’inspirer confiance, de créer une expérience cohérente, et de générer des
                                 résultats mesurables. <br> <br>
-                                Une marque claire simplifie la décision d’achat. Une marque floue rend toute communication coûteuse et inefficace.La visibilité sans
+                                Une marque claire simplifie la décision d’achat. Une marque floue rend toute
+                                communication coûteuse et inefficace.La visibilité sans
                                 clarté devient une dépense.
                                 La clarté transforme chaque action en investissement.
                             </p>
@@ -609,8 +610,8 @@
                                         visuels produits
                                     </p>
 
-                                    <a href="blog-details" class="btn-black btn-white">VIEW ALL projects<img
-                                            src="{{ asset('assets/img/icon/star-black.png')}}" alt="image"></a>
+                                    <a href="blog-details" class="btn-black btn-white" style="color: black;">NOS
+                                        PROJETS<img src="{{ asset('assets/img/icon/star-black.png')}}" alt="image"></a>
                                 </div>
                             </div>
                             <div class="section__bottom">
@@ -714,7 +715,7 @@
                     <div class="container">
                         <div class="section__wrapper">
                             <div class="section-sub__wrapper">
-                                <h6>latest news et articles</h6>
+                                <h6>Actualités</h6>
                                 <span></span>
                             </div>
 
@@ -722,12 +723,11 @@
                                 <h2 class="section-title rr-title-anim">ARTICLES</h2>
                                 <div class="section__content">
                                     <p>
-                                        Duis aute irure dolor in reprehenderit in voluptate velit
-                                        esse cillum dolore eu fugiat nulla pariatur. excepteur
-                                        sint occaecat
+                                        Ici, nous mettons à votre disposition des contenus soigneusement conçus pour
+                                        vous informer, vous inspirer et renforcer vos compétences.
                                     </p>
 
-                                    <a href="blog-details" class="btn-black btn-white">VIEW ALL BLOG<img
+                                    <a href="blog-details" class="btn-black btn-white" style="color: black;">VOIR<img
                                             src="{{ asset('assets/img/icon/star-black.png')}}" alt="image"></a>
                                 </div>
                             </div>
@@ -793,6 +793,87 @@
                 </section>
                 <!-- blog area end  -->
 
+                <section class="blog section-space">
+                    <div class="container">
+                        <div class="section__wrapper">
+                            <div class="section-sub__wrapper">
+                                <h6>FORMATION</h6>
+                                <span></span>
+                            </div>
+
+                            <div class="section__wrap">
+                                <h2 class="section-title rr-title-anim">Se former</h2>
+                                <div class="section__content">
+                                    <p>
+                                        Nous vous proposons du contenu utile, pratique et directement applicable, pour
+                                        transformer vos idées en compétences réelles.
+                                    </p>
+
+                                    <a href="blog-details" class="btn-black btn-white" style="color: black;">VOIR<img
+                                            src="{{ asset('assets/img/icon/star-black.png')}}" alt="image"></a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row gutter-30 mb-minus-30">
+                            <div class="col-lg-6 col-xl-4">
+                                <div class="blog__item wow fade-in-bottom" data-wow-delay="600ms">
+                                    <div class="blog-media">
+                                        <a href="blog-details.html">
+                                            <img src="{{ asset('assets/img/blog/blog-1.jpg')}}" alt="image"></a>
+                                    </div>
+                                    <ul class="blog-meta__list">
+                                        <li>insight</li>
+                                        <li>25 march, 2025</li>
+                                    </ul>
+                                    <h4 class="blog-title rr-title-anim">
+                                        <a href="blog-details">Transforming Concepts into Reality: The Art of
+                                            Effective Design</a>
+                                    </h4>
+                                    <a class="read-more" href="blog-details">Read more
+                                        <span><i class="fa-solid fa-arrow-right"></i></span></a>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-xl-4">
+                                <div class="blog__item wow fade-in-bottom" data-wow-delay="600ms">
+                                    <div class="blog-media">
+                                        <a href="blog-details.html">
+                                            <img src="{{ asset('assets/img/blog/blog-2.jpg')}}" alt="image"></a>
+                                    </div>
+                                    <ul class="blog-meta__list">
+                                        <li>insight</li>
+                                        <li>25 march, 2025</li>
+                                    </ul>
+                                    <h4 class="blog-title rr-title-anim">
+                                        <a href="blog-details">The Brave is Seeking to Recruit the Brightest et Best
+                                            Talent</a>
+                                    </h4>
+                                    <a class="read-more" href="blog-details">Read more
+                                        <span><i class="fa-solid fa-arrow-right"></i></span></a>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-xl-4">
+                                <div class="blog__item wow fade-in-bottom" data-wow-delay="600ms">
+                                    <div class="blog-media">
+                                        <a href="blog-details.html">
+                                            <img src="{{ asset('assets/img/blog/blog-3.jpg')}}" alt="image"></a>
+                                    </div>
+                                    <ul class="blog-meta__list">
+                                        <li>insight</li>
+                                        <li>25 march, 2025</li>
+                                    </ul>
+                                    <h4 class="blog-title rr-title-anim">
+                                        <a href="blog-details">Designers' Hub: Tips and Tricks for Creatives to
+                                            Inspire, Innovate et Succeed</a>
+                                    </h4>
+                                    <a class="read-more" href="blog-details">Read more
+                                        <span><i class="fa-solid fa-arrow-right"></i></span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
                 <!-- cta area start  -->
                 <!-- cta area end  -->
 
@@ -810,7 +891,7 @@
                                         <li><a href="#">FACEBOOK</a></li>
                                     </ul>
                                     <div class="info-link">
-                                        <a href="mailto:contact@gmail.com">contact@gmail.com</a>
+                                        <a href="mailto:contact@smartvision-ml.com">contact@smartvision-ml.com</a>
                                     </div>
                                 </div>
                             </div>
@@ -868,7 +949,7 @@
                                     <div class="copyright-text">
                                         <p class="text">
                                             © Copyright {{ Date('Y')}}, All Rights Reserved by
-                                            <a href="#">Smart Vision</a>top
+                                            <a href="#">Smart Vision</a>
                                         </p>
                                         <a class="back" href="#">Vers le Haut</a>
                                     </div>
@@ -877,7 +958,7 @@
                         </div>
                     </div>
                     <div class="footer-bottom">
-                        <h4 class="footer-bottom-title" style="font-size: 224px;" >SmartVision</h2>
+                        <h4 class="footer-bottom-title" style="font-size: 224px;">SmartVision</h2>
                     </div>
                 </footer>
                 <!-- footer area end  -->
