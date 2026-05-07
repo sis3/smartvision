@@ -16,15 +16,7 @@
 /* VARIBALES CSS START
 /*----------------------------------------*/
 /* @import url("https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"); */
-
-
-@font-face {
-    font-family: 'VPU';
-    src: url('/assets/fonts/vpu.ttf') format('opentype');
-    font-weight: normal;
-    font-style: normal;
-}
-
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap");
 
 :root {
   ---white: #000000;
@@ -39,9 +31,9 @@
 /* TYPOGRAPHY CSS START
 /*----------------------------------------*/
 :root {
-  --font_dmsans: "VPU", "DM+Sans", sans-serif;
-  --font_brico:  "VPU", "Bricolage Grotesque", sans-serif;
-  --font_awesome:  "VPU", "Font Awesome 6 pro";
+  --font_dmsans: "Montserrat", "DM+Sans", sans-serif;
+  --font_brico:  "Montserrat", "Bricolage Grotesque", sans-serif;
+  --font_awesome:  "Montserrat", "Font Awesome 6 pro";
 }
 
 * {
@@ -100,7 +92,7 @@ button {
 p {
   padding: 0;
   margin: 0;
-  font-size: 16px;
+  font-size: 13px;
   font-weight: 400;
   line-height: 26px;
   color: var(--white);
@@ -135,7 +127,7 @@ main {
 }
 
 h1 {
-  font-size: 200px;
+  font-size: 100px;
 }
 
 h2 {
@@ -151,11 +143,11 @@ h4 {
 }
 
 h5 {
-  font-size: 42px;
+  font-size: 25px;
 }
 
 h6 {
-  font-size: 30px;
+  font-size: 25px;
 }
 
 section {
@@ -239,22 +231,22 @@ section {
 }
 .section-2__bottom .title {
   font-weight: 700;
-  font-size: 30px;
+  font-size: 25px;
   line-height: 62px;
   color: var(--white);
-  text-indent: 300px;
+  /* text-indent: 300px; */
   margin-bottom: 35px;
 }
 @media only screen and (max-width: 991px) {
   .section-2__bottom .title {
     font-size: 40px;
     line-height: 50px;
-    text-indent: 0;
+    /* text-indent: 0; */
   }
 }
 @media only screen and (max-width: 767px) {
   .section-2__bottom .title {
-    font-size: 30px;
+    font-size: 25px;
     line-height: 45px;
   }
 }
@@ -845,7 +837,7 @@ section {
   pointer-events: all;
 }
 .main-menu ul.dp-menu li a {
-  font-size: 16px;
+  font-size: 13px;
   font-weight: 500;
   color: #999999;
   padding: 10px 0;
@@ -1226,7 +1218,7 @@ section {
   border-top: 1px solid var(--border);
 }
 .mobile-menu.mean-container .mean-nav ul li li a {
-  font-size: 16px;
+  font-size: 13px;
   text-transform: capitalize;
   border-top: none !important;
   padding: 12px 0;
@@ -1572,7 +1564,7 @@ section {
 }
 .hero__content .hero-title {
   font-weight: 800;
-  font-size: 175px;
+  font-size: 130px;
   line-height: 200px;
   text-transform: uppercase;
 }
@@ -1618,7 +1610,7 @@ section {
   max-width: 433px;
   line-height: 30px;
   font-style: normal;
-  text-indent: 162px;
+  /* text-indent: 162px; */
   display: inline-block;
   text-transform: math-auto;
   font-family: var(--font_dmsans);
@@ -1635,20 +1627,20 @@ section {
     font-size: 18px;
     max-width: 380px;
     line-height: 26px;
-    text-indent: 100px;
+    /* text-indent: 100px; */
     transform: translatey(0%);
   }
 }
 @media only screen and (max-width: 991px) {
   .hero__content .hero-title .des {
     max-width: 460px;
-    text-indent: 80px;
+    /* text-indent: 80px; */
   }
 }
 @media (max-width: 575px) {
   .hero__content .hero-title .des {
     max-width: 100%;
-    text-indent: 0px;
+    /* text-indent: 0px; */
     margin: 20px 0px;
   }
 }
@@ -1820,7 +1812,7 @@ section {
 }
 @media only screen and (max-width: 767px) {
   .hero-video__wrapper .hero__play .popup-video.has--play {
-    font-size: 16px;
+    font-size: 13px;
     width: 100%;
     min-width: 100%;
     justify-content: flex-start;
@@ -1993,7 +1985,7 @@ section {
   }
 }
 .header-area .main-menu li a {
-  font-size: 16px;
+  font-size: 13px;
   font-weight: 400;
   padding: 15px 28px;
 }
@@ -2079,7 +2071,7 @@ section {
 .header-area-2 .main-menu li a {
   font-weight: 600;
   padding: 15px 28px;
-  font-size: 16px;
+  font-size: 13px;
   line-height: 19px;
   color: var(--white);
   text-transform: uppercase;
@@ -2339,7 +2331,7 @@ section {
 }
 .footer-area .footer-widget-box .title {
   font-weight: 700;
-  font-size: 30px;
+  font-size: 25px;
   line-height: 25px;
   color: var(--white);
   font-family: var(--font_brico);
@@ -2364,7 +2356,7 @@ section {
 .footer-area .footer-widget-box.let-talk .let-talk-title {
   display: flex;
   font-weight: 600;
-  font-size: 60px;
+  font-size: 30px;
   line-height: 70px;
   align-items: center;
   margin-bottom: 100px;
@@ -2407,7 +2399,7 @@ section {
   }
 }
 .footer-area .footer-widget-box.let-talk p {
-  font-size: 30px;
+  font-size: 25px;
   font-weight: 600;
   line-height: 40px;
   color: var(---white);
@@ -2517,7 +2509,7 @@ section {
 }
 @media (max-width: 575px) {
   .footer-area .footer-bottom-title {
-    font-size: 60px;
+    font-size: 30px;
     line-height: 100px;
     margin-left: -2px;
   }
@@ -2704,7 +2696,7 @@ section {
 }
 .footer-area-2 .footer-widget-box .title {
   font-weight: 600;
-  font-size: 30px;
+  font-size: 25px;
   line-height: 25px;
   color: var(--white);
   font-family: var(--font_brico);
@@ -2844,7 +2836,7 @@ section {
 }
 @media (max-width: 575px) {
   .footer-cta .footer-cta-title {
-    font-size: 30px;
+    font-size: 25px;
     line-height: 45px;
   }
 }
@@ -2931,13 +2923,13 @@ section {
 }
 .blog-meta__list li {
   font-weight: 500;
-  font-size: 16px;
+  font-size: 13px;
   color: #aaaaaa;
   line-height: 26px;
   text-transform: uppercase;
 }
 .blog-title {
-  font-size: 36px;
+  font-size: 25px;
   font-weight: 700;
   line-height: 46px;
   font-style: normal;
@@ -2945,7 +2937,7 @@ section {
 }
 @media only screen and (max-width: 1399px) {
   .blog-title {
-    font-size: 30px;
+    font-size: 25px;
     line-height: 40px;
     margin-bottom: 50px;
   }
@@ -2962,7 +2954,7 @@ section {
 }
 .blog .read-more {
   display: flex;
-  font-size: 16px;
+  font-size: 13px;
   font-weight: 500;
   line-height: 26px;
   color: var(--white);
@@ -3054,7 +3046,7 @@ section {
 .brand-slide__wrapper .title {
   font-style: normal;
   font-weight: 600;
-  font-size: 30px;
+  font-size: 25px;
   line-height: 40px;
   text-align: center;
   color: var(--white);
@@ -3225,7 +3217,7 @@ section {
   }
 }
 .testimonial__number span {
-  font-size: 36px;
+  font-size: 25px;
   line-height: 46px;
   font-weight: 500;
   display: block;
@@ -3241,7 +3233,7 @@ section {
 }
 .testimonial__content .des {
   font-weight: 500;
-  font-size: 36px;
+  font-size: 25px;
   line-height: 46px;
   color: var(--white);
   font-family: var(--font_brico);
@@ -3250,7 +3242,7 @@ section {
 }
 @media only screen and (max-width: 1919px) {
   .testimonial__content .des {
-    font-size: 30px;
+    font-size: 25px;
     line-height: 40px;
   }
 }
@@ -3289,14 +3281,14 @@ section {
   object-fit: cover;
 }
 .testimonial__author h6 {
-  font-size: 36px;
+  font-size: 25px;
   line-height: 46px;
   margin-bottom: 5px;
   color: var(--white);
 }
 @media only screen and (max-width: 1199px) {
   .testimonial__author h6 {
-    font-size: 30px;
+    font-size: 25px;
     line-height: 40px;
   }
 }
@@ -3377,10 +3369,10 @@ section {
   }
 }
 .about-us__content p {
-  font-size: 32px;
+  font-size: 25px;
   font-weight: 700;
   line-height: 52px;
-  text-indent: 270px;
+  /* text-indent: 270px; */
   color: var(--white);
   margin-bottom: 35px;
   font-family: var(--font_brico);
@@ -3389,17 +3381,17 @@ section {
   .about-us__content p {
     font-size: 37px;
     line-height: 50px;
-    text-indent: 115px;
+    /* text-indent: 115px; */
   }
 }
 @media only screen and (max-width: 1199px) {
   .about-us__content p {
-    text-indent: 0;
+    /* text-indent: 0; */
   }
 }
 @media only screen and (max-width: 991px) {
   .about-us__content p {
-    font-size: 30px;
+    font-size: 25px;
     line-height: 45px;
   }
 }
@@ -3581,7 +3573,7 @@ section {
   }
 }
 .about .about-media .about-info .sub-title {
-  font-size: 30px;
+  font-size: 25px;
   line-height: 40px;
   font-weight: 700;
   color: var(--white);
@@ -3624,7 +3616,7 @@ section {
 }
 @media only screen and (max-width: 1199px) {
   .about .about-media .about-info .about-info-item h4 {
-    font-size: 60px;
+    font-size: 30px;
     line-height: 60px;
   }
 }
@@ -3666,8 +3658,8 @@ section {
 .portfolio .section__bottom-title {
   font-style: normal;
   font-weight: 700;
-  font-size: 200px;
-  line-height: 200px;
+  font-size: 100px;
+  /* line-height: 200px; */
   text-transform: uppercase;
   margin-left: auto;
 }
@@ -3698,7 +3690,7 @@ section {
 }
 @media (max-width: 575px) {
   .portfolio .section__bottom-title {
-    font-size: 60px;
+    font-size: 30px;
     line-height: 75px;
   }
 }
@@ -3793,7 +3785,7 @@ section {
 }
 @media only screen and (max-width: 1199px) {
   .portfolio__item .thumb .tags li {
-    font-size: 16px;
+    font-size: 13px;
   }
 }
 .portfolio__item .content {
@@ -3815,12 +3807,12 @@ section {
   }
 }
 .portfolio__item .content .title {
-  font-size: 42px;
+  font-size: 25px;
   line-height: 52px;
 }
 @media only screen and (max-width: 1199px) {
   .portfolio__item .content .title {
-    font-size: 32px;
+    font-size: 25px;
     line-height: 42px;
   }
 }
@@ -3843,7 +3835,7 @@ section {
 @media only screen and (max-width: 1199px) {
   .portfolio__item .content .date {
     padding: 6px 20px;
-    font-size: 16px;
+    font-size: 13px;
   }
 }
 
@@ -3917,7 +3909,7 @@ section {
 }
 @media only screen and (max-width: 1399px) {
   .services__content .title {
-    font-size: 60px;
+    font-size: 30px;
     line-height: 70px;
   }
 }
@@ -3938,7 +3930,7 @@ section {
   font-size: 18px;
   line-height: 28px;
   max-width: 519px;
-  text-indent: 150px;
+  /* text-indent: 150px; */
   margin-bottom: 35px;
   display: none;
   transition: all 0.5s ease;
@@ -3946,7 +3938,7 @@ section {
 @media only screen and (max-width: 991px) {
   .services__content .des {
     display: block;
-    text-indent: 0;
+    /* text-indent: 0; */
   }
 }
 .services__list {
@@ -4006,7 +3998,7 @@ section {
 .title-slider__title {
   gap: 35px;
   display: flex;
-  font-size: 60px;
+  font-size: 30px;
   line-height: 60px;
   color: var(--white);
   text-transform: uppercase;
@@ -4142,7 +4134,7 @@ section {
 }
 @media only screen and (max-width: 1199px) {
   .counter__item h4 {
-    font-size: 60px;
+    font-size: 30px;
     line-height: 60px;
     margin-bottom: 30px;
   }
@@ -4155,7 +4147,7 @@ section {
   }
 }
 .counter__item p {
-  font-size: 30px;
+  font-size: 25px;
   font-weight: 500;
   line-height: 35px;
   text-align: right;
@@ -4184,7 +4176,7 @@ section {
 }
 .insights .section-title-wrapper .title {
   font-weight: 700;
-  font-size: 200px;
+  font-size: 100px;
   line-height: 200px;
   color: var(---white);
   text-transform: uppercase;
@@ -4314,7 +4306,7 @@ section {
   color: var(---white);
 }
 .insights__content .title {
-  font-size: 42px;
+  font-size: 25px;
   line-height: 52px;
   font-weight: 700;
   color: var(---white);
@@ -4396,7 +4388,7 @@ section {
   line-height: 28px;
 }
 .working-process__item .title {
-  font-size: 42px;
+  font-size: 25px;
   line-height: 52px;
   font-weight: 700;
   color: var(--white);
@@ -4412,7 +4404,7 @@ section {
 }
 @media (max-width: 575px) {
   .working-process__item .title {
-    font-size: 30px;
+    font-size: 25px;
     line-height: 35px;
     color: var(--white);
     margin-bottom: 30px;
@@ -4547,7 +4539,7 @@ section {
 }
 .our-expertise-7 .section-title-wrapper .title {
   font-weight: 700;
-  font-size: 200px;
+  font-size: 100px;
   line-height: 200px;
   text-transform: uppercase;
   text-align: center;
@@ -4769,11 +4761,11 @@ section {
 }
 @media only screen and (max-width: 1199px) {
   .featured-product__item .thumb .tags li {
-    font-size: 16px;
+    font-size: 13px;
   }
 }
 .featured-product__item .title {
-  font-size: 60px;
+  font-size: 30px;
   line-height: 70px;
   font-weight: 700;
   position: absolute;
@@ -4782,7 +4774,7 @@ section {
 }
 @media only screen and (max-width: 1199px) {
   .featured-product__item .title {
-    font-size: 32px;
+    font-size: 25px;
     line-height: 42px;
   }
 }
@@ -4873,7 +4865,7 @@ section {
 .our-services__item .title-wrapper .title {
   gap: 60px;
   display: flex;
-  font-size: 60px;
+  font-size: 30px;
   color: var(--white);
   line-height: 100px;
   align-items: center;
@@ -4972,11 +4964,11 @@ section {
   line-height: 28px;
   margin-left: auto;
   margin-right: auto;
-  text-indent: 150px;
+  /* text-indent: 150px; */
 }
 @media only screen and (max-width: 767px) {
   .our-services__media .content p {
-    text-indent: 0px;
+    /* text-indent: 0px; */
   }
 }
 @media (max-width: 575px) {
@@ -5049,7 +5041,7 @@ section {
   }
 }
 .mission-statement__top .sub-title {
-  font-size: 60px;
+  font-size: 30px;
   line-height: 70px;
   color: #c51718;
   margin-bottom: 30px;
@@ -5103,7 +5095,7 @@ section {
   }
 }
 .mission-statement__item .title {
-  font-size: 72px;
+  font-size: 54px;
   line-height: 100px;
   font-weight: 600;
 }
@@ -5133,7 +5125,7 @@ section {
 }
 @media only screen and (max-width: 767px) {
   .mission-statement__item .title {
-    font-size: 32px;
+    font-size: 25px;
     line-height: 46px;
   }
 }
@@ -5188,7 +5180,7 @@ section {
   margin-left: auto;
 }
 .mission-statement__content .description {
-  font-size: 42px;
+  font-size: 25px;
   line-height: 52px;
   font-weight: 700;
   font-family: var(--font_brico);
@@ -5274,7 +5266,7 @@ section {
   }
 }
 .mission-statement__box h2 {
-  font-size: 200px;
+  font-size: 100px;
   line-height: 200px;
   color: var(--white);
   font-weight: 700;
@@ -5305,7 +5297,7 @@ section {
 }
 @media only screen and (max-width: 767px) {
   .mission-statement__box h2 {
-    font-size: 60px;
+    font-size: 30px;
     line-height: 80px;
   }
 }
@@ -5316,16 +5308,16 @@ section {
 }
 .mission-statement__box p {
   color: var(--white);
-  font-size: 30px;
+  font-size: 25px;
   font-weight: 600;
   line-height: 40px;
   max-width: 390px;
-  text-indent: 105px;
+  /* text-indent: 105px; */
   font-family: var(--font_brico);
 }
 @media only screen and (max-width: 991px) {
   .mission-statement__box p {
-    text-indent: 0px;
+    /* text-indent: 0px; */
     max-width: 100%;
   }
 }
@@ -5412,7 +5404,7 @@ section {
 }
 @media only screen and (max-width: 991px) {
   .mission-statement__wrapper .item-box h4 {
-    font-size: 60px;
+    font-size: 30px;
     margin-bottom: 0px;
   }
 }
@@ -5433,7 +5425,7 @@ section {
   line-height: 1;
 }
 .mission-statement__wrapper .item-box p {
-  font-size: 30px;
+  font-size: 25px;
   font-weight: 600;
   line-height: 40px;
   color: var(--white);
@@ -5494,7 +5486,7 @@ section {
   width: auto;
 }
 .text-slider-2__item h5 {
-  font-size: 30px;
+  font-size: 25px;
   line-height: 30px;
 }
 
@@ -5571,7 +5563,7 @@ section {
 }
 @media only screen and (max-width: 991px) {
   .hero-2 .hero-2-title-wrapper .title {
-    font-size: 200px;
+    font-size: 100px;
     line-height: 200px;
   }
 }
@@ -5659,17 +5651,17 @@ section {
   font-size: 20px;
   line-height: 30px;
   max-width: 356px;
-  text-indent: 148px;
+  /* text-indent: 148px; */
 }
 @media only screen and (max-width: 991px) {
   .hero-2 .hero-2-wrapper p {
     order: 2;
     max-width: 100%;
-    text-indent: 0;
+    /* text-indent: 0; */
   }
 }
 .hero-2 .hero-2-wrapper .sub-title {
-  font-size: 200px;
+  font-size: 100px;
   line-height: 200px;
   font-weight: 700;
 }
@@ -5741,7 +5733,7 @@ section {
 }
 .approach__content-item .description {
   margin-top: 60px;
-  font-size: 42px;
+  font-size: 25px;
   line-height: 52px;
   font-weight: 700;
   color: var(--white);
@@ -5752,7 +5744,7 @@ section {
 @media only screen and (max-width: 1199px) {
   .approach__content-item .description {
     margin-top: 30px;
-    font-size: 30px;
+    font-size: 25px;
     line-height: 45px;
   }
 }
@@ -5920,7 +5912,7 @@ section {
 }
 @media (max-width: 575px) {
   .our-team__item .content .title {
-    font-size: 30px;
+    font-size: 25px;
     line-height: 30px;
   }
 }
@@ -6007,7 +5999,7 @@ section {
   }
 }
 .breadcrumb__content .title {
-  font-size: 200px;
+  font-size: 100px;
   font-weight: 700;
   line-height: 200px;
   margin-bottom: 30px;
@@ -6033,7 +6025,7 @@ section {
 }
 @media (max-width: 575px) {
   .breadcrumb__content .title {
-    font-size: 60px;
+    font-size: 30px;
     line-height: 60px;
   }
 }
@@ -6131,7 +6123,7 @@ section {
 }
 @media only screen and (max-width: 767px) {
   .choose-us .title {
-    font-size: 60px;
+    font-size: 30px;
     line-height: 60px;
   }
 }
@@ -6175,7 +6167,7 @@ section {
 }
 @media (max-width: 575px) {
   .choose-us__item .sub-title {
-    font-size: 30px;
+    font-size: 25px;
     line-height: 30px;
   }
 }
@@ -6231,7 +6223,7 @@ section {
 }
 @media only screen and (max-width: 767px) {
   .branding-identity .title {
-    font-size: 60px;
+    font-size: 30px;
     line-height: 60px;
   }
 }
@@ -6476,18 +6468,18 @@ section {
   font-size: 52px;
   line-height: 62px;
   color: var(--white);
-  text-indent: 366px;
+  /* text-indent: 366px; */
 }
 @media only screen and (max-width: 991px) {
   .contact-info-area .section-title-wrapper .title {
     font-size: 40px;
     line-height: 50px;
-    text-indent: 0;
+    /* text-indent: 0; */
   }
 }
 @media only screen and (max-width: 767px) {
   .contact-info-area .section-title-wrapper .title {
-    font-size: 30px;
+    font-size: 25px;
     line-height: 45px;
   }
 }
@@ -6530,14 +6522,14 @@ section {
 .contact-info-widget h3 {
   font-style: normal;
   font-weight: 500;
-  font-size: 30px;
+  font-size: 25px;
   line-height: 40px;
   color: var(--white);
 }
 .contact-info-widget-link h5 {
   font-style: normal;
   font-weight: 500;
-  font-size: 30px;
+  font-size: 25px;
   line-height: 40px;
   color: var(--white);
 }
@@ -6624,7 +6616,7 @@ section {
   font-family: --font_dmsans;
   font-style: normal;
   font-weight: 400;
-  font-size: 16px;
+  font-size: 13px;
   line-height: 20px;
   color: #aaaaaa;
 }
@@ -6649,7 +6641,7 @@ section {
   font-family: --font_dmsans;
   font-style: normal;
   font-weight: 400;
-  font-size: 16px;
+  font-size: 13px;
   line-height: 20px;
   color: #aaaaaa;
 }
@@ -6762,12 +6754,12 @@ section {
   max-width: 1280px;
 }
 .faq-area .section-2__bottom .title {
-  text-indent: 263px;
+  /* text-indent: 263px; */
   margin-bottom: 0;
 }
 @media only screen and (max-width: 767px) {
   .faq-area .section-2__bottom .title {
-    text-indent: 0px;
+    /* text-indent: 0px; */
   }
 }
 
@@ -6804,7 +6796,7 @@ section {
 }
 @media only screen and (max-width: 767px) {
   .faq-content .rr-accordion-button .number {
-    font-size: 16px;
+    font-size: 13px;
   }
 }
 .faq-content .rr-accordion-button .number .title {
@@ -7026,7 +7018,7 @@ section {
   }
 }
 .client-satisfaction__item .sub-title {
-  font-size: 30px;
+  font-size: 25px;
   line-height: 40px;
   font-weight: 600;
   color: var(--white);
@@ -7060,7 +7052,7 @@ section {
 }
 @media only screen and (max-width: 1199px) {
   .client-satisfaction__item h4 {
-    font-size: 60px;
+    font-size: 30px;
     line-height: 60px;
     margin-bottom: 30px;
   }
@@ -7121,7 +7113,7 @@ section {
 }
 @media only screen and (max-width: 767px) {
   .portfolio-details__content .title {
-    font-size: 60px;
+    font-size: 30px;
     line-height: 70px;
   }
 }
@@ -7390,7 +7382,7 @@ section {
   display: inline-block;
 }
 .blog-details-inner .section-heading .date {
-  font-size: 16px;
+  font-size: 13px;
   font-weight: 500;
   text-transform: uppercase;
   display: block;
@@ -7398,7 +7390,7 @@ section {
 }
 .blog-details-inner .section-heading .title {
   font-weight: 700;
-  font-size: 60px;
+  font-size: 30px;
   line-height: 70px;
   text-align: center;
   color: var(--white);
@@ -7421,7 +7413,7 @@ section {
 }
 @media only screen and (max-width: 767px) {
   .blog-details-inner .section-heading .title {
-    font-size: 30px;
+    font-size: 25px;
     line-height: 40px;
   }
 }
@@ -7480,7 +7472,7 @@ section {
   margin-bottom: 5px;
 }
 .blog-details-inner .author-info .author-date h6 {
-  font-size: 16px;
+  font-size: 13px;
   font-weight: 600;
 }
 
@@ -7515,7 +7507,7 @@ section {
 .blog__details-content h5,
 .blog__details-content h6 {
   margin-bottom: 35px;
-  font-size: 42px;
+  font-size: 25px;
   line-height: 52px;
   color: var(--white);
 }
@@ -7592,7 +7584,7 @@ section {
 .blog__details-content blockquote span:not(.icon) {
   font-style: normal;
   font-weight: 400;
-  font-size: 16px;
+  font-size: 13px;
   line-height: 23px;
   color: var(--rr-text-body);
 }
@@ -7615,7 +7607,7 @@ section {
   align-items: center;
 }
 .blog__details-meta li i {
-  font-size: 16px;
+  font-size: 13px;
   margin-right: 8px;
   color: var(--rr-theme--white);
 }
@@ -7726,7 +7718,7 @@ section {
   gap: 10px;
   flex-wrap: wrap;
   text-transform: uppercase;
-  font-size: 16px;
+  font-size: 13px;
   transition: all 0.3s;
   font-weight: 700;
 }
@@ -7810,7 +7802,7 @@ section {
 }
 .live-comment-widget .contact-us-message__form-input input::placeholder {
   color: #aaaaaa;
-  font-size: 16px;
+  font-size: 13px;
   line-height: 20px;
 }
 .live-comment-widget .contact-us-message__form-input input:hover, .live-comment-widget .contact-us-message__form-input input:focus {
@@ -7829,7 +7821,7 @@ section {
 }
 .live-comment-widget .contact-us-message__form-input textarea::placeholder {
   color: #aaaaaa;
-  font-size: 16px;
+  font-size: 13px;
   line-height: 20px;
 }
 .live-comment-widget .contact-us-message__form-input textarea:hover, .live-comment-widget .contact-us-message__form-input textarea:focus {
@@ -7916,7 +7908,7 @@ section {
 .sidebar__widget-search .search__bar input::placeholder {
   font-family: var(--font_dmsans);
   font-weight: 400;
-  font-size: 16px;
+  font-size: 13px;
   line-height: 26px;
   color: #aaaaaa;
 }
@@ -7931,7 +7923,7 @@ section {
   position: absolute;
   font-style: normal;
   font-weight: 500;
-  font-size: 16px;
+  font-size: 13px;
   line-height: 16px;
   color: var(--white);
   background: var(--action);
@@ -8005,7 +7997,7 @@ section {
   flex-wrap: wrap;
 }
 .sidebar__widget-post__content-meta li a {
-  font-size: 16px;
+  font-size: 13px;
   line-height: 22px;
   align-items: center;
   text-transform: uppercase;
@@ -8097,7 +8089,7 @@ section {
 .section-title {
   font-style: normal;
   font-weight: 700;
-  font-size: 200px;
+  font-size: 100px;
   line-height: 200px;
   text-transform: uppercase;
 }
@@ -8127,7 +8119,7 @@ section {
 }
 @media (max-width: 575px) {
   .section-title {
-    font-size: 60px;
+    font-size: 30px;
     line-height: 75px;
   }
 }
@@ -8135,7 +8127,7 @@ section {
   max-width: 417px;
 }
 .section__content p {
-  text-indent: 103px;
+  /* text-indent: 103px; */
   font-style: normal;
   font-weight: 400;
   font-size: 18px;

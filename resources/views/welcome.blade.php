@@ -276,7 +276,7 @@
                         </div>
 
                         <div class="mission-statement__content wow fade-in-bottom" data-wow-delay="600ms">
-                            <p class="description" style="font-size: 35px;">
+                            <p class="description" >
                                 Nous croyons que le branding n’est ni esthétique ni décoratif.
                                 C’est un outil stratégique qui permet à une organisation d’être comprise
                                 rapidement, d’inspirer confiance, de créer une expérience cohérente, et de générer des
@@ -306,7 +306,7 @@
                 </section>
 
                 <!-- title-slider area start  -->
-                <section class="title-slider theme-bg-gray section-space">
+                {{-- <section class="title-slider theme-bg-gray section-space">
                     <div class="title-slider__wrapper">
                         <div class="swiper title-slider__active">
                             <div class="swiper-wrapper">
@@ -400,7 +400,7 @@
                             </div>
                         </div>
                     </div>
-                </section>
+                </section> --}}
                 <!-- title-slider area end  -->
 
                 <!-- services area start  -->
@@ -999,7 +999,7 @@
                         </div>
                     </div>
                     <div class="footer-bottom">
-                        <h4 class="footer-bottom-title" style="font-size: 224px;">SmartVision</h2>
+                        <h4 class="footer-bottom-title" style="font-size: 150px;">SmartVision</h2>
                     </div>
                 </footer>
                 <!-- footer area end  -->
