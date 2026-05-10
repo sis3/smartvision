@@ -12,4 +12,9 @@ class Post extends Model
         'content',
         'image',
     ];
+
+    public function getFormattedDateAttribute()
+    {
+        return $this->created_at->format('d F, Y');
+    }
 }

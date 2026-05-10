@@ -276,7 +276,7 @@
                         </div>
 
                         <div class="mission-statement__content wow fade-in-bottom" data-wow-delay="600ms">
-                            <p class="description" >
+                            <p class="description">
                                 Nous croyons que le branding n’est ni esthétique ni décoratif.
                                 C’est un outil stratégique qui permet à une organisation d’être comprise
                                 rapidement, d’inspirer confiance, de créer une expérience cohérente, et de générer des
@@ -304,105 +304,6 @@
                         </div>
                     </div>
                 </section>
-
-                <!-- title-slider area start  -->
-                {{-- <section class="title-slider theme-bg-gray section-space">
-                    <div class="title-slider__wrapper">
-                        <div class="swiper title-slider__active">
-                            <div class="swiper-wrapper">
-                                <div class="swiper-slide">
-                                    <div class="title-slider__item">
-                                        <h3 class="title-slider__title">
-                                            Formation Personal<img src="{{ asset('assets/img/logo/Logo.png')}}"
-                                                alt="image">
-                                            Branding et Community<img src="{{ asset('assets/img/logo/Logo.png')}}"
-                                                alt="image">Management Communication
-                                        </h3>
-                                    </div>
-                                </div>
-                                <div class="swiper-slide">
-                                    <div class="title-slider__item">
-                                        <h3 class="title-slider__title">
-                                            <img src="{{ asset('assets/img/logo/Logo.png')}}"
-                                                alt="image">Institutionnelle Branding
-                                            <img src="{{ asset('assets/img/logo/Logo.png')}}" alt="image">
-                                            Stratégique Graphisme
-                                            <img src="{{ asset('assets/img/logo/Logo.png')}}" alt="image">
-                                        </h3>
-                                    </div>
-                                </div>
-                                <div class="swiper-slide">
-                                    <div class="title-slider__item">
-                                        <h3 class="title-slider__title">
-                                            Digital Marketing Former<img src="{{ asset('assets/img/logo/Logo.png')}}"
-                                                alt="image">
-                                            Creative thinking
-                                        </h3>
-                                    </div>
-                                </div>
-                                <div class="swiper-slide">
-                                    <div class="title-slider__item">
-                                        <h3 class="title-slider__title">
-                                            <img src="{{ asset('assets/img/logo/Logo.png')}}" alt="image">Formation
-                                            Personal
-                                            <img src="{{ asset('assets/img/logo/Logo.png')}}" alt="image">
-                                            Stratégique Graphisme
-                                            <img src="{{ asset('assets/img/logo/Logo.png')}}" alt="image">
-                                        </h3>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div dir="rtl" class="swiper title-slider__active-2">
-                            <div class="swiper-wrapper">
-                                <div class="swiper-slide">
-                                    <div class="title-slider__item">
-                                        <h3 class="title-slider__title">
-                                            Digital Marketing Former<img src="{{ asset('assets/img/logo/Logo.png')}}"
-                                                alt="image">
-                                            Formation Personal<img src="{{ asset('assets/img/logo/Logo.png')}}"
-                                                alt="image">Creative thinking
-                                        </h3>
-                                    </div>
-                                </div>
-                                <div class="swiper-slide">
-                                    <div class="title-slider__item">
-                                        <h3 class="title-slider__title">
-                                            <img src="{{ asset('assets/img/logo/Logo.png')}}"
-                                                alt="image">Institutionnelle Branding
-                                            <img src="{{ asset('assets/img/logo/Logo.png')}}" alt="image">
-                                            Branding et Community
-                                            <img src="{{ asset('assets/img/logo/Logo.png')}}" alt="image">
-                                        </h3>
-                                    </div>
-                                </div>
-                                <div class="swiper-slide">
-                                    <div class="title-slider__item">
-                                        <h3 class="title-slider__title">
-                                            Management Communication<img src="{{ asset('assets/img/logo/Logo.png')}}"
-                                                alt="image">
-                                            Stratégique Graphisme<img src="{{ asset('assets/img/logo/Logo.png')}}"
-                                                alt="image">Creative thinking
-                                        </h3>
-                                    </div>
-                                </div>
-                                <div class="swiper-slide">
-                                    <div class="title-slider__item">
-                                        <h3 class="title-slider__title">
-                                            <img src="{{ asset('assets/img/logo/Logo.png')}}" alt="image">
-                                            Branding et Community
-                                            <img src="{{ asset('assets/img/logo/Logo.png')}}" alt="image">
-                                            Institutionnelle Branding
-                                            <img src="{{ asset('assets/img/logo/Logo.png')}}" alt="image">
-                                        </h3>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section> --}}
-                <!-- title-slider area end  -->
-
                 <!-- services area start  -->
                 <section class="our-services section-space">
                     <div class="container">
@@ -614,97 +515,47 @@
                                         PROJETS<img src="{{ asset('assets/img/icon/star-black.png')}}" alt="image"></a>
                                 </div>
                             </div>
-                            <div class="section__bottom">
-                                <h2 class="section__bottom-title">et REFERENCES</h2>
-                                <h3 class="section__bottom-sub-title"></h3>
-                            </div>
                         </div>
                         <div class="portfolio-inner">
                             <div class="portfolio-wrapper">
-                                <div class="portfolio__item wow fade-in-bottom" data-wow-delay="600ms">
-                                    <div class="thumb" data-cursor-text="View">
-                                        <a href="#">
-                                            <img src="{{ asset('assets/img/portfolio/portfolio-1.jpg')}}" alt="image">
+                                @forelse($projects->slice(0,3) as $project)
+                                <div class="portfolio__item wow fade-in-bottom {{ $project->is_span_2 ? 'span-2' : '' }}"
+                                    data-wow-delay="600ms">
+                                    <div class="thumb" data-cursor-text="Voir">
+                                        <a href="{{ $project->project_url ?: '#' }}">
+                                            <img src="{{ asset('storage/' . $project->image) }}"
+                                                alt="{{ $project->title }}">
                                         </a>
+                                        @if($project->tags && count($project->tags) > 0)
                                         <ul class="tags">
-                                            <li>Branding // </li>
-                                            <li> Package_Design //</li>
-                                            <li>Development</li>
+                                            @foreach($project->tags as $index => $tag)
+                                            <li>{{ $tag['tag'] }}@if(!$loop->last) // @endif</li>
+                                            @endforeach
                                         </ul>
+                                        @endif
                                     </div>
                                     <div class="content">
-                                        <h3 class="title rr-title-anim">Packaging design</h3>
-                                        <span class="date">// 2024</span>
+                                        <h3 class="title rr-title-anim">{{ $project->title }}</h3>
+                                        @if($project->date)
+                                        <span class="date">// {{ $project->date }}</span>
+                                        @endif
                                     </div>
                                 </div>
-                                <div class="portfolio__item wow fade-in-bottom" data-wow-delay="600ms">
-                                    <div class="thumb" data-cursor-text="View">
-                                        <a href="#">
-                                            <img src="{{ asset('assets/img/portfolio/portfolio-2.jpg')}}" alt="image">
-                                        </a>
-                                        <ul class="tags">
-                                            <li>Branding // </li>
-                                            <li> Package_Design //</li>
-                                            <li>Development</li>
-                                        </ul>
-                                    </div>
-                                    <div class="content">
-                                        <h3 class="title rr-title-anim">Mobile app design</h3>
-                                        <span class="date">// 2024</span>
+                                @empty
+                                <div class="col-12">
+                                    <div class="no-projects-message text-center py-5">
+                                        <div class="" role="alert">
+                                            <i class="fa-solid fa-folder-open fa-3x mb-3"></i>
+                                            <h4>Aucun projet disponible</h4>
+                                            <p>Désolé, il n'y a pas de projets pour le moment. Revenez bientôt !</p>
+                                        </div>
                                     </div>
                                 </div>
-                                <div class="portfolio__item wow fade-in-bottom" data-wow-delay="600ms">
-                                    <div class="thumb" data-cursor-text="View">
-                                        <a href="#">
-                                            <img src="{{ asset('assets/img/portfolio/portfolio-3.jpg')}}" alt="image">
-                                        </a>
-                                        <ul class="tags">
-                                            <li>Branding // </li>
-                                            <li> Package_Design //</li>
-                                            <li>Development</li>
-                                        </ul>
-                                    </div>
-                                    <div class="content">
-                                        <h3 class="title rr-title-anim">Mockup Design</h3>
-                                        <span class="date">// 2024</span>
-                                    </div>
-                                </div>
-                                <div class="portfolio__item wow fade-in-bottom" data-wow-delay="600ms">
-                                    <div class="thumb" data-cursor-text="View">
-                                        <a href="#">
-                                            <img src="{{ asset('assets/img/portfolio/portfolio-4.jpg')}}" alt="image">
-                                        </a>
-                                        <ul class="tags">
-                                            <li>Branding // </li>
-                                            <li> Package_Design //</li>
-                                            <li>Development</li>
-                                        </ul>
-                                    </div>
-                                    <div class="content">
-                                        <h3 class="title rr-title-anim">Brand Identity Design</h3>
-                                        <span class="date">// 2024</span>
-                                    </div>
-                                </div>
-                                <div class="portfolio__item wow fade-in-bottom span-2" data-wow-delay="600ms">
-                                    <div class="thumb" data-cursor-text="View">
-                                        <a href="#">
-                                            <img src="{{ asset('assets/img/portfolio/portfolio-5.jpg')}}" alt="image">
-                                        </a>
-                                        <ul class="tags">
-                                            <li>Branding // </li>
-                                            <li> Package_Design //</li>
-                                            <li>Development</li>
-                                        </ul>
-                                    </div>
-                                    <div class="content">
-                                        <h3 class="title rr-title-anim">
-                                            Digital Prodcut Design
-                                        </h3>
-                                        <span class="date">// 2024</span>
-                                    </div>
-                                </div>
+                                @endforelse
                             </div>
                         </div>
+
+
                     </div>
                 </section>
                 <!-- portfolio area end  -->
@@ -734,60 +585,41 @@
                         </div>
 
                         <div class="row gutter-30 mb-minus-30">
+                            @forelse($posts->slice(0,3) as $post)
                             <div class="col-lg-6 col-xl-4">
                                 <div class="blog__item wow fade-in-bottom" data-wow-delay="600ms">
                                     <div class="blog-media">
-                                        <a href="blog-details.html">
-                                            <img src="{{ asset('assets/img/blog/blog-1.jpg')}}" alt="image"></a>
+                                        <a href="{{ route('blog.details', $post->slug) }}">
+                                            <img src="{{ $post->image ? asset('storage/' . $post->image) : asset('assets/img/blog/blog-1.jpg') }}"
+                                                alt="{{ $post->title }}">
+                                        </a>
                                     </div>
                                     <ul class="blog-meta__list">
-                                        <li>insight</li>
-                                        <li>25 march, 2025</li>
+                                        <li>{{ $post->category ?? 'insight' }}</li>
+                                        <li>{{ $post->created_at ? $post->created_at->format('d F, Y') : '25 march,
+                                            2025' }}</li>
                                     </ul>
                                     <h4 class="blog-title rr-title-anim">
-                                        <a href="blog-details">Transforming Concepts into Reality: The Art of
-                                            Effective Design</a>
+                                        <a href="{{ route('blog.details', $post->slug) }}">{{ $post->title }}</a>
                                     </h4>
-                                    <a class="read-more" href="blog-details">Read more
-                                        <span><i class="fa-solid fa-arrow-right"></i></span></a>
+                                    <p class="blog-excerpt">{{ Str::limit($post->excerpt ?? $post->content, 100) }}</p>
+                                    <a class="read-more" href="{{ route('blog.details', $post->slug) }}">Read more
+                                        <span><i class="fa-solid fa-arrow-right"></i></span>
+                                    </a>
                                 </div>
                             </div>
-                            <div class="col-lg-6 col-xl-4">
-                                <div class="blog__item wow fade-in-bottom" data-wow-delay="600ms">
-                                    <div class="blog-media">
-                                        <a href="blog-details.html">
-                                            <img src="{{ asset('assets/img/blog/blog-2.jpg')}}" alt="image"></a>
+                            @empty
+                            <div class="col-12">
+                                <div class="no-articles-message text-center py-5">
+                                    <div class="" role="alert">
+                                        <i class="fa-solid fa-newspaper fa-3x mb-3"></i>
+                                        <h4>Aucun article disponible</h4>
+                                        <p>Désolé, il n'y a pas d'articles pour le moment. Revenez bientôt pour
+                                            découvrir nos nouveaux contenus !</p>
                                     </div>
-                                    <ul class="blog-meta__list">
-                                        <li>insight</li>
-                                        <li>25 march, 2025</li>
-                                    </ul>
-                                    <h4 class="blog-title rr-title-anim">
-                                        <a href="blog-details">The Brave is Seeking to Recruit the Brightest et Best
-                                            Talent</a>
-                                    </h4>
-                                    <a class="read-more" href="blog-details">Read more
-                                        <span><i class="fa-solid fa-arrow-right"></i></span></a>
                                 </div>
                             </div>
-                            <div class="col-lg-6 col-xl-4">
-                                <div class="blog__item wow fade-in-bottom" data-wow-delay="600ms">
-                                    <div class="blog-media">
-                                        <a href="blog-details.html">
-                                            <img src="{{ asset('assets/img/blog/blog-3.jpg')}}" alt="image"></a>
-                                    </div>
-                                    <ul class="blog-meta__list">
-                                        <li>insight</li>
-                                        <li>25 march, 2025</li>
-                                    </ul>
-                                    <h4 class="blog-title rr-title-anim">
-                                        <a href="blog-details">Designers' Hub: Tips and Tricks for Creatives to
-                                            Inspire, Innovate et Succeed</a>
-                                    </h4>
-                                    <a class="read-more" href="blog-details">Read more
-                                        <span><i class="fa-solid fa-arrow-right"></i></span></a>
-                                </div>
-                            </div>
+                            @endforelse
                         </div>
                     </div>
                 </section>
@@ -814,111 +646,6 @@
                                 </div>
                             </div>
                         </div>
-
-                                 <section class="contact-area section-space">
-            {{-- <div class="container">
-              <div class="contact-wrapper">
-                <div class="row">
-                  <div class="col-xl-6">
-                    <div class="contact-us__area">
-                      <div class="row align-items-center">
-                        <div class="col-12">
-                          <div class="contact-us__form-wrapper">
-                            <h2 class="title">We’ve been waiting for you!</h2>
-                            <form
-                              class="contact-us__form"
-                              id="contact-us__form"
-                              method="POST"
-                              action="./mail.php"
-                            >
-                              <div class="row">
-                                <div class="col-sm-6">
-                                  <div
-                                    class="contact-us__input wow fadeInLeft"
-                                    data-wow-delay=".4s"
-                                  >
-                                    <input
-                                      type="text"
-                                      id="name"
-                                      placeholder="Name"
-                                   >
-                                  </div>
-                                </div>
-                                <div class="col-sm-6">
-                                  <div
-                                    class="contact-us__input wow fadeInLeft"
-                                    data-wow-delay=".5s"
-                                  >
-                                    <input
-                                      id="password"
-                                      type="password"
-                                      placeholder="Email"
-                                   >
-                                  </div>
-                                </div>
-                                <div class="col-sm-6">
-                                  <div
-                                    class="contact-us__input wow fadeInLeft"
-                                    data-wow-delay=".5s"
-                                  >
-                                    <input
-                                      id="number"
-                                      type="number"
-                                      placeholder="Phone"
-                                   >
-                                  </div>
-                                </div>
-                                <div class="col-sm-6">
-                                  <div
-                                    class="contact-us__input wow fadeInLeft"
-                                    data-wow-delay=".5s"
-                                  >
-                                    <input
-                                      id="Subject"
-                                      type="text"
-                                      placeholder="Subject"
-                                   >
-                                  </div>
-                                </div>
-                                <div class="col-12">
-                                  <div
-                                    class="contact-us__textarea wow fadeInLeft"
-                                    data-wow-delay=".7s"
-                                  >
-                                    <textarea
-                                      name="textarea"
-                                      id="textarea"
-                                      cols="30"
-                                      rows="10"
-                                      placeholder="Write Your Message"
-                                    ></textarea>
-                                  </div>
-                                </div>
-                                <div class="col-12">
-                                  <button
-                                    type="submit"
-                                    class="btn-black btn-white rr-btnn mt-20 wow fadeInLeft"
-                                    data-wow-delay=".8s"
-                                  >
-                                    Submit Message
-                                  </button>
-                                </div>
-                              </div>
-                            </form>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-xl-6">
-                    <div class="contact-thumb">
-                      <img src="assets/img/contact/contact-img-1.jpg" alt="">
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div> --}}
-          </section>
                     </div>
                 </section>
 
@@ -931,12 +658,12 @@
                         <div class="container">
                             <div class="footer-top-inner">
                                 <div class="text">
-                                    <p>DROP US A LINE, AND WE’LL GET IN TOUCH!</p>
+                                    <p>ÉCRIVEZ-NOUS ET NOUS VOUS CONTACTERONS !</p>
                                 </div>
                                 <div class="footer-socail">
                                     <ul>
-                                        <li><a href="#">LINKEDIN</a></li>
-                                        <li><a href="#">FACEBOOK</a></li>
+                                        <li><a href="https://ml.linkedin.com/company/smarts-vision">LINKEDIN</a></li>
+                                        <li><a href="https://www.facebook.com/visionsmart818/">FACEBOOK</a></li>
                                     </ul>
                                     <div class="info-link">
                                         <a href="mailto:contact@smartvision-ml.com">contact@smartvision-ml.com</a>
@@ -947,7 +674,7 @@
                                 <div class="footer-widget-wrapper">
                                     <div class="footer-widget-box let-talk">
                                         <h3 class="let-talk-title">
-                                         Parlons
+                                            Parlons
                                             <a href="contact.html"><i class="fa-solid fa-arrow-right"></i></a>
                                         </h3>
                                         <p>Envie de lancer quelque chose ?</p>
