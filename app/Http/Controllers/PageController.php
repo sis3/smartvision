@@ -15,4 +15,19 @@ class PageController extends Controller
 
         return view('pages.homes.index', compact('posts', 'projects'));
     }
+
+    public function contact()
+    {
+        return view('pages.contacts.index');
+    }
+
+    public function about()
+    {
+        return view('pages.abouts.index');
+    }
+
+    public function projet()
+    {
+        return view('pages.portofolios.index');
+    }
 }
