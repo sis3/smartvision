@@ -106,7 +106,7 @@
                         <nav class="main-menu">
                             <ul>
                                 <li class="menu-item">
-                                    <a href="#">Accueil</a>
+                                    <a href="{{route('home')}}">Accueil</a>
                                 </li>
                                 <li><a href="{{route('about')}}">À propos</a></li>
                                 <li><a href="{{route('posts')}}">Actualités</a></li>

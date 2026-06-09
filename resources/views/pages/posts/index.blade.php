@@ -40,7 +40,7 @@
     <section class="insights theme-bg-light section-space">
         <div class="container-fluid">
             <div class="section-title-wrapper wow fade-in-bottom" data-wow-delay="600ms">
-                <h2 class="title">Dernières <span>Actualités</span> & Articles</h2>
+                <h2 class="title"> <span>Actualités</span> & Articles</h2>
             </div>
         </div>
         <div class="container">
