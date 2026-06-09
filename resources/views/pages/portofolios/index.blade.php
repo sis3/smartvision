@@ -10,9 +10,10 @@
                     <div class="breadcrumb__content text-center">
                         <h2 class="title">Projets</h2>
                         <p>
-Pour des raisons de confidentialité,
-les stratégies de marque développées pour nos clients
-ne sont pas rendues publiques. Les projets présentés illustrent toutefois notre exigence de cohérence, notre approche stratégique, et la qualité des univers visuels produits
+                            Pour des raisons de confidentialité,
+                            les stratégies de marque développées pour nos clients
+                            ne sont pas rendues publiques. Les projets présentés illustrent toutefois notre exigence de
+                            cohérence, notre approche stratégique, et la qualité des univers visuels produits
                         </p>
                     </div>
                     <div class="breadcrumb__menu section-space-top">
@@ -36,19 +37,67 @@ ne sont pas rendues publiques. Les projets présentés illustrent toutefois notr
         </div>
     </div>
 
-    <!-- portfolio area start  -->
-    <section id="portfolio" class="portfolio section-space">
-        <div class="container">
-            <div class="section__wrapper"></div>
-            <div class="portfolio-inner">
-                <div class="portfolio-wrapper">
-                    
 
+    <section class="insights theme-bg-light section-space">
+        <div class="container-fluid">
+            <div class="section-title-wrapper wow fade-in-bottom" data-wow-delay="600ms">
+                <h2 class="title"> <span>Projets</span> & Réalisations</h2>
+            </div>
+        </div>
+        <div class="container">
+            <div class="insights__inner">
+                @forelse($projects as $project)
+                <div class="insights__item wow fade-in-bottom" data-wow-delay="600ms">
+                    <div class="insights__media">
+                        <a href="{{ route('projects.show', $project->slug) }}">
+                            <img src="{{ Storage::url($project->image) }}" alt="{{ $project->title }}">
+                        </a>
+                    </div>
+
+                    <div class="insights__content">
+                        <ul class="insight-list">
+                            <li>
+                                <span>Projet</span>
+                                {{ $project->year }}
+                            </li>
+                        </ul>
+
+                        <h4 class="title rr-title-anim">
+                            <a href="{{ route('projects.show', $project->slug) }}">
+                                {{ $project->title }}
+                            </a>
+                        </h4>
+
+                        <ul class="meta-list">
+                            <li>Année : {{ $project->year }}</li>
+                            @if($project->link)
+                            <li>
+                                <a href="{{ $project->link }}" target="_blank" rel="noopener noreferrer">
+                                    Voir le projet →
+                                </a>
+                            </li>
+                            @endif
+                        </ul>
+                    </div>
+
+                    <div class="insights__btn">
+                        <a href="{{ route('projects.show', $project->slug) }}" class="btn-primary btn-black-2">
+                            En savoir plus
+                        </a>
+                    </div>
                 </div>
+                @empty
+                <div class="col-12 text-center">
+                    <div class="">
+                        <h4 class="text-black">Aucun projet disponible</h4>
+                        <p class="text-black">Les projets et réalisations seront publiés prochainement.</p>
+                    </div>
+                </div>
+                @endforelse
+
             </div>
         </div>
     </section>
-    <!-- portfolio area end  -->
 
     <!-- footer area start  -->
     <footer class="footer-area">

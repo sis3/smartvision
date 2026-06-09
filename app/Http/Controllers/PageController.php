@@ -28,6 +28,8 @@ class PageController extends Controller
 
     public function projet()
     {
-        return view('pages.portofolios.index');
+        $projects = Project::latest()->get();
+
+        return view('pages.portofolios.index', compact('projects'));
     }
 }
