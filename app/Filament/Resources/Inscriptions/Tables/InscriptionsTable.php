@@ -5,6 +5,7 @@ namespace App\Filament\Resources\Inscriptions\Tables;
 use Filament\Actions\BulkActionGroup;
 use Filament\Actions\DeleteBulkAction;
 use Filament\Actions\EditAction;
+use Filament\Tables\Columns\TextColumn;
 use Filament\Tables\Table;
 
 class InscriptionsTable
@@ -13,7 +14,18 @@ class InscriptionsTable
     {
         return $table
             ->columns([
-                //
+                TextColumn::make('name')
+                    ->searchable()
+                    ->sortable(),
+
+                TextColumn::make('email')
+                    ->searchable()
+                    ->sortable(),
+
+                TextColumn::make('formation.title')
+                    ->label('Formation')
+                    ->sortable()
+                    ->searchable(),
             ])
             ->filters([
                 //

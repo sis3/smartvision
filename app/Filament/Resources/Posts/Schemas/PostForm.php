@@ -13,7 +13,12 @@ class PostForm
             ->components([
                 Forms\Components\TextInput::make('title')->required(),
                 Forms\Components\TextInput::make('slug')->required(),
-                Forms\Components\RichEditor::make('content')->required(),
+                Forms\Components\RichEditor::make('content')
+                    ->required()
+                    ->columnSpanFull()
+                    ->extraAttributes([
+                        'style' => 'min-height: 400px;',
+                    ]),
                 Forms\Components\FileUpload::make('image'),
             ]);
     }
