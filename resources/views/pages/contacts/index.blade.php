@@ -8,25 +8,25 @@
             <div class="row align-items-center justify-content-between">
                 <div class="col-12">
                     <div class="breadcrumb__content text-center">
-                        <h2 class="title">CONTACT US</h2>
+                        <h2 class="title">NOUS CONTACTER</h2>
                         <p>
-                            Drop us a line to get your next creative project started.
-                            We'd love to hear from you.
+                   Nous aidons les entreprises et institutions à structurer leur marque et leur communication
+afin de transformer leur image en levier de crédibilité, de fidélisation et de ventes durables.
                         </p>
                     </div>
                     <div class="breadcrumb__menu section-space-top">
                         <nav>
                             <ul>
                                 <li>
-                                    <span><a href="index.html">Home</a></span>
+                                    <span><a href="{{ route('home')}}">Accueil</a></span>
                                 </li>
-                                <li class="active"><span>CONTACT US</span></li>
+                                <li class="active"><span>NOUS CONTACTER</span></li>
                             </ul>
                         </nav>
                         <div class="scroll-down">
                             <h6>
                                 <a href="#contact">
-                                    Scroll Down <i class="fa-solid fa-arrow-down"></i></a>
+                                    Vers bas <i class="fa-solid fa-arrow-down"></i></a>
                             </h6>
                         </div>
                     </div>
@@ -39,52 +39,34 @@
         <div class="container">
             <div class="section-title-wrapper">
                 <h3 class="title">
-                    Partnering with global brands, founders, startups, and VCs to
-                    deliver brands that drive profitable growth and lasting
-                    impact.
+               Une marque floue rend toute communication coûteuse et inefficace.La visibilité sans clarté devient une dépense.
                 </h3>
             </div>
             <div class="wrapper section-space-top">
                 <div class="contact-info__item">
                     <div class="contact-info-widget">
-                        <h3>Get in touch</h3>
+                        <h3>Notre Adresse Mail</h3>
                     </div>
                     <div class="contact-info-widget-link">
-                        <h5>New Business.</h5>
-                        <h5><a href="">contact99@gmail.com</a></h5>
+
                     </div>
                     <div class="contact-info-widget-link">
-                        <h5>Join the Team.</h5>
-                        <h5><a href="">domin22@rejouice.com</a></h5>
+                <h5>Smart Vision.</h5>
+                        <h5><a href="#">contact@smartvision-ml.com</a></h5>
                     </div>
                 </div>
+
                 <div class="contact-info__item">
                     <div class="contact-info-widget">
-                        <h3>Get in touch</h3>
+                        <h3>Adresse et Téléphone</h3>
                     </div>
                     <div class="contact-info-widget-link">
-                        <h5>
-                            <a href="">4375 30th Street <br>
-                                California, 92104 <br>
-                                USA</a>
-                        </h5>
+                        <h5>Téléphone.</h5>
+                      <h5> <a href="tel:+22378187300">+223 78-18-73-00 / 66 82 59 94</a></h5>
                     </div>
                     <div class="contact-info-widget-link">
-                        <h5>Join the Team.</h5>
-                        <h5><a href="">domin22@rejouice.com</a></h5>
-                    </div>
-                </div>
-                <div class="contact-info__item">
-                    <div class="contact-info-widget">
-                        <h3>Get in touch</h3>
-                    </div>
-                    <div class="contact-info-widget-link">
-                        <h5>New Business.</h5>
-                        <h5><a href="">contact99@gmail.com</a></h5>
-                    </div>
-                    <div class="contact-info-widget-link">
-                        <h5>Join the Team.</h5>
-                        <h5><a href="">domin22@rejouice.com</a></h5>
+                        <h5>Adresse.</h5>
+                        <h5><a href="#">N'tomikorobougou près du GMS</a></h5>
                     </div>
                 </div>
             </div>
@@ -120,11 +102,28 @@
                                                         <input id="number" type="number" placeholder="Phone">
                                                     </div>
                                                 </div>
-                                                <div class="col-sm-6">
-                                                    <div class="contact-us__input wow fadeInLeft" data-wow-delay=".5s">
-                                                        <input id="Subject" type="text" placeholder="Subject">
-                                                    </div>
-                                                </div>
+                                              <div class="col-sm-6">
+    <div class="contact-us__input wow fadeInLeft" data-wow-delay=".5s">
+        <select id="subject" name="subject">
+            <option value="">Choisir une formation</option>
+            <option value="Personal Branding & Community Management">
+                Personal Branding & Community Management
+            </option>
+            <option value="Communication Institutionnelle">
+                Communication Institutionnelle
+            </option>
+            <option value="Branding stratégique">
+                Branding stratégique
+            </option>
+            <option value="Graphisme & Digital Marketing">
+                Graphisme & Digital Marketing
+            </option>
+            <option value="Former">
+                Former
+            </option>
+        </select>
+    </div>
+</div>
                                                 <div class="col-12">
                                                     <div class="contact-us__textarea wow fadeInLeft"
                                                         data-wow-delay=".7s">
@@ -233,6 +232,18 @@
             <h4 class="footer-bottom-title" style="font-size: 150px;">SmartVision</h2>
         </div>
     </footer>
+    <style>
+        .contact-us__input select {
+    width: 100%;
+    height: 60px;
+    padding: 0 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background: #191919;
+    font-size: 16px;
+    color: #333;
+}
+    </style>
     <!-- footer area end  -->
 </main>
 @endsection

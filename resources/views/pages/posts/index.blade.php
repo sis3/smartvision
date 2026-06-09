@@ -8,26 +8,27 @@
             <div class="row align-items-center justify-content-between">
                 <div class="col-12">
                     <div class="breadcrumb__content text-center">
-                        <h2 class="title">Blog list</h2>
+                        <h2 class="title">Actualités</h2>
                         <p>
-                            Discover our blog for insights into our creative process,
+
+                            Découvrez notre blog pour en savoir plus sur notre processus créatif
                             <br>
-                            upcoming events, and awards.
+                            Événements à venir et remises de prix.
                         </p>
                     </div>
                     <div class="breadcrumb__menu section-space-top">
                         <nav>
                             <ul>
                                 <li>
-                                    <span><a href="index.html">Home</a></span>
+                                    <span><a href="{{ route('home')}}">Accueil</a></span>
                                 </li>
-                                <li class="active"><span>Blog list</span></li>
+                                <li class="active"><span>Actualités</span></li>
                             </ul>
                         </nav>
                         <div class="scroll-down">
                             <h6>
                                 <a href="#">
-                                    Scroll Down <i class="fa-solid fa-arrow-down"></i></a>
+                                    {{-- vers le bas <i class="fa-solid fa-arrow-down"></i></a> --}}
                             </h6>
                         </div>
                     </div>
@@ -39,137 +40,54 @@
     <section class="insights theme-bg-light section-space">
         <div class="container-fluid">
             <div class="section-title-wrapper wow fade-in-bottom" data-wow-delay="600ms">
-                <h2 class="title">ghts <span>insights</span> insig</h2>
+                <h2 class="title">Dernières <span>Actualités</span> & Articles</h2>
             </div>
         </div>
         <div class="container">
             <div class="insights__inner">
+                @forelse($posts as $post)
                 <div class="insights__item wow fade-in-bottom" data-wow-delay="600ms">
                     <div class="insights__media">
-                        <a href="#"><img src="assets/img/services/services-7.jpg" alt="image"></a>
+                        <a href="{{ route('posts.show', $post->slug) }}">
+                            <img src="{{ Storage::url($post->image) }}" alt="{{ $post->title }}">
+                        </a>
                     </div>
+
                     <div class="insights__content">
                         <ul class="insight-list">
-                            <li><span>Insight</span>5 mins</li>
+                            <li>
+                                <span>Actualité</span>
+                                5 mins
+                            </li>
                         </ul>
+
                         <h4 class="title rr-title-anim">
-                            <a href="#">Crafting the Design for Beyond the Screen Digital
-                                Products Marketplace</a>
+                            <a href="{{ route('posts.show', $post->slug) }}">
+                                {{ $post->title }}
+                            </a>
                         </h4>
+
                         <ul class="meta-list">
-                            <li>Andy Styles</li>
-                            <li>07.03.2025</li>
+                            <li>Administrateur</li>
+                            <li>{{ $post->created_at->format('d.m.Y') }}</li>
                         </ul>
                     </div>
+
                     <div class="insights__btn">
-                        <a href="#" class="btn-primary btn-black-2">Read More</a>
+                        <a href="{{ route('posts.show', $post->slug) }}" class="btn-primary btn-black-2">
+                            Lire plus
+                        </a>
                     </div>
                 </div>
-                <div class="insights__item wow fade-in-bottom" data-wow-delay="600ms">
-                    <div class="insights__media">
-                        <a href="#"><img src="assets/img/services/services-8.jpg" alt="image"></a>
-                    </div>
-                    <div class="insights__content">
-                        <ul class="insight-list">
-                            <li><span>Insight</span>5 mins</li>
-                        </ul>
-                        <h4 class="title rr-title-anim">
-                            <a href="#">Why Mobile-First Design is Crucial for Modern
-                                Websites</a>
-                        </h4>
-                        <ul class="meta-list">
-                            <li>Andy Styles</li>
-                            <li>07.03.2025</li>
-                        </ul>
-                    </div>
-                    <div class="insights__btn">
-                        <a href="#" class="btn-primary btn-black-2">Read More</a>
+                @empty
+                <div class="col-12 text-center">
+                    <div class="">
+                        <h4 class="text-black">Aucun article disponible</h4>
+                        <p class="text-black">Les actualités et articles seront publiés prochainement.</p>
                     </div>
                 </div>
-                <div class="insights__item wow fade-in-bottom" data-wow-delay="600ms">
-                    <div class="insights__media">
-                        <a href="#"><img src="assets/img/services/services-9.jpg" alt="image"></a>
-                    </div>
-                    <div class="insights__content">
-                        <ul class="insight-list">
-                            <li><span>Insight</span>5 mins</li>
-                        </ul>
-                        <h4 class="title rr-title-anim">
-                            <a href="#">Pixel Playground creative studio Claims Site of the
-                                Week at Awwwards!</a>
-                        </h4>
-                        <ul class="meta-list">
-                            <li>Andy Styles</li>
-                            <li>07.03.2025</li>
-                        </ul>
-                    </div>
-                    <div class="insights__btn">
-                        <a href="#" class="btn-primary btn-black-2">Read More</a>
-                    </div>
-                </div>
-                <div class="insights__item wow fade-in-bottom" data-wow-delay="600ms">
-                    <div class="insights__media">
-                        <a href="#"><img src="assets/img/services/services-10.jpg" alt="image"></a>
-                    </div>
-                    <div class="insights__content">
-                        <ul class="insight-list">
-                            <li><span>Insight</span>6 mins</li>
-                        </ul>
-                        <h4 class="title rr-title-anim">
-                            <a href="#">The Future of UX Design Trends Shaping 2025 Design and
-                                Strategic.</a>
-                        </h4>
-                        <ul class="meta-list">
-                            <li>Andy Styles</li>
-                            <li>07.03.2025</li>
-                        </ul>
-                    </div>
-                    <div class="insights__btn">
-                        <a href="#" class="btn-primary btn-black-2">Read More</a>
-                    </div>
-                </div>
-                <div class="insights__item wow fade-in-bottom" data-wow-delay="600ms">
-                    <div class="insights__media">
-                        <a href="#"><img src="assets/img/services/services-11.jpg" alt="image"></a>
-                    </div>
-                    <div class="insights__content">
-                        <ul class="insight-list">
-                            <li><span>Insight</span>5 mins</li>
-                        </ul>
-                        <h4 class="title rr-title-anim">
-                            <a href="#">From Ideas to Impact A Comprehensive Guide to Growing
-                                Your Brand.</a>
-                        </h4>
-                        <ul class="meta-list">
-                            <li>Andy Styles</li>
-                            <li>07.03.2025</li>
-                        </ul>
-                    </div>
-                    <div class="insights__btn">
-                        <a href="#" class="btn-primary btn-black-2">Read More</a>
-                    </div>
-                </div>
-                <div class="insights__item wow fade-in-bottom" data-wow-delay="600ms">
-                    <div class="insights__media">
-                        <a href="#"><img src="assets/img/services/services-12.jpg" alt="image"></a>
-                    </div>
-                    <div class="insights__content">
-                        <ul class="insight-list">
-                            <li><span>Insight</span>5 mins</li>
-                        </ul>
-                        <h4 class="title rr-title-anim">
-                            <a href="#">The Creative Canvas Where Ideas Take Shape Modern
-                                Design</a>
-                        </h4>
-                        <ul class="meta-list">
-                            <li>Andy Styles</li>
-                            <li>07.03.2025</li>
-                        </ul>
-                    </div>
-                    <div class="insights__btn">
-                        <a href="#" class="btn-primary btn-black-2">Read More</a>
-                    </div>
-                </div>
+                @endforelse
+
             </div>
         </div>
     </section>

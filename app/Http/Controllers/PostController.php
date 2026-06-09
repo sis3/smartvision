@@ -11,7 +11,7 @@ class PostController extends Controller
     {
         // Récupérer tous les posts avec pagination
         $posts = Post::orderBy('created_at', 'desc')
-            ->paginate(6); // 6 posts par page
+            ->paginate(30); // 6 posts par page
 
         return view('pages.posts.index', compact('posts'));
     }

@@ -8,26 +8,26 @@
             <div class="row align-items-center justify-content-between">
                 <div class="col-12">
                     <div class="breadcrumb__content text-center">
-                        <h2 class="title">PORTFOLIO</h2>
+                        <h2 class="title">Projets</h2>
                         <p>
-                            We build beautiful and functional websites that help you
-                            <br>
-                            achieve your business goals.
+Pour des raisons de confidentialité,
+les stratégies de marque développées pour nos clients
+ne sont pas rendues publiques. Les projets présentés illustrent toutefois notre exigence de cohérence, notre approche stratégique, et la qualité des univers visuels produits
                         </p>
                     </div>
                     <div class="breadcrumb__menu section-space-top">
                         <nav>
                             <ul>
                                 <li>
-                                    <span><a href="index.html">Home</a></span>
+                                    <span><a href="{{ route('home')}}">Accueil</a></span>
                                 </li>
-                                <li class="active"><span>Portfolio Grid</span></li>
+                                <li class="active"><span>Projets</span></li>
                             </ul>
                         </nav>
                         <div class="scroll-down">
                             <h6>
                                 <a href="#portfolio">
-                                    Scroll Down <i class="fa-solid fa-arrow-down"></i></a>
+                                    {{-- Scroll Down <i class="fa-solid fa-arrow-down"></i></a> --}}
                             </h6>
                         </div>
                     </div>
@@ -42,136 +42,8 @@
             <div class="section__wrapper"></div>
             <div class="portfolio-inner">
                 <div class="portfolio-wrapper">
-                    <div class="portfolio__item wow fade-in-bottom" data-wow-delay="600ms">
-                        <div class="thumb" data-cursor-text="View">
-                            <a href="#">
-                                <img src="assets/img/portfolio/portfolio-1.jpg" alt="image">
-                            </a>
-                            <ul class="tags">
-                                <li>Branding/</li>
-                                <li>Package_Design/</li>
-                                <li>Development</li>
-                            </ul>
-                        </div>
-                        <div class="content">
-                            <h3 class="title rr-title-anim">Packaging design</h3>
-                            <span class="date">// 2024</span>
-                        </div>
-                    </div>
-                    <div class="portfolio__item wow fade-in-bottom" data-wow-delay="600ms">
-                        <div class="thumb" data-cursor-text="View">
-                            <a href="#">
-                                <img src="assets/img/portfolio/portfolio-2.jpg" alt="image">
-                            </a>
-                            <ul class="tags">
-                                <li>Branding/</li>
-                                <li>Package_Design/</li>
-                                <li>Development</li>
-                            </ul>
-                        </div>
-                        <div class="content">
-                            <h3 class="title rr-title-anim">Mobile App Design</h3>
-                            <span class="date">// 2024</span>
-                        </div>
-                    </div>
-                    <div class="portfolio__item wow fade-in-bottom" data-wow-delay="600ms">
-                        <div class="thumb" data-cursor-text="View">
-                            <a href="#">
-                                <img src="assets/img/portfolio/portfolio-3.jpg" alt="image">
-                            </a>
-                            <ul class="tags">
-                                <li>Branding/</li>
-                                <li>Package_Design/</li>
-                                <li>Development</li>
-                            </ul>
-                        </div>
-                        <div class="content">
-                            <h3 class="title rr-title-anim">Mockup Design</h3>
-                            <span class="date">// 2024</span>
-                        </div>
-                    </div>
-                    <div class="portfolio__item wow fade-in-bottom" data-wow-delay="600ms">
-                        <div class="thumb" data-cursor-text="View">
-                            <a href="#">
-                                <img src="assets/img/portfolio/portfolio-4.jpg" alt="image">
-                            </a>
-                            <ul class="tags">
-                                <li>Branding/</li>
-                                <li>Package_Design/</li>
-                                <li>Development</li>
-                            </ul>
-                        </div>
-                        <div class="content">
-                            <h3 class="title rr-title-anim">Brand Identity Design</h3>
-                            <span class="date">// 2024</span>
-                        </div>
-                    </div>
-                    <div class="portfolio__item wow fade-in-bottom" data-wow-delay="600ms">
-                        <div class="thumb" data-cursor-text="View">
-                            <a href="#">
-                                <img src="assets/img/portfolio/portfolio-6.jpg" alt="image">
-                            </a>
-                            <ul class="tags">
-                                <li>Branding/</li>
-                                <li>Package_Design/</li>
-                                <li>Development</li>
-                            </ul>
-                        </div>
-                        <div class="content">
-                            <h3 class="title rr-title-anim">
-                                Digital Product Design
-                            </h3>
-                            <span class="date">// 2024</span>
-                        </div>
-                    </div>
-                    <div class="portfolio__item wow fade-in-bottom" data-wow-delay="600ms">
-                        <div class="thumb" data-cursor-text="View">
-                            <a href="#">
-                                <img src="assets/img/portfolio/portfolio-7.jpg" alt="image">
-                            </a>
-                            <ul class="tags">
-                                <li>Branding/</li>
-                                <li>Package_Design/</li>
-                                <li>Development</li>
-                            </ul>
-                        </div>
-                        <div class="content">
-                            <h3 class="title rr-title-anim">Mobile App Design</h3>
-                            <span class="date">// 2024</span>
-                        </div>
-                    </div>
-                    <div class="portfolio__item wow fade-in-bottom" data-wow-delay="600ms">
-                        <div class="thumb" data-cursor-text="View">
-                            <a href="#">
-                                <img src="assets/img/portfolio/portfolio-8.jpg" alt="image">
-                            </a>
-                            <ul class="tags">
-                                <li>Branding/</li>
-                                <li>Package_Design/</li>
-                                <li>Development</li>
-                            </ul>
-                        </div>
-                        <div class="content">
-                            <h3 class="title rr-title-anim">Headphone Mockup</h3>
-                            <span class="date">// 2024</span>
-                        </div>
-                    </div>
-                    <div class="portfolio__item wow fade-in-bottom" data-wow-delay="600ms">
-                        <div class="thumb" data-cursor-text="View">
-                            <a href="#">
-                                <img src="assets/img/portfolio/portfolio-9.jpg" alt="image">
-                            </a>
-                            <ul class="tags">
-                                <li>Branding/</li>
-                                <li>Package_Design/</li>
-                                <li>Development</li>
-                            </ul>
-                        </div>
-                        <div class="content">
-                            <h3 class="title rr-title-anim">Brand Identity Design</h3>
-                            <span class="date">// 2024</span>
-                        </div>
-                    </div>
+                    
+
                 </div>
             </div>
         </div>
