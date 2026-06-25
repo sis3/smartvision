@@ -112,7 +112,7 @@
                                 <li><a href="{{route('posts')}}">Actualités</a></li>
                                 <li><a href="{{route('projets')}}">Projets</a></li>
                                 <li><a href="{{ route('contact')}}">Contact</a></li>
-                                <li><a href="{{route('about')}}">Formation</a></li>
+                                <li><a href="{{route('formations')}}">Formation</a></li>
                             </ul>
                         </nav>
                         <div class="header__navicon">

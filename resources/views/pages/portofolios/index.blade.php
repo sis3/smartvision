@@ -1,6 +1,6 @@
 @extends('app')
 
-@section('title', 'Projet')
+@section('title', 'Nos Réalisations')
 @section('content')
 <main>
     <div class="breadcrumb" data-background="assets/img/breadcrumb/breadcrumb.png">
@@ -8,12 +8,9 @@
             <div class="row align-items-center justify-content-between">
                 <div class="col-12">
                     <div class="breadcrumb__content text-center">
-                        <h2 class="title">Projets</h2>
+                        <h2 class="title">Nos Réalisations</h2>
                         <p>
-                            Pour des raisons de confidentialité,
-                            les stratégies de marque développées pour nos clients
-                            ne sont pas rendues publiques. Les projets présentés illustrent toutefois notre exigence de
-                            cohérence, notre approche stratégique, et la qualité des univers visuels produits
+                            Découvrez les projets, campagnes, événements et initiatives que nous avons accompagnés pour contribuer à la croissance, à la visibilité et à la crédibilité de nos partenaires.
                         </p>
                     </div>
                     <div class="breadcrumb__menu section-space-top">

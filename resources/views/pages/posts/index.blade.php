@@ -8,12 +8,10 @@
             <div class="row align-items-center justify-content-between">
                 <div class="col-12">
                     <div class="breadcrumb__content text-center">
-                        <h2 class="title">Actualités</h2>
+                        <h2 class="title">Notre Actualité</h2>
                         <p>
 
-                            Découvrez notre blog pour en savoir plus sur notre processus créatif
-                            <br>
-                            Événements à venir et remises de prix.
+                            Retrouvez nos dernières réalisations, événements, analyses, formations et initiatives autour du branding, de la communication, du marketing et du développement des organisations
                         </p>
                     </div>
                     <div class="breadcrumb__menu section-space-top">
