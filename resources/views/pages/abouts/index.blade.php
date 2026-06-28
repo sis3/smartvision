@@ -1,6 +1,6 @@
 @extends('app')
 
-@section('title', 'À Propos - Smart Vision')
+@section('title', 'À Propos')
 @section('content')
 <main>
     <!-- Breadcrumb -->
