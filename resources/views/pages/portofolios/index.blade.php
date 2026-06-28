@@ -170,7 +170,7 @@
             </div>
         </div>
         <div class="footer-bottom">
-            <h4 class="footer-bottom-title" style="font-size: 150px;">SmartVision</h2>
+            <h4 class="footer-bottom-title"  >SmartVision</h2>
         </div>
     </footer>
     <!-- footer area end  -->

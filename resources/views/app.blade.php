@@ -58,8 +58,8 @@
             <div class="side-info-content">
                 <div class="offset-widget offset-header">
                     <div class="offset-logo">
-                        <a href="index.html">
-                            <img src="{{ asset('assets/img/logo/logo-black.png')}}" class="normal-logo" alt="Site Logo">
+                        <a href="{{route('home')}}">
+                            <img src="{{ asset('assets/img/logo/loblack.png')}}" class="normal-logo" alt="Site Logo">
                         </a>
                     </div>
                     <button id="side-info-close" class="side-info-close">x</button>
@@ -71,15 +71,17 @@
                     <div class="contact-meta">
                         <div class="contact-item">
                             <span class="icon"><i class="fa-solid fa-location-dot"></i></span>
-                            <span class="text">3891 Ranchview Dr. Richardson</span>
+                                    <a href="{{route('contact')}}">N'tomikorobougou près du GMS</a>
                         </div>
                         <div class="contact-item">
                             <span class="icon"><i class="fa-solid fa-envelope"></i></span>
-                            <span class="text"><a href="mailto:hello@cruvagency.com">hello@cruvagency.com</a></span>
+                            <span class="text">
+                                    <a href="{{route('contact')}}">contact@smartvision-ml.com</a>
+                            </span>
                         </div>
                         <div class="contact-item">
                             <span class="icon"><i class="fa-solid fa-phone"></i></span>
-                            <span class="text"><a href="tel:(505)555-0125">(505) 555-0125</a></span>
+                                    <a href="tel:+22378187300">+223 78-18-73-00 / 66 82 59 94</a>
                         </div>
                     </div>
                 </div>
@@ -95,11 +97,10 @@
             <div class="container">
                 <div class="header-area__inner">
                     <div class="header__logo">
-                        <a href="index.html">
+                        <a href="{{route('home')}}">
                             <br>
                             <br>
-                            <img src="{{ asset('assets/img/logo/Logo.png')}}" class="normal-logo" alt="Site Logo"
-                                width="200">
+                            <img src="{{ asset('assets/img/logo/Logo.png')}}" class="normal-logo" alt="Site Logo" width="200">
                         </a>
                     </div>
                     <div class="header__nav">

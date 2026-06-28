@@ -24,27 +24,7 @@
     </section>
     <!-- hero area start  -->
 
-    <section class="hero-video">
-        <div class="hero-video__wrapper">
-            <div class="work">
-                <h6></h6>
-            </div>
-            <div class="hero__play">
-                <a class="popup-video" href="https://www.youtube.com/watch?v=8oON21G1Bqg">
-                    <svg width="18" height="22" viewBox="0 0 18 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M18 11L0 0.607697V21.3923L18 11Z" fill="black">
-                    </svg>
-                </a>
 
-                <a class="popup-video has--play" href="https://www.youtube.com/watch?v=8oON21G1Bqg">
-                    <span>LIRE</span>
-                </a>
-            </div>
-            <div class="play">
-                <h6><a href="#about">SCROLL VERS LE BAS</a></h6>
-            </div>
-        </div>
-    </section>
 
     <section class="about-us theme-bg-gray section-space-top">
         <div class="container">
@@ -76,28 +56,6 @@
     </section>
 
     <!-- counter area start  -->
-
-    <!-- counter area end  -->
-
-    <!-- experience area start  -->
-    <section id="about" class="experience">
-        <div class="experience__media">
-            {{-- <img src="{{ asset('assets/img/services/experience.jpg')}}" alt="image"> --}}
-
-            <div class="experience__card">
-                <div class="experience__card-wrapper">
-                    <h2 class="number">15+</h2>
-                    <p>
-                        We have over a 15 years of experience in design,
-                        development, production, and support of modern digital
-                        solutions.
-                    </p>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- experience area end  -->
-
     <section class="mission-statement section-space" data-background="assets/img/our-services/mission-statement-bg.png">
         <div class="container">
             <div class="mission-statement__top wow fade-in-bottom" data-wow-delay="600ms">
@@ -442,7 +400,7 @@
                             vous informer, vous inspirer et renforcer vos compétences.
                         </p>
 
-                        <a href="blog-details" class="btn-black btn-white" style="color: black;">VOIR<img
+                        <a href="{{ route('home')}}" class="btn-black btn-white" style="color: black;">VOIR<img
                                 src="{{ asset('assets/img/icon/star-black.png')}}" alt="image"></a>
                     </div>
                 </div>
@@ -467,7 +425,7 @@
                             <a href="{{ route('blog.details', $post->slug) }}">{{ $post->title }}</a>
                         </h4>
                         <p class="blog-excerpt">{{ Str::limit($post->excerpt ?? $post->content, 100) }}</p>
-                        <a class="read-more" href="{{ route('blog.details', $post->slug) }}">Read more
+                        <a class="read-more" href="{{ route('blog.details', $post->slug) }}">Voir
                             <span><i class="fa-solid fa-arrow-right"></i></span>
                         </a>
                     </div>
@@ -500,16 +458,17 @@
                 <div class="section__wrap">
                     <h2 class="section-title rr-title-anim">Se former</h2>
                     <div class="section__content">
-                        <p>
+                        {{-- <p>
                             Smart Vision propose des formations et accompagnements
                             destinés aux entreprises, institutions et établissements académiques,
                             axés sur la pratique, la structuration et l’impact réel.
-                            Domaines de formationPersonal Branding & Community ManagementCommunication InstitutionnelleBranding stratégiqueGraphisme & Digital MarketingFormer, ce n’est pas transmettre des outils.
-C’est structurer une manière de penser la marque.
-                        </p>
+                            Domaines de formationPersonal Branding & Community ManagementCommunication
+                            InstitutionnelleBranding stratégiqueGraphisme & Digital MarketingFormer, ce n’est pas
+                            transmettre des outils.
+                            C’est structurer une manière de penser la marque.
+                        </p> --}}
 
-                        <a href="blog-details" class="btn-black btn-white" style="color: black;">Demander une formation sur mesure<img
-                                src="{{ asset('assets/img/icon/star-black.png')}}" alt="image"></a>
+                        <a href="{{ route('formations')}}" class="btn-black btn-white" style="color: black;">Nos Formations<img src="{{ asset('assets/img/icon/star-black.png')}}" alt="image"></a>
                     </div>
                 </div>
             </div>
@@ -542,7 +501,7 @@ C’est structurer une manière de penser la marque.
                         <div class="footer-widget-box let-talk">
                             <h3 class="let-talk-title">
                                 Parlons
-                                <a href="{{route('contact')}}"><i class="fa-solid fa-arrow-right"></i></a>
+                                <a href="{{route('formations')}}"><i class="fa-solid fa-arrow-right"></i></a>
                             </h3>
                             <p>Envie de lancer quelque chose ?</p>
                         </div>
@@ -584,7 +543,7 @@ C’est structurer une manière de penser la marque.
                         <div class="copyright-text">
                             <p class="text">
                                 © Copyright {{ Date('Y')}}, All Rights Reserved by
-                                <a href="#">Smart Vision</a>
+                                <a href="{{ route('home')}}">Smart Vision</a>
                             </p>
                             <a class="back" href="#">Vers le Haut</a>
                         </div>
@@ -593,7 +552,7 @@ C’est structurer une manière de penser la marque.
             </div>
         </div>
         <div class="footer-bottom">
-            <h4 class="footer-bottom-title" style="font-size: 150px;">SmartVision</h2>
+            <h2 class="footer-bottom-title" >SmartVision</h2>
         </div>
     </footer>
     <!-- footer area end  -->

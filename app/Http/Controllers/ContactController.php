@@ -15,11 +15,10 @@ class ContactController extends Controller
         $validated = $request->validate([
             "name" => "required|string|max:255",
             "email" => "required|email|max:255",
-            "phone" => "nullable|string|max:20",
-            "subject" => "required|string|max:255",
+            "phone" => "required|string|max:20",
+            "formation_id" => "required|string|max:255",
             "message" => "required|string|min:10",
         ]);
-
         // Sauvegarde dans la base de données
         $contact = Contact::create($validated);
 
@@ -29,7 +28,7 @@ class ContactController extends Controller
         // Redirection avec message de succès
         return redirect()
             ->back()
-            ->with("success", "Votre message a été envoyé avec succès !");
+            ->with("success", "Votre message a été envoyé avec succès, nous vous recontacterons dans les meilleurs délais !");
     }
 
     public function index()

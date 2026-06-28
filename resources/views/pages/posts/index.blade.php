@@ -113,16 +113,16 @@
                         <div class="footer-widget-box let-talk">
                             <h3 class="let-talk-title">
                                 Parlons
-                                <a href="{{route('contact')}}"><i class="fa-solid fa-arrow-right"></i></a>
+                                <a href="{{route('formations')}}"><i class="fa-solid fa-arrow-right"></i></a>
                             </h3>
                             <p>Envie de lancer quelque chose ?</p>
                         </div>
                         <div class="footer-widget-box">
                             <h2 class="title">Liens rapides</h2>
                             <ul class="footer-nav-list">
-                                <li><a href="about.html">À propos</a></li>
-                                <li><a href="blog-details.html">Actualités</a></li>
-                                <li><a href="contact-us.html">Contact</a></li>
+                                <li><a href="{{ route('apropos')}}">À propos</a></li>
+                                <li><a href="{{ route('posts')}}">Actualités</a></li>
+                                <li><a href="{{ route('contact')}}">Contact</a></li>
                             </ul>
                         </div>
                         <div class="footer-widget-box">
@@ -164,7 +164,7 @@
             </div>
         </div>
         <div class="footer-bottom">
-            <h4 class="footer-bottom-title" style="font-size: 150px;">SmartVision</h2>
+            <h4 class="footer-bottom-title"  >SmartVision</h2>
         </div>
     </footer>
     <!-- footer area end  -->
