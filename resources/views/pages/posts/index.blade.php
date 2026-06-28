@@ -120,7 +120,7 @@
                         <div class="footer-widget-box">
                             <h2 class="title">Liens rapides</h2>
                             <ul class="footer-nav-list">
-                                <li><a href="{{ route(' about')}}">À propos</a></li>
+                                <li><a href="{{ route('about')}}">À propos</a></li>
                                 <li><a href="{{ route('posts')}}">Actualités</a></li>
                                 <li><a href="{{ route('contact')}}">Contact</a></li>
                             </ul>
