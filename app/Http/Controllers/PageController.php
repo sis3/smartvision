@@ -13,8 +13,10 @@ class PageController extends Controller
     {
         $posts = Post::latest()->get();
         $projects = Project::latest()->get();
+        $formations = Formation::get();
 
-        return view("pages.homes.index", compact("posts", "projects"));
+
+        return view("pages.homes.index", compact("posts", "projects", "formations"));
     }
 
     public function contact()

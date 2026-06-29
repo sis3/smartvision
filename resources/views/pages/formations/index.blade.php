@@ -236,7 +236,8 @@
                                                     <button type="submit" id="submitBtn" class="btn-black"
                                                         style="background-color: #c51718">
                                                         <span class="btn-wrap">
-                                                            <span class="text-one" style="color: #000">Envoyer la demande</span>
+                                                            <span class="text-one" style="color: #000">Envoyer la
+                                                                demande</span>
                                                         </span>
                                                     </button>
                                                 </div>
@@ -423,7 +424,7 @@ document.head.appendChild(styleSheet);
             </div>
         </div>
         <div class="footer-bottom">
-            <h4 class="footer-bottom-title"  >SmartVision</h2>
+            <h4 class="footer-bottom-title">SmartVision</h2>
         </div>
     </footer>
     <!-- footer area end  -->

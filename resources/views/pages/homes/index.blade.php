@@ -2,6 +2,64 @@
 
 @section('title', 'Accueil')
 @section('content')
+<style>
+    .service-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+        gap: 15px;
+    }
+
+    .service-card {
+        cursor: pointer;
+        margin: 0;
+    }
+
+    .service-card input {
+        display: none;
+    }
+
+    .service-card span {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 70px;
+        padding: 15px;
+        text-align: center;
+        border: 2px solid #e5e5e5;
+        border-radius: 12px;
+        background: #fff;
+        font-weight: 600;
+        transition: all .3s ease;
+    }
+
+    .service-card:hover span {
+        transform: translateY(-3px);
+        border-color: #000;
+        box-shadow: 0 10px 25px rgba(0, 0, 0, .08);
+    }
+
+    .service-card input:checked+span {
+        background: #111;
+        color: #fff;
+        border-color: #111;
+    }
+
+    .contact-us__input input,
+    .contact-us__textarea textarea {
+        width: 100%;
+        border: 1px solid #ddd;
+        border-radius: 10px;
+        padding: 14px 18px;
+        transition: .3s;
+    }
+
+    .contact-us__input input:focus,
+    .contact-us__textarea textarea:focus {
+        border-color: #111;
+        outline: none;
+        box-shadow: 0 0 0 4px rgba(0, 0, 0, .08);
+    }
+</style>
 <main>
     <!-- hero area start  -->
     <section class="hero" data-background="{{ asset('assets/img/hero/hero-bg.png')}}">
@@ -43,7 +101,7 @@
                         structurée pour vendre et durer.
                     </p>
 
-                    <a href="" class="btn-black" style="background-color: white; color: black;">Plus de
+                    <a href="{{ route('about')}}" class="btn-black" style="background-color: white; color: black;">Plus de
                         détails
                     </a>Plus
                 </div>
@@ -54,7 +112,242 @@
             <br>
         </div>
     </section>
+<section class="contact-area section-space">
+        <div class="container">
+            <div class="contact-wrapper">
+                <div class="row">
+                    <div class="col-xl-12">
+                        <div class="contact-us__area">
+                            <div class="row align-items-center">
+                                <div class="col-12">
+                                    <div class="contact-us__form-wrapper">
+                                        <h2 class="title">Parlons de vos ambitions !</h2>
 
+                                        <form class="contact-us__form" id="contact-us__form" method="POST"
+                                            action="{{ route('contact.submit') }}">
+                                            @csrf
+
+                                            <div class="row">
+
+                                                <div class="col-md-6">
+                                                    <div class="contact-us__input">
+                                                        <input type="text" name="name" placeholder="Nom complet *"
+                                                            onclick="event.preventDefault();" required>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-md-6">
+                                                    <div class="contact-us__input">
+                                                        <input type="email" name="email" placeholder="Adresse email *"
+                                                            onclick="event.preventDefault();" required>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-md-6">
+                                                    <div class="contact-us__input">
+                                                        <input type="tel" name="phone" placeholder="+223 ... *"
+                                                            onclick="event.preventDefault();" required>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-12 mt-4">
+                                                    <h5 class="mb-3">
+                                                        Quel service vous intéresse ?
+                                                    </h5>
+
+                                                    <div class="service-grid">
+                                                        @foreach ($formations as $formation)
+                                                        <label class="service-card">
+                                                            <input type="radio" name="formation_id"
+                                                                value="{{ $formation->id }}" {{
+                                                                old('formation_id')==$formation->id ? 'checked' : '' }}
+                                                            required>
+                                                            <span>{{ $formation->title }}</span>
+                                                        </label>
+                                                        @endforeach
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-12 mt-4">
+                                                    <div class="contact-us__textarea">
+                                                        <textarea name="message" rows="6"
+                                                            placeholder="Décrivez votre besoin ou votre projet..."
+                                                            onclick="event.preventDefault();" required></textarea>
+                                                    </div>
+                                                </div>
+
+                                                <!-- CAPTCHA SECTION -->
+                                                <div class="col-12 mt-4">
+                                                    <div class="captcha-wrapper"
+                                                        style="background: #f8f9fa; padding: 20px; border-radius: 12px; border: 1px solid #e9ecef;">
+                                                        <div class="row align-items-center">
+                                                            <div class="col-md-4">
+                                                                <label style="font-weight: 600; margin-bottom: 0;">
+                                                                    <i class="fas fa-shield-alt"
+                                                                        style="color: #c51718; margin-right: 8px;"></i>
+                                                                    Vérification
+                                                                </label>
+                                                            </div>
+                                                            <div class="col-md-8">
+                                                                <div class="d-flex align-items-center gap-3 flex-wrap">
+                                                                    <span id="captchaQuestion"
+                                                                        style="font-size: 1.1rem; font-weight: 500; background: white; padding: 8px 16px; border-radius: 8px; border: 1px solid #dee2e6;">
+                                                                        <!-- Généré par JavaScript -->
+                                                                    </span>
+                                                                    <span
+                                                                        style="font-weight: 600; color: #6c757d;">=</span>
+                                                                    <input type="number" id="captchaAnswer"
+                                                                        onclick="event.preventDefault();"
+                                                                        placeholder="Résultat" style="
+                                width: 120px;
+                                padding: 10px 15px;
+                                border: 2px solid #dee2e6;
+                                border-radius: 8px;
+                                font-size: 1rem;
+                                transition: all 0.3s;
+                                text-align: center;
+                            ">
+                                                                    <button type="button" id="refreshCaptcha" style="
+                                background: none;
+                                border: none;
+                                color: #c51718;
+                                font-size: 1.2rem;
+                                cursor: pointer;
+                                padding: 8px;
+                                transition: transform 0.3s;
+                            " onmouseover="this.style.transform='rotate(180deg)'"
+                                                                        onmouseout="this.style.transform='rotate(0deg)'">
+                                                                        <i class="fas fa-sync-alt"></i>
+                                                                    </button>
+                                                                </div>
+                                                                <div id="captchaError"
+                                                                    style="color: #dc3545; font-size: 0.9rem; margin-top: 8px; display: none;">
+                                                                    <i class="fas fa-exclamation-circle"></i> Réponse
+                                                                    incorrecte, veuillez réessayer.
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-12 mt-4 mb-4">
+                                                    <button type="submit" id="submitBtn" class="btn-black"
+                                                        style="background-color: #c51718">
+                                                        <span class="btn-wrap">
+                                                            <span class="text-one" style="color: #000">Envoyer la
+                                                                demande</span>
+                                                        </span>
+                                                    </button>
+                                                </div>
+
+                                            </div>
+                                        </form>
+
+                                        <!-- JavaScript pour le captcha -->
+                                        <script>
+                                            document.addEventListener('DOMContentLoaded', function() {
+    let num1, num2, operation, correctAnswer;
+
+    // Fonction pour générer une nouvelle question
+    function generateCaptcha() {
+        // Choisir aléatoirement l'opération (0: addition, 1: multiplication)
+        const opType = Math.floor(Math.random() * 2);
+
+        if (opType === 0) {
+            // Addition
+            num1 = Math.floor(Math.random() * 10) + 1;
+            num2 = Math.floor(Math.random() * 10) + 1;
+            operation = '+';
+            correctAnswer = num1 + num2;
+            document.getElementById('captchaQuestion').textContent = `${num1} + ${num2}`;
+        } else {
+            // Multiplication
+            num1 = Math.floor(Math.random() * 9) + 1;
+            num2 = Math.floor(Math.random() * 9) + 1;
+            operation = '×';
+            correctAnswer = num1 * num2;
+            document.getElementById('captchaQuestion').textContent = `${num1} × ${num2}`;
+        }
+
+        // Réinitialiser le champ et cacher l'erreur
+        document.getElementById('captchaAnswer').value = '';
+        document.getElementById('captchaError').style.display = 'none';
+        document.getElementById('captchaAnswer').style.borderColor = '#dee2e6';
+    }
+
+    // Générer le premier captcha
+    generateCaptcha();
+
+    // Rafraîchir le captcha
+    document.getElementById('refreshCaptcha').addEventListener('click', generateCaptcha);
+
+    // Valider le captcha avant soumission
+    document.getElementById('contact-us__form').addEventListener('submit', function(e) {
+        const userAnswer = parseInt(document.getElementById('captchaAnswer').value);
+        const errorDiv = document.getElementById('captchaError');
+        const answerInput = document.getElementById('captchaAnswer');
+
+        // Vérifier si la réponse est vide ou incorrecte
+        if (isNaN(userAnswer) || userAnswer !== correctAnswer) {
+            e.preventDefault(); // Empêcher la soumission
+            errorDiv.style.display = 'block';
+            answerInput.style.borderColor = '#dc3545';
+            answerInput.style.boxShadow = '0 0 0 4px rgba(220, 53, 69, 0.1)';
+
+            // Secouer le champ
+            answerInput.style.animation = 'shake 0.5s ease';
+            setTimeout(() => {
+                answerInput.style.animation = '';
+            }, 500);
+
+            // Générer une nouvelle question après erreur
+            setTimeout(generateCaptcha, 1000);
+        } else {
+            // Succès - le formulaire sera soumis normalement
+            document.getElementById('submitBtn').innerHTML = `
+                <span class="btn-wrap">
+                    <span class="text-one"><i class="fas fa-spinner fa-spin"></i> Envoi en cours...</span>
+                </span>
+            `;
+            document.getElementById('submitBtn').disabled = true;
+        }
+    });
+
+    // Réinitialiser le style du champ quand l'utilisateur tape
+    document.getElementById('captchaAnswer').addEventListener('input', function() {
+        this.style.borderColor = '#dee2e6';
+        this.style.boxShadow = 'none';
+        document.getElementById('captchaError').style.display = 'none';
+    });
+
+    // Permettre la soumission avec la touche Entrée sur le champ captcha
+    document.getElementById('captchaAnswer').addEventListener('keypress', function(e) {
+        if (e.key === 'Enter') {
+            document.getElementById('contact-us__form').dispatchEvent(new Event('submit'));
+        }
+    });
+});
+
+// Animation CSS pour le shake
+const styleSheet = document.createElement("style");
+styleSheet.textContent = `
+    @keyframes shake {
+        0%, 100% { transform: translateX(0); }
+        10%, 30%, 50%, 70%, 90% { transform: translateX(-5px); }
+        20%, 40%, 60%, 80% { transform: translateX(5px); }
+    }
+`;
+document.head.appendChild(styleSheet);
+                                        </script>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
     <!-- counter area start  -->
     <section class="mission-statement section-space" data-background="assets/img/our-services/mission-statement-bg.png">
         <div class="container">
@@ -334,7 +627,7 @@
                             visuels produits
                         </p>
 
-                        <a href="blog-details" class="btn-black btn-white" style="color: black;">NOS
+                        <a href="{{ route('projets')}}" class="btn-black btn-white" style="color: black;">NOS
                             PROJETS<img src="{{ asset('assets/img/icon/star-black.png')}}" alt="image"></a>
                     </div>
                 </div>
